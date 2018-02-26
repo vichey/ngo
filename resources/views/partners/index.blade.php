@@ -13,7 +13,6 @@
                             <tr>
                                 <th>&numero;</th>
                                 <th>Name</th>
-                                <th>Type</th>
                                 <th>Address</th>
                                 <th>Contact</th>
                                 <th>logo</th>
@@ -28,15 +27,14 @@
                                 <tr>
                                     <td>{{$i++}}</td>
                                     <td>{{$par->name}}</td>
-                                    <td>{{$par->type}}</td>
                                     <td>{{$par->address}}</td>
                                     <td>{{$par->contact}}</td>
                                     <td><img src="{{URL::asset('partners/').'/'.$par->logo}}" width="65"/></td>
                                     <td>{{$par->url}}</td>
                                     <td>{{$par->sequence}}</td>
                                     <td>
-                                        <a href="{{url('/donor/edit/'.$par->id)}}" title="Edit"><i class="fa fa-edit text-success"></i></a>&nbsp;&nbsp;
-                                        <a href="{{url('/donor/delete/'.$par->id)}}" onclick="return confirm('Do you want to delete?')" title="Delete"><i class="fa fa-remove text-danger"></i></a>
+                                        <a class="btn btn-info btn-xs" href="{{url('/donor/edit/'.$par->id)}}" title="Edit"><i class="fa fa-pencil"></i></a>
+                                        <a class="btn btn-danger btn-xs"  href="{{url('/donor/delete/'.$par->id)}}" onclick="return confirm('Do you want to delete?')" title="Delete"><i class="fa fa-trash-o"></i></a>
                                     </td>
                                 </tr>
                             @endforeach

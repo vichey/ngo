@@ -52,24 +52,6 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="contact" class="control-label col-lg-1 col-sm-2">Type<span class="text-danger">*</span></label>
-                            <div class="col-lg-6 col-sm-8">
-                                <select class="form-control" name="type" id="type"  id="exampleSelect1">
-                                    <option 
-                                        value="customer" {{$partner->type=='customer'?'selected':''}}
-                                    >
-                                        Customer 
-                                    </option>
-                                    <option 
-                                        value="partner" 
-                                        {{$partner->type=='partner'?'selected':''}}
-                                    >
-                                        Partner
-                                    </option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group row">
                             <label for="contact" class="control-label col-lg-1 col-sm-2">Contact<span class="text-danger">*</span></label>
                             <div class="col-lg-6 col-sm-8">
                                 <input 

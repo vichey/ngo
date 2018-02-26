@@ -51,7 +51,6 @@ class PartnerController extends Controller
         }
         $data = array(
             'name' => $r->name,
-            'type' => $r->type,
             'address' => $r->address,
             'contact' => $r->contact,
             'logo' => $file_name,
@@ -97,7 +96,6 @@ class PartnerController extends Controller
     {
         $data = array(
                 'name' => $r->name,
-                'type' => $r->type,
                 'address' => $r->address,
                 'contact' => $r->contact,
                 'sequence' => $r->sequence,

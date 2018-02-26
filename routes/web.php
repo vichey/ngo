@@ -87,6 +87,16 @@ Route::get('/page/edit/{id}', "PageController@edit");
 Route::post('/page/update', "PageController@update");
 Route::get('/page/view/{id}', "PageController@view");
 
+// Page
+Route::get('/announcement', "AnnouncementController@index");
+Route::get('/announcement/create', "AnnouncementController@create");
+Route::post('/announcement/save', "AnnouncementController@save");
+Route::get('/announcement/delete/{id}', "AnnouncementController@delete");
+Route::get('/announcement/edit/{id}', "AnnouncementController@edit");
+Route::post('/announcement/update', "AnnouncementController@update");
+Route::get('/announcement/view/{id}', "AnnouncementController@view");
+
+
 // front page
 Route::get('/page/about', "FrontPageController@about");
 Route::get('/page/contact', "FrontPageController@contact");
