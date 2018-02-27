@@ -1,148 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="sor vichey" content="sor vichey">
-        <title>Lysreyvyna Clinic</title>
-        <link href="{{asset('front/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-        <link href="{{asset('front/css/4-col-portfolio.css')}}" rel="stylesheet">
-    </head>
 
-    <body>
-	<div class="container pd-20">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Khmer Young Assiciation</title>
+    <script type="text/javascript" src="css/jq.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="{{asset('front/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('front/css/b.css')}}" rel="stylesheet">
+      <script src="{{asset('front/css/owl.carousel.min.js')}}"></script>
+    <!-- Custom styles for this template -->
+    <link href="{{asset('front/css/4-col-portfolio.css')}}" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <div class="container-fluit">
+    <div class="container">
         <div class="col-md-12">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="contact">
-                        <span class="icon">
-                            <img src="{{asset('front/img/call.png')}}">
-                        </span>
-                    </div>
-                    <div class="call">
-                        (+855) 12 990 988, <br>
-                        (+855) 99 990 988, <br>
-                        (+855) 17 978 999
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="logo">
-                        <a href="{{url('/')}}"><img src="{{asset('front/img/logo.jpg')}}" alt="logo" id="logo"></a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="contact">
-                        <span class="icon">
-                            <img src="{{asset('front/img/map.png')}}">
-                        </span>
-                    </div>
-                    <div class="call">
-                        #339A/B/C, St. 163, Sangkat Toul Tum Poung II, Khan Chamkarmorn,12311, 
-                        Phnom Penh , Cambodia
-                    </div>
-                </div>
+        <div class="row">   
+            <div class="col-md-9">   
+                <img src="{{asset('front/img/kya-logo.png')}}" height="100" style="margin-bottom: 5px; margin-top: -5px;">
             </div>
+            <div class="col-md-3" style="margin-top: 30px;">
+                <div class="float-right">
+                <a href="" class="text-default"><img class="lang" src="{{asset('front/img/kh.png')}}" width="40">ភាសារខ្មែរ</a>
+                <a href="" class="text-default"><img class="lang" src="{{asset('front/img/en.png')}}" width="40"> English</a>
+                </div>
+            </div> 
         </div>
+        </div></div>
     </div>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav text-center">
-                <li class="nav-item active">
-                    <a class="nav-link" href="{{url('/')}}">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Facility</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{url('new-and-education')}}">News and Education</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{url('page/staff')}}">Doctor Background</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{url('/page/about')}}">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{url('/page/contact')}}">Contact Us</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                        All Service
-                    </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                        <a class="dropdown-item" href="#">Link 3</a>
-                    </div>
-                </li>
-            </ul>
-	    </nav> 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+      <div class="col-md-12">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                About Us
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Our History</a>
+                <a class="dropdown-item" href="#">Vision, Mission, Core Values</a>
+                <a class="dropdown-item" href="#">Organizational Chart</a>
+                <a class="dropdown-item" href="#">BOD members</a>
+                <a class="dropdown-item" href="#">Staff</a>
+                <a class="dropdown-item" href="#">Annual & Financial reports</a>
+                
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Where We Work</a>
+            </li>
+             <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Our Program
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+            </li>
+             <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Membership
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+            </li>
+             <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Get Involved
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Announcements
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                 Publications 
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+            </li>
+             <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                 Contact Us 
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+            </li>
+          
+          </ul>  </div>
+        </div>
+      </div>
+    </nav>
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{{asset('front/img/slider-1.jpg')}}" alt="Los Angeles" width="100%">
     </div>
-	
-	<div id="demo" class="carousel slide" data-ride="carousel">
-		<?php $i = 1;
-            $slides = DB::table('slides')->orderBy('order', 'asc')->where('active',1)->get();
-        ?>
-        <div class="carousel-inner">
-            @foreach($slides as $s)
-                @if($i == 1)
-                    <div class="carousel-item active">
-                        <img src="{{asset('front/slides/'.$s->photo)}}" alt="{{$s->name}}" width="100%">
-                    </div>
-                @else
-                    <div class="carousel-item">
-                        <img src="{{asset('front/slides/'.$s->photo)}}"   alt="{{$s->name}}"  width="100%">
-                    </div>
-                @endif
-                <?php $i++; ?>
-            @endforeach
-	    </div>
-	    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-		</a>
-	</div>
+    <div class="carousel-item">
+      <img src="{{asset('front/img/slider-1.jpg')}}" alt="Los Angeles" width="100%">
+    </div>
+  </div>
 
-	<div class="col-md-12">
-		<div class="row">
-			<div class="col-md-4 background-w">	
-                <div class="float-right"><img src="{{asset('front/img/u.png')}}" width="48"  style="opacity: 0.6;"></div>
-                <?php $who_we_are = DB::table('pages')->where('id',1)->first();?>
-                <h5>{{$who_we_are->title}}</h5>
-                <p>{!!$who_we_are->description!!}</p>
-            </div>
-			<div class="col-md-4 background-c">
-                <div class="float-right"><img src="{{asset('front/img/w.png')}}" width="50" style="opacity: 0.6;"></div>
-                <?php $comfortable_environment = DB::table('pages')->where('id',2)->first();?>
-                <h5>{{$comfortable_environment->title}}</h5>
-                <p>{!!$comfortable_environment->description!!}</p>
-			</div>
-			<div class="col-md-4 background-o">
-			    <div class="float-right"><img src="{{asset('front/img/h.png')}}"  style="opacity: 0.6;"></div>
-			    <?php $opening_hours = DB::table('pages')->where('id',3)->first();?>
-				<h5>{{$opening_hours->title}}</h5>
-				<p>{!!$opening_hours->description!!}</p>
-			</div>
-		</div>
-	</div>
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
 
-    <div class="container">
+</div>
+
+<div class="container-fluit b-image">
+<div class="container">
         @yield('content')
-    </div><br>
+    </div>
+</div><br><br>
+   
+    <h4 align="center">
+    <img src="{{asset('front/img/partner.png')}}"> <b>Our Donors</b> <hr>
+</h4>
+  <div class="col-md-12 border-custom"> 
+      <div class="">
+          <div class="swiper-viewport">
+          <div id="carousel0" class="swiper-container">
+          <div class="swiper-wrapper"> <div class="swiper-slide text-center">
+          <img src="img/logo.png" width="150" alt="NFL"/></div>
+          <div class="swiper-slide text-center"><img src="img/logo.png" alt="RedBull" width="150" /></div>
+          <div class="swiper-slide text-center"><img src="img/logo.png" alt="Sony"  width="150"/></div>
+          <div class="swiper-slide text-center"><img src="img/logo.png" alt="Coca Cola" width="150" /></div>
+          <div class="swiper-slide text-center"><img src="img/logo.png" alt="Burger King" width="150" /></div>
+          <div class="swiper-slide text-center"><img src="img/logo.png" alt="Canon" width="150" /></div>
+          <div class="swiper-slide text-center"><img src="img/logo.png" alt="Harley Davidson"  width="150"/></div>
+          <div class="swiper-slide text-center"><img src="img/logo.png" alt="Dell" width="150" /></div>
+          <div class="swiper-slide text-center"><img src="img/logo.png" alt="Disney"  width="150" /></div>
+          <div class="swiper-slide text-center"><img src="img/logo.png" alt="Starbucks" width="150"  /></div>
+          <div class="swiper-slide text-center"><img src="img/logo.png" alt="Nintendo" width="150" /></div>
+          </div>
+      </div>
+<style type="text/css">
+.swiper-button-next, .swiper-button-prev {
+position: absolute;
+top: 69%;
+width: 40px;
+height: 26px;
+margin-top: -22px;
+}
+</style>
+<div class="swiper-pager">
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+</div>
+</div>
+<script type="text/javascript"><!--
+$('#carousel0').swiper({
+mode: 'horizontal',
+slidesPerView: 5,
+pagination: '.carousel0',
+paginationClickable: true,
+nextButton: '.swiper-button-next',
+prevButton: '.swiper-button-prev',
+autoplay: 2500,
+loop: true
+});
+--></script>
+</div>
+</div><hr><br><br><br>
+</div>
+</div>
 
-    <footer>
-         <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018 Lysreyvyna Clinic.</p>
-            <aside class="text-white text-center">Power by <a class="text-white" href="http://vdoo.biz/">Vdoo Solutions</a></aside>
+<div class="container-fluit b">
+  <div class="container">
+  <div class="row">
+   <div class="col-md-3 text-center">
+       <div class="foot">
+          <h6>CONTACT INFO</h6><br>
+          Address: 184 Main Collins Street West Victoria 8007 <br>
+           +1800-222-3333<br>
+           +1833-232-3443<br>
+           contact@greennaturewp.com
         </div>
-    </footer>
-    <script src="{{asset('front/vendor/jquery/jquery.min.js')}}"></script>
-    <script src="{{asset('front/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+      </div>
+      <div class="col-md-3 text-center">
+         <div class="foot">
+          <h6>Find Us</h6><br>
+          <img src="{{asset('front/img/ff.png')}}" width="80%"><br><br>
+          <img src="{{asset('front/img/y.jpg')}}" width="80%">
+        </div>
+      </div>
+       
+       <div class="col-md-3 text-center"><div class="foot">
+        <div class="fb-like-box fb_iframe_widget" data-href="https://www.facebook.com/khmeryouthassociationkh" data-width="200" data-show-faces="true" data-stream="false" data-header="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=200&amp;header=true&amp;href=https%3A%2F%2Fwww.facebook.com%2Fkhmeryouthassociationkh&amp;locale=en_US&amp;sdk=joey&amp;show_faces=true&amp;stream=false&amp;width=200"><span style="vertical-align: bottom; width: 200px; height: 188px;"><iframe name="f24aff432ffcfc" width="200px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="https://www.facebook.com/plugins/like_box.php?app_id=&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FlY4eZXm_YWu.js%3Fversion%3D42%23cb%3Df2a218e77737814%26domain%3Dwww.kya-cambodia.org%26origin%3Dhttp%253A%252F%252Fwww.kya-cambodia.org%252Ff13c442bd725f4%26relation%3Dparent.parent&amp;container_width=200&amp;header=true&amp;href=https%3A%2F%2Fwww.facebook.com%2Fkhmeryouthassociationkh&amp;locale=en_US&amp;sdk=joey&amp;show_faces=true&amp;stream=false&amp;width=200px" style="border: none; visibility: visible; width: 200px; height: 188px;" class=""></iframe></span></div>
+      </div></div>
+      <div class="col-md-3 text-center"><div class="foot">
+        <a href="https://www.worldflagcounter.com/details/dTc">
+        <img src="https://www.worldflagcounter.com/dTc/" alt="Flag Counter" height="188" width="200"></a></a></div>
+      </div>
+      </div>
+  </div>
+</div>
+<div class="copyright">
+<div  class=" container ">
+<div class="row">
+  <div class="col-md-6">
+     <img src="{{asset('front/img/f.png')}}" width="30"> 
+      <img src="{{asset('front/img/l.png')}}" width="30" > 
+      <img src="{{asset('front/img/t.png')}}" width="30">
+      <img src="{{asset('front/img/e.png')}}" width="40"> 
+  </div>
+  <div class="col-md-6 co">
+     <div align="right">Copyright © 2018 Khmer Young Association. Power by <a href="http://vdoo.biz/">Vdoo Solutions</a></div>
+  </div>
+</div>
+</div>
+
+ 
+</div>
+
+<!-- Bootstrap core JavaScript -->
+<script src="{{asset('front/vendor/jquery/jquery.min.js')}}"></script>
+<script src="{{asset('front/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
 </body>
+
 </html>
