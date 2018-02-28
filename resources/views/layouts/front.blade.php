@@ -200,7 +200,13 @@ loop: true
       </div>
       <div class="col-md-3 text-center">
          <div class="foot">
-          <h6>Find Us</h6><br>
+          <h6>Find Us</h6>
+
+                <img src="{{asset('front/img/f.png')}}" width="30"> 
+                <img src="{{asset('front/img/l.png')}}" width="30" > 
+                <img src="{{asset('front/img/t.png')}}" width="30">
+                <img src="{{asset('front/img/e.png')}}" width="40"> 
+
           <img src="{{asset('front/img/ff.png')}}" width="80%"><br><br>
           <img src="{{asset('front/img/y.jpg')}}" width="80%">
         </div>
@@ -215,23 +221,6 @@ loop: true
       </div>
       </div>
   </div>
-</div>
-<div class="copyright">
-<div  class=" container ">
-<div class="row">
-  <div class="col-md-6">
-     <img src="{{asset('front/img/f.png')}}" width="30"> 
-      <img src="{{asset('front/img/l.png')}}" width="30" > 
-      <img src="{{asset('front/img/t.png')}}" width="30">
-      <img src="{{asset('front/img/e.png')}}" width="40"> 
-  </div>
-  <div class="col-md-6 co">
-     <div align="right">Copyright © 2018 Khmer Young Association. Power by <a href="http://vdoo.biz/">Vdoo Solutions</a></div>
-  </div>
-</div>
-</div>
-
- 
 </div>
 
 <!-- Bootstrap core JavaScript -->
