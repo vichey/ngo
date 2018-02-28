@@ -80,7 +80,7 @@
                         <a class="nav-link" href="#"><i class="fa fa-user"></i>Member</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-user"></i>Staff</a>
+                        <a class="nav-link" href="{{url('/admin/staff')}}"><i class="fa fa-user"></i>Staff</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fa fa-envelope"></i>Newsletter</a>

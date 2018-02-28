@@ -10,13 +10,7 @@ class StaffController extends Controller
 {
     public function __construct()
     {
-        $this->middleware(function ($request, $next) {
-            if (Auth::user()==null)
-            {
-                return redirect("/login");
-            }
-            return $next($request);
-        });
+        $this->middleware('auth');
     }
     // index
     public function index()
@@ -35,45 +29,39 @@ class StaffController extends Controller
     public function save(Request $r)
     {   
         $data = array(
-            'name' => $r->name,
+            'full_name' => $r->full_name,
             'position' => $r->position,
-            'description' => $r->description,
+            'section' => $r->section,
+            'order_number' => $r->order_number,
+            'profile' => $r->profile
         );
-        if($r->photo) {
-            $file = $r->file('photo');
-            $file_name = $file->getClientOriginalName();
-            $destinationPath = 'front/img/';
-            $file->move($destinationPath, $file_name);
-            $data['photo'] = $file_name;
-        }
-        $sms = "The new staff has been created successfully.";
-        $sms1 = "Fail to create the new staff, please check again!";
         $i = DB::table('staffs')->insertGetId($data);
-
-        if($i > 0) {
-            $url = 'staff/view/'.$i;
-            $data = array(
-                'url' => $url
-            );
-            $i = DB::table('staffs')->where('id', $i)->update($data);
-        }
-
+        
         if ($i)
         {
-            $r->session()->flash('sms', $sms);
-            return redirect('/staff/create');
+            if($r->photo) {
+                $file = $r->file('photo');
+                $file_name = $file->getClientOriginalName();
+                $ext = \File::extension($file_name);
+                $file_name = $i.$ext;
+                $destinationPath = 'uploads/staff/';
+                $file->move($destinationPath, $file_name);
+                DB::table('staffs')->where('id', $i)->update(['photo'=>$file_name]);
+            }
+            $r->session()->flash('sms', "New staff has been created successfully!");
+            return redirect('/admin/staff/create');
         }
         else
         {
-            $r->session()->flash('sms1', $sms1);
-            return redirect('/staff/create')->withInput();
+            $r->session()->flash('sms1', "Fail to create new staff!");
+            return redirect('/admin/staff/create')->withInput();
         }
     }
     // delete
     public function delete($id)
     {
         DB::table('staffs')->where('id', $id)->update(['active'=>0]);
-        return redirect('/staff');
+        return redirect('/admin/staff');
     }
 
     public function edit($id)

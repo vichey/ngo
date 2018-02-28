@@ -14,7 +14,13 @@
 Route::get('/admin',"HomeController@index");
 Route::get('/admin/dashboard',"HomeController@index");
 Route::get('/',"FrontController@index");
-
+// staff admin
+Route::get('/admin/staff', "StaffController@index");
+Route::get('/admin/staff/create', "StaffController@create");
+Route::get('/admin/staff/edit/{id}', "StaffController@edit");
+Route::get('/admin/staff/delete/{id}', "StaffController@delete");
+Route::post('/admin/staff/save', "StaffController@save");
+Route::post('/admin/staff/update', "StaffController@update");
 
 Auth::routes();
 // Logo
