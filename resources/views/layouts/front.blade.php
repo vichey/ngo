@@ -187,46 +187,43 @@ loop: true
 </script>
 
 <div class="container-fluit b">
-  <div class="container">
-  <div class="row">
-   <div class="col-md-3 text-center">
-       <div class="foot">
-          <h6>CONTACT INFO</h6><br>
-          Address: 184 Main Collins Street West Victoria 8007 <br>
-           +1800-222-3333<br>
-           +1833-232-3443<br>
-           contact@greennaturewp.com
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <div class="foot">
+                <h6>CONTACT INFO</h6><br>
+                Address: 184 Main Collins Street West Victoria 8007 <br>
+                +1800-222-3333<br>
+                +1833-232-3443<br>
+                contact@greennaturewp.com
+                </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="foot">
+                        <h6>FIND US</h6>
+                        <p>
+                            <img src="{{asset('front/img/f.png')}}" height="28"> 
+                            <img src="{{asset('front/img/l.png')}}" height="28"> 
+                            <img src="{{asset('front/img/t.png')}}" height="28">
+                            <img src="{{asset('front/img/e.png')}}" height="28"> 
+                        </p>
+                        <p><img src="{{asset('front/img/ff.png')}}" ></p>
+                        <p><img src="{{asset('front/img/y.jpg')}}"><p>
+                    </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="foot">
+                    <div class="fb-like-box fb_iframe_widget" data-href="https://www.facebook.com/khmeryouthassociationkh" data-width="200" data-show-faces="true" data-stream="false" data-header="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=200&amp;header=true&amp;href=https%3A%2F%2Fwww.facebook.com%2Fkhmeryouthassociationkh&amp;locale=en_US&amp;sdk=joey&amp;show_faces=true&amp;stream=false&amp;width=200"><span style="vertical-align: bottom; width: 200px; height: 188px;"><iframe name="f24aff432ffcfc" width="200px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="https://www.facebook.com/plugins/like_box.php?app_id=&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FlY4eZXm_YWu.js%3Fversion%3D42%23cb%3Df2a218e77737814%26domain%3Dwww.kya-cambodia.org%26origin%3Dhttp%253A%252F%252Fwww.kya-cambodia.org%252Ff13c442bd725f4%26relation%3Dparent.parent&amp;container_width=200&amp;header=true&amp;href=https%3A%2F%2Fwww.facebook.com%2Fkhmeryouthassociationkh&amp;locale=en_US&amp;sdk=joey&amp;show_faces=true&amp;stream=false&amp;width=200px" style="border: none; visibility: visible; width: 200px; height: 188px;" class=""></iframe></span></div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center"><div class="foot">
+                <a href="https://www.worldflagcounter.com/details/dTc">
+                <img src="https://www.worldflagcounter.com/dTc/" alt="Flag Counter" height="188" width="200"></a></a></div>
+            </div>
         </div>
-      </div>
-      <div class="col-md-3 text-center">
-         <div class="foot">
-          <h6>Find Us</h6>
-
-                <img src="{{asset('front/img/f.png')}}" width="30"> 
-                <img src="{{asset('front/img/l.png')}}" width="30" > 
-                <img src="{{asset('front/img/t.png')}}" width="30">
-                <img src="{{asset('front/img/e.png')}}" width="40"> 
-
-          <img src="{{asset('front/img/ff.png')}}" width="80%"><br><br>
-          <img src="{{asset('front/img/y.jpg')}}" width="80%">
-        </div>
-      </div>
-       
-       <div class="col-md-3 text-center"><div class="foot">
-        <div class="fb-like-box fb_iframe_widget" data-href="https://www.facebook.com/khmeryouthassociationkh" data-width="200" data-show-faces="true" data-stream="false" data-header="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=200&amp;header=true&amp;href=https%3A%2F%2Fwww.facebook.com%2Fkhmeryouthassociationkh&amp;locale=en_US&amp;sdk=joey&amp;show_faces=true&amp;stream=false&amp;width=200"><span style="vertical-align: bottom; width: 200px; height: 188px;"><iframe name="f24aff432ffcfc" width="200px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="https://www.facebook.com/plugins/like_box.php?app_id=&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FlY4eZXm_YWu.js%3Fversion%3D42%23cb%3Df2a218e77737814%26domain%3Dwww.kya-cambodia.org%26origin%3Dhttp%253A%252F%252Fwww.kya-cambodia.org%252Ff13c442bd725f4%26relation%3Dparent.parent&amp;container_width=200&amp;header=true&amp;href=https%3A%2F%2Fwww.facebook.com%2Fkhmeryouthassociationkh&amp;locale=en_US&amp;sdk=joey&amp;show_faces=true&amp;stream=false&amp;width=200px" style="border: none; visibility: visible; width: 200px; height: 188px;" class=""></iframe></span></div>
-      </div></div>
-      <div class="col-md-3 text-center"><div class="foot">
-        <a href="https://www.worldflagcounter.com/details/dTc">
-        <img src="https://www.worldflagcounter.com/dTc/" alt="Flag Counter" height="188" width="200"></a></a></div>
-      </div>
-      </div>
-  </div>
+    </div>
 </div>
-
-<!-- Bootstrap core JavaScript -->
 <script src="{{asset('front/vendor/jquery/jquery.min.js')}}"></script>
 <script src="{{asset('front/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-
 </body>
-
 </html>
