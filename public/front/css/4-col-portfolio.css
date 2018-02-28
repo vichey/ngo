@@ -198,3 +198,9 @@ small {
 .lang {
   padding: 5px;
 }
+/* custom css */
+.dropdown-item:focus, .dropdown-item:hover {
+  /* color: #16181b;
+  text-decoration: none; */
+  background-color: #b2c9e0;
+}

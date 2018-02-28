@@ -95,21 +95,22 @@ Route::get('/announcement/delete/{id}', "AnnouncementController@delete");
 Route::get('/announcement/edit/{id}', "AnnouncementController@edit");
 Route::post('/announcement/update', "AnnouncementController@update");
 Route::get('/announcement/view/{id}', "AnnouncementController@view");
-
+// load front page
+Route::get('/page/{id}', "FrontPageController@index");
 
 // front page
-Route::get('/page/about', "FrontPageController@about");
-Route::get('/page/contact', "FrontPageController@contact");
-Route::get('/page/staff', "FrontPageController@staff");
-// test
-Route::get('/test', "TestController@index");
+// Route::get('/page/about', "FrontPageController@about");
+// Route::get('/page/contact', "FrontPageController@contact");
+// Route::get('/page/staff', "FrontPageController@staff");
+// // test
+// Route::get('/test', "TestController@index");
 
-// Post
-Route::get('/post', "PostController@index");
-Route::get('/post/create', "PostController@create");
-Route::get('/post/create/new', "PostController@create");
-Route::post('/post/save', "PostController@save");
-Route::get('/post/delete/{id}', "PostController@delete");
-Route::get('/post/edit/{id}', "PostController@edit");
-Route::post('/post/update', "PostController@update");
-Route::get('/post/view/{id}', "PostController@view");
+// // Post
+// Route::get('/post', "PostController@index");
+// Route::get('/post/create', "PostController@create");
+// Route::get('/post/create/new', "PostController@create");
+// Route::post('/post/save', "PostController@save");
+// Route::get('/post/delete/{id}', "PostController@delete");
+// Route::get('/post/edit/{id}', "PostController@edit");
+// Route::post('/post/update', "PostController@update");
+// Route::get('/post/view/{id}', "PostController@view");

@@ -80,6 +80,9 @@
                         <a class="nav-link" href="#"><i class="fa fa-user"></i>Member</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-user"></i>Staff</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fa fa-envelope"></i>Newsletter</a>
                     </li>
                     <li class="nav-item">
@@ -100,12 +103,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{url('/donor')}}"><i class="fa fa-gift"></i> Donor </a>
                     </li>
-                    <li class="nav-item">
+                    {{--  <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fa fa-list"></i> Social </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fa fa-bars text-primary"></i> Menu </a>
-                    </li>
+                    </li>  --}}
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fa fa-file text-primary"></i> File Manager </a>
                     </li>

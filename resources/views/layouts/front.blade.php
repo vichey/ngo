@@ -3,10 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="vdoo solutions" content="">
+        <meta name="description" content="Khmer Youth Association">
+        <meta name="keyword" content="KYA, Khmer Youth Association">
 
         <title>Khmer Young Assiciation</title>
+        <link rel="icon" type="image/gif" href="{{asset('img/favicon.gif')}}" >
         <script type="text/javascript" src="{{asset('front/css/jq.js')}}"></script>
         <!-- Bootstrap core CSS -->
         <link href="{{asset('front/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -42,19 +43,19 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="{{url('/')}}">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                                 About Us
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Our History</a>
-                                <a class="dropdown-item" href="#">Vision, Mission, Core Values</a>
-                                <a class="dropdown-item" href="#">Organizational Chart</a>
+                                <a class="dropdown-item" href="{{url('/page/1')}}">Our History</a>
+                                <a class="dropdown-item" href="{{url('/page/2')}}">Vision, Mission, Core Values</a>
+                                <a class="dropdown-item" href="{{url('/page/3')}}">Organizational Chart</a>
                                 <a class="dropdown-item" href="#">BOD members</a>
                                 <a class="dropdown-item" href="#">Staff</a>
-                                <a class="dropdown-item" href="#">Annual & Financial reports</a>
+                                <a class="dropdown-item" href="{{url('/page/4')}}">Annual & Financial Reports</a>
                                 
                             </div>
                         </li>
@@ -63,35 +64,29 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                Our Program
+                                Our Programs
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Link 1</a>
-                                <a class="dropdown-item" href="#">Link 2</a>
-                                <a class="dropdown-item" href="#">Link 3</a>
+                                <a class="dropdown-item" href="#">Youth Participation in Decision-Making Processes</a>
+                                <a class="dropdown-item" href="#">Youth Employment Opportunities</a>
+                                <a class="dropdown-item" href="#">Improved Social Well-Being and Youth Engagement in Human Rights and Sustainable Development</a>
                             </div>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                Membership
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Link 1</a>
-                                <a class="dropdown-item" href="#">Link 2</a>
-                                <a class="dropdown-item" href="#">Link 3</a>
-                            </div>
-                        </li>
+                        
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                                 Get Involved
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Link 1</a>
-                                <a class="dropdown-item" href="#">Link 2</a>
-                                <a class="dropdown-item" href="#">Link 3</a>
+                                <a class="dropdown-item" href="#">Case Study</a>
+                                <a class="dropdown-item" href="#">Volunteer With Us</a>
+                                {{--  <a class="dropdown-item" href="#">Announcements</a>  --}}
+                                <a class="dropdown-item" href="#">Events</a>
+                                <a class="dropdown-item" href="#">Job Announcements</a>
+                                
                             </div>
                         </li>
-                        <li class="nav-item dropdown">
+                        {{--  <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                                 Announcements
                             </a>
@@ -100,15 +95,14 @@
                                 <a class="dropdown-item" href="#">Link 2</a>
                                 <a class="dropdown-item" href="#">Link 3</a>
                             </div>
-                        </li>
+                        </li>  --}}
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                Publications 
+                                E-Library 
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Link 1</a>
-                                <a class="dropdown-item" href="#">Link 2</a>
-                                <a class="dropdown-item" href="#">Link 3</a>
+                                <a class="dropdown-item" href="#">Document Library</a>
+                                <a class="dropdown-item" href="#">Photo Library</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -116,9 +110,8 @@
                                 Contact Us 
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Link 1</a>
-                                <a class="dropdown-item" href="#">Link 2</a>
-                                <a class="dropdown-item" href="#">Link 3</a>
+                                <a class="dropdown-item" href="#">Head Office in Phnom Penh</a>
+                                <a class="dropdown-item" href="#">Provincial Office</a>
                             </div>
                         </li>
                     </ul>  
@@ -126,12 +119,9 @@
             </div>
         </div>
     </nav>
-  
-
     
-            @yield('content')
-     
-   
+    @yield('content')
+
     <h4 align="center">
         <img src="{{asset('front/img/partner.png')}}"> <b>Our Donors</b> <hr>
     </h4>

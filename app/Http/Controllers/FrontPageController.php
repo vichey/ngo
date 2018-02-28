@@ -8,6 +8,13 @@ use DB;
 class FrontPageController extends Controller
 {
     // index
+    public function index($id)
+    {
+        $data['page'] = DB::table('pages')
+            ->where('id', $id)
+            ->first();
+            return view('fronts.page', $data);
+    }
     public function about()
     {
         $data['about'] = DB::table('pages')
