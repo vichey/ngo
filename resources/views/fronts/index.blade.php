@@ -29,7 +29,7 @@
 <div class="col-md-12">
 
        <h4 class="my-3">
-           <img src="{{asset('front/img/Insights.png')}}" width="40"> <b>Case Studies</b> <span class="more">More Case Studies >></span>
+           <img src="{{asset('front/img/Insights.png')}}" width="40"> <b>Recent News</b> <span class="more">More Recents News >></span>
        </h4><hr class="hr-c">
        <div class="row">
           <div class="col-lg-3 col-md-3 col-sm-6 portfolio-item">

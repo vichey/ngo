@@ -27,9 +27,9 @@
         <div class="col-md-12">
         <div class="row">   
             <div class="col-md-9">   
-                <img src="{{asset('front/img/kya-logo.png')}}" height="100" style="margin-bottom: 5px; margin-top: -5px;">
+                <img src="{{asset('front/img/kya-logo.png')}}" height="130" style="margin-bottom: 5px; margin-top: -5px;">
             </div>
-            <div class="col-md-3" style="margin-top: 30px;">
+            <div class="col-md-3" style="margin-top: 50px;">
                 <div class="float-right">
                 <a href="" class="text-default"><img class="lang" src="{{asset('front/img/kh.png')}}" width="40">ភាសារខ្មែរ</a>
                 <a href="" class="text-default"><img class="lang" src="{{asset('front/img/en.png')}}" width="40"> English</a>
