@@ -22,7 +22,7 @@
             <div class="col-md-12">
                 <div class="row">   
                     <div class="col-md-9">   
-                        <img src="{{asset('front/img/kya-logo.png')}}" height="130" style="margin-bottom: 5px; margin-top: -5px;">
+                       <a href="{{url('/')}}"><img src="{{asset('front/img/kya-logo.png')}}" height="130" style="margin-bottom: 5px; margin-top: -5px;"></a> 
                     </div>
                     <div class="col-md-3" style="margin-top: 50px;">
                         <div class="float-right">
@@ -56,7 +56,6 @@
                                 <a class="dropdown-item" href="#">BOD members</a>
                                 <a class="dropdown-item" href="#">Staff</a>
                                 <a class="dropdown-item" href="{{url('/page/4')}}">Annual & Financial Reports</a>
-                                
                             </div>
                         </li>
                         <li class="nav-item">
@@ -115,6 +114,12 @@
                             </div>
                         </li>
                     </ul>  
+                    <ul class="ml-auto">
+                        <form class="form-inline">
+                            <input type="text" class="form-control mr-sm-1" placeholder="Search...">
+                            <button type="submit" class="btn btn-primary btn-c"><img src="{{asset('front/img/search-icon.png')}}"></button>
+                        </form>
+                    </ul>
                 </div>
             </div>
         </div>
