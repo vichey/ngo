@@ -13,7 +13,7 @@
                     <table class="table table-condensed table-striped table-responsive">
                         <thead>
                         <tr>
-                            <th>{{$lb_id}}</th>
+                            <th>&numero;</th>
                             <th>{{$lb_name}}</th>
                             <th>{{$lb_email}}</th>
                             <th>{{$lb_language}}</th>

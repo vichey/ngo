@@ -32,7 +32,7 @@
 <body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
     <header class="app-header navbar">
         <button class="navbar-toggler mobile-sidebar-toggler d-lg-none" type="button">☰</button>
-        <a class="navbar-brand" href="#"></a>
+        <a class="navbar-brand" href="#">KYA Cambodia</a>
         <ul class="nav navbar-nav d-md-down-none">
             <li class="nav-item">
                 <a class="nav-link navbar-toggler sidebar-toggler" href="#">☰</a>
@@ -77,7 +77,13 @@
                         <a class="nav-link" href="{{url('/admin/dashboard')}}"><i class="fa fa-tachometer text-primary"></i> {{$lb_dashboard}} </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{url('/post')}}"><i class="fa fa-file-o"></i>Case Stady</a>
+                        <a class="nav-link" href="#"><i class="fa fa-user"></i>Member</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-envelope"></i>Newsletter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url('/post')}}"><i class="fa fa-file-o"></i>Case Study</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{url('/page')}}"><i class="fa fa-columns"></i> Page </a>
@@ -87,6 +93,24 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{url('/donor')}}"><i class="fa fa-gift"></i> Donor </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url('/donor')}}"><i class="fa fa-th"></i> Photo Library </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url('/donor')}}"><i class="fa fa-star"></i> Document Library </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url('/donor')}}"><i class="fa fa-gift"></i> Donor </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-list"></i> Social </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-bars text-primary"></i> Menu </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-file text-primary"></i> File Manager </a>
                     </li>
                     <li class="nav-item nav-dropdown">
                         <a href="#" class="nav-link nav-dropdown-toggle">
@@ -129,7 +153,7 @@
     </div>
 
     <footer class="app-footer">
-        Copy &copy; {{date('Y')}} by <a href="#">Lysreyvyna Clinic</a>
+        Copy &copy; {{date('Y')}} by <a href="#">KYA</a>
         <span class="float-right">Powered by <a href="http://vdoo.biz" target="_blank">Vdoo</a>
         </span>
     </footer>
