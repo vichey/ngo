@@ -1,193 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="vdoo solutions" content="">
 
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Khmer Young Assiciation</title>
-    <script type="text/javascript" src="css/jq.js"></script>
-    <!-- Bootstrap core CSS -->
-    <link href="{{asset('front/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-    <link href="{{asset('front/css/b.css')}}" rel="stylesheet">
-      <script src="{{asset('front/css/owl.carousel.min.js')}}"></script>
-    <!-- Custom styles for this template -->
-    <link href="{{asset('front/css/4-col-portfolio.css')}}" rel="stylesheet">
-
-  </head>
-
-  <body>
-
-    <!-- Navigation -->
+        <title>Khmer Young Assiciation</title>
+        <script type="text/javascript" src="{{asset('front/css/jq.js')}}"></script>
+        <!-- Bootstrap core CSS -->
+        <link href="{{asset('front/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+        <link href="{{asset('front/css/b.css')}}" rel="stylesheet">
+        <script src="{{asset('front/css/owl.carousel.min.js')}}"></script>
+        <!-- Custom styles for this template -->
+        <link href="{{asset('front/css/4-col-portfolio.css')}}" rel="stylesheet">
+    </head>
+    <body>
     <div class="container-fluit">
-    <div class="container">
-        <div class="col-md-12">
-        <div class="row">   
-            <div class="col-md-9">   
-                <img src="{{asset('front/img/kya-logo.png')}}" height="130" style="margin-bottom: 5px; margin-top: -5px;">
-            </div>
-            <div class="col-md-3" style="margin-top: 50px;">
-                <div class="float-right">
-                <a href="" class="text-default"><img class="lang" src="{{asset('front/img/kh.png')}}" width="40">ភាសារខ្មែរ</a>
-                <a href="" class="text-default"><img class="lang" src="{{asset('front/img/en.png')}}" width="40"> English</a>
+        <div class="container">
+            <div class="col-md-12">
+                <div class="row">   
+                    <div class="col-md-9">   
+                        <img src="{{asset('front/img/kya-logo.png')}}" height="130" style="margin-bottom: 5px; margin-top: -5px;">
+                    </div>
+                    <div class="col-md-3" style="margin-top: 50px;">
+                        <div class="float-right">
+                        <a href="" class="text-default"><img class="lang" src="{{asset('front/img/kh.png')}}" width="40">ភាសារខ្មែរ</a>
+                        <a href="" class="text-default"><img class="lang" src="{{asset('front/img/en.png')}}" width="40"> English</a>
+                        </div>
+                    </div> 
                 </div>
-            </div> 
+            </div>
         </div>
-        </div></div>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-      <div class="col-md-12">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                About Us
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Our History</a>
-                <a class="dropdown-item" href="#">Vision, Mission, Core Values</a>
-                <a class="dropdown-item" href="#">Organizational Chart</a>
-                <a class="dropdown-item" href="#">BOD members</a>
-                <a class="dropdown-item" href="#">Staff</a>
-                <a class="dropdown-item" href="#">Annual & Financial reports</a>
-                
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Where We Work</a>
-            </li>
-             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                Our Program
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Link 1</a>
-                <a class="dropdown-item" href="#">Link 2</a>
-                <a class="dropdown-item" href="#">Link 3</a>
-              </div>
-            </li>
-             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                Membership
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Link 1</a>
-                <a class="dropdown-item" href="#">Link 2</a>
-                <a class="dropdown-item" href="#">Link 3</a>
-              </div>
-            </li>
-             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                Get Involved
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Link 1</a>
-                <a class="dropdown-item" href="#">Link 2</a>
-                <a class="dropdown-item" href="#">Link 3</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                Announcements
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Link 1</a>
-                <a class="dropdown-item" href="#">Link 2</a>
-                <a class="dropdown-item" href="#">Link 3</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                 Publications 
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Link 1</a>
-                <a class="dropdown-item" href="#">Link 2</a>
-                <a class="dropdown-item" href="#">Link 3</a>
-              </div>
-            </li>
-             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                 Contact Us 
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Link 1</a>
-                <a class="dropdown-item" href="#">Link 2</a>
-                <a class="dropdown-item" href="#">Link 3</a>
-              </div>
-            </li>
-          
-          </ul>  </div>
+        <div class="container">
+            <div class="col-md-12">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                About Us
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Our History</a>
+                                <a class="dropdown-item" href="#">Vision, Mission, Core Values</a>
+                                <a class="dropdown-item" href="#">Organizational Chart</a>
+                                <a class="dropdown-item" href="#">BOD members</a>
+                                <a class="dropdown-item" href="#">Staff</a>
+                                <a class="dropdown-item" href="#">Annual & Financial reports</a>
+                                
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Where We Work</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                Our Program
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Link 1</a>
+                                <a class="dropdown-item" href="#">Link 2</a>
+                                <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                Membership
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Link 1</a>
+                                <a class="dropdown-item" href="#">Link 2</a>
+                                <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                Get Involved
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Link 1</a>
+                                <a class="dropdown-item" href="#">Link 2</a>
+                                <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                Announcements
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Link 1</a>
+                                <a class="dropdown-item" href="#">Link 2</a>
+                                <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                Publications 
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Link 1</a>
+                                <a class="dropdown-item" href="#">Link 2</a>
+                                <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                Contact Us 
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Link 1</a>
+                                <a class="dropdown-item" href="#">Link 2</a>
+                                <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                        </li>
+                    </ul>  
+                </div>
+            </div>
         </div>
-      </div>
     </nav>
+  
 
-    <div id="demo" class="carousel slide" data-ride="carousel">
-
-  <!-- Indicators -->
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-  </ul>
-
-  <!-- The slideshow -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="{{asset('front/img/slider-1.jpg')}}" alt="Los Angeles" width="100%">
-    </div>
-    <div class="carousel-item">
-      <img src="{{asset('front/img/slider-1.jpg')}}" alt="Los Angeles" width="100%">
-    </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-
-</div>
-
-<div class="container-fluit b-image">
-<div class="container">
-        @yield('content')
-    </div>
-</div><br><br>
+    
+            @yield('content')
+     
    
     <h4 align="center">
-    <img src="{{asset('front/img/partner.png')}}"> <b>Our Donors</b> <hr>
-</h4>
-  <div class="col-md-12 border-custom"> 
-      <div class="">
-          <div class="swiper-viewport">
-          <div id="carousel0" class="swiper-container">
-          <div class="swiper-wrapper"> <div class="swiper-slide text-center">
-          <img src="img/logo.png" width="150" alt="NFL"/></div>
-          <div class="swiper-slide text-center"><img src="img/logo.png" alt="RedBull" width="150" /></div>
-          <div class="swiper-slide text-center"><img src="img/logo.png" alt="Sony"  width="150"/></div>
-          <div class="swiper-slide text-center"><img src="img/logo.png" alt="Coca Cola" width="150" /></div>
-          <div class="swiper-slide text-center"><img src="img/logo.png" alt="Burger King" width="150" /></div>
-          <div class="swiper-slide text-center"><img src="img/logo.png" alt="Canon" width="150" /></div>
-          <div class="swiper-slide text-center"><img src="img/logo.png" alt="Harley Davidson"  width="150"/></div>
-          <div class="swiper-slide text-center"><img src="img/logo.png" alt="Dell" width="150" /></div>
-          <div class="swiper-slide text-center"><img src="img/logo.png" alt="Disney"  width="150" /></div>
-          <div class="swiper-slide text-center"><img src="img/logo.png" alt="Starbucks" width="150"  /></div>
-          <div class="swiper-slide text-center"><img src="img/logo.png" alt="Nintendo" width="150" /></div>
-          </div>
-      </div>
+        <img src="{{asset('front/img/partner.png')}}"> <b>Our Donors</b> <hr>
+    </h4>
+    <div class="col-md-12 border-custom"> 
+        <div class="">
+            <div class="swiper-viewport">
+            <div id="carousel0" class="swiper-container">
+            <div class="swiper-wrapper"> 
+                <div class="swiper-slide text-center">
+            <img src="{{asset('front/img/logo.png')}}" width="150" alt="NFL"/></div>
+            <div class="swiper-slide text-center"><img src="{{asset('front/img/logo.png')}}" alt="RedBull" width="150" /></div>
+            <div class="swiper-slide text-center"><img src="{{asset('front/img/logo.png')}}" alt="Sony"  width="150"/></div>
+            <div class="swiper-slide text-center"><img src="{{asset('front/img/logo.png')}}" alt="Coca Cola" width="150" /></div>
+            <div class="swiper-slide text-center"><img src="{{asset('front/img/logo.png')}}" alt="Burger King" width="150" /></div>
+            <div class="swiper-slide text-center"><img src="{{asset('front/img/logo.png')}}" alt="Canon" width="150" /></div>
+            <div class="swiper-slide text-center"><img src="{{asset('front/img/logo.png')}}" alt="Harley Davidson"  width="150"/></div>
+            <div class="swiper-slide text-center"><img src="{{asset('front/img/logo.png')}}" alt="Dell" width="150" /></div>
+            <div class="swiper-slide text-center"><img src="{{asset('front/img/logo.png')}}" alt="Disney"  width="150" /></div>
+            <div class="swiper-slide text-center"><img src="{{asset('front/img/logo.png')}}" alt="Starbucks" width="150"  /></div>
+            <div class="swiper-slide text-center"><img src="{{asset('front/img/logo.png')}}" alt="Nintendo" width="150" /></div>
+            </div>
+        </div>
+        <div class="swiper-pager">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    </div>
+</div><hr><br><br><br>
+</div>
+</div>
 <style type="text/css">
 .swiper-button-next, .swiper-button-prev {
 position: absolute;
@@ -197,11 +172,7 @@ height: 26px;
 margin-top: -22px;
 }
 </style>
-<div class="swiper-pager">
-<div class="swiper-button-next"></div>
-<div class="swiper-button-prev"></div>
-</div>
-</div>
+
 <script type="text/javascript"><!--
 $('#carousel0').swiper({
 mode: 'horizontal',
@@ -213,11 +184,7 @@ prevButton: '.swiper-button-prev',
 autoplay: 2500,
 loop: true
 });
---></script>
-</div>
-</div><hr><br><br><br>
-</div>
-</div>
+</script>
 
 <div class="container-fluit b">
   <div class="container">

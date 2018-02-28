@@ -83,16 +83,13 @@
                         <a class="nav-link" href="#"><i class="fa fa-envelope"></i>Newsletter</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{url('/post')}}"><i class="fa fa-file-o"></i>Case Study</a>
+                        <a class="nav-link" href="{{url('/post')}}"><i class="fa fa-file-o"></i>Recent News</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{url('/page')}}"><i class="fa fa-columns"></i> Page </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{url('/announcement')}}"><i class="fa fa-bullhorn"></i> Announcement </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{url('/donor')}}"><i class="fa fa-gift"></i> Donor </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{url('/donor')}}"><i class="fa fa-th"></i> Photo Library </a>

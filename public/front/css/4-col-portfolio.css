@@ -36,8 +36,8 @@ small {
     padding: 10px;
 }
 .btn-lg-c {
-    padding: 23px 30px;
-    font-size: 20px;
+    padding: 50px 70px;
+    font-size: 35px;
     line-height: 1.5;
     border-radius: .3rem;
 }
@@ -67,7 +67,7 @@ small {
   padding: 20px;
 }
 .announcements {
-    background: #1d1d1d;
+    background: #004789;
     padding: 20px;
     margin-top: -38px;
 }
@@ -78,19 +78,19 @@ small {
   background-image: url("../img/service-bg-2.jpg");
      padding-top: 160px;
     padding-bottom: 160px;
-    background-position: center -18.92px;
 }
 .to {
   font-size: 13px;
 }
 .s-image {
      background-image: url("../img/newsletter-bg.jpg");
-    padding-top: 125px;
-    padding-bottom: 80px;
-    background-position: center -18.92px;
+    padding-top: 80px;
+    padding-bottom: 33px;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 .hr-r {
-  border: 3px solid #ffc107;
+  border: 3px solid #0069d9;
   width: 250px;
 }
 .greennature-action-ads-item, .greennature-action-ads-item-1 {
