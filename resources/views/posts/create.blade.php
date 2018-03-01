@@ -59,33 +59,32 @@
         </div>
         <div class="col-sm-3 col-lg-3">
         <div class="card">
-                <div class="card-header">
-                    Public
-                </div>
+                <div class="card">
+                        <div class="card-header">
+                            Feature Image
+                        </div>
+                        <div class="card-block">
+                            <div style="margin-bottom: 3px;">
+                                <input type="file" name="feature_image" id="feature_image" accept="image/*" class="form-control" onchange="loadFile(event)">
+                            </div>
+                            <div>
+                                <img src="{{asset('front/img/default.svg')}}" id="img" width="100%" alt="">
+                            </div>
+                        </div>
+                    </div>
+                
                 <div class="card-block">
                     <div class="btn-group btn-group-justified" role="group">
                         <div class="btn-group" role="group">
-                            <button class="btn btn-primary" type="submit">Public</button>
+                            <button class="btn btn-primary" type="submit">Save</button>
                         </div>
                         <div class="btn-group" role="group">
-                            <button class="btn btn-danger" type="reset">Preview</button>
+                            <button class="btn btn-danger" type="reset">Cancel</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-header">
-                    Feature Image
-                </div>
-                <div class="card-block">
-                    <div style="margin-bottom: 3px;">
-                        <input type="file" name="feature_image" id="feature_image" accept="image/*" class="form-control" onchange="loadFile(event)">
-                    </div>
-                    <div>
-                        <img src="{{asset('front/img/default.svg')}}" id="img" width="100%">
-                    </div>
-                </div>
-            </div>
+            
             </form>
         </div>
     </div>

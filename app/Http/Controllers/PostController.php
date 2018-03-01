@@ -38,7 +38,6 @@ class PostController extends Controller
         $data = array(
             'title' => $r->title,
             'short_description' => $r->short_description,
-            'create_by' =>  Auth::user()->name,
             'description' => $r->description,
         );
         if($r->feature_image) {
@@ -56,7 +55,7 @@ class PostController extends Controller
                 $con->aspectRatio();
             });
             $new_img->save($destinationPath . $file_name, 80);
-            $data['feature_image'] = $file_name;
+            $data['featured_image'] = $file_name;
         }
        
         $sms = "The new post has been created successfully.";
@@ -98,7 +97,6 @@ class PostController extends Controller
         $data = array(
             'title' => $r->title,
             'short_description' => $r->short_description,
-            'create_by' =>  Auth::user()->name,
             'description' => $r->description,
         );
         if($r->feature_image) {
@@ -116,7 +114,7 @@ class PostController extends Controller
             });
             $new_img->save($destinationPath . $file_name, 80);
             $data = array(
-                'feature_image' => $file_name,
+                'featured_image' => $file_name,
             );
         }
         $sms = "All changes have been saved successfully.";

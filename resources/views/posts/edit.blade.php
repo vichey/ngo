@@ -56,28 +56,27 @@
             </div>
         </div>
         <div class="col-sm-3 col-lg-3">
-            <div class="card">
-                <div class="card-header">
-                    Public
-                </div>
+                <div class="card">
+                        <div class="card-header">
+                            Feature Image
+                        </div>
+                        <div class="card-block">
+                            <input type="file" name="feature_image" id="feature_image" accept="image/*" class="form-control" onchange="loadFile(event)">
+                            @if($post->featured_image != null) 
+                            <img src="{{asset('uploads/posts/250x250/'.$post->featured_image)}}" width="100%">
+                            @else 
+                            <img src="{{asset('front/img/default.svg')}}" width="100%">
+                            @endif
+                        </div>
+                    </div>
+                <div class="card">
+              
                 <div class="card-block">
-                    <button class="btn btn-primary" type="submit">Public</button>
-                    <button class="btn btn-danger" type="reset">Preview</button>
+                    <button class="btn btn-primary" type="submit">Save</button>
+                    <button class="btn btn-danger" type="reset">Cancel</button>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-header">
-                    Feature Image
-                </div>
-                <div class="card-block">
-                    <input type="file" name="feature_image" id="feature_image" accept="image/*" class="form-control" onchange="loadFile(event)">
-                    @if($post->feature_image != null) 
-                    <img src="{{asset('uploads/posts/250x250/'.$post->feature_image)}}" width="100%">
-                    @else 
-                    <img src="{{asset('front/img/default.svg')}}" width="100%">
-                    @endif
-                </div>
-            </div>
+            
         </div>
     </div>
     </form>
