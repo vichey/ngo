@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use DB;
 use Session;
 use Auth;
+use Intervention\Image\ImageManagerStatic as Image;
 class StaffController extends Controller
 {
     public function __construct()
@@ -45,7 +46,15 @@ class StaffController extends Controller
                 $ext = \File::extension($file_name);
                 $file_name = $i.$ext;
                 $destinationPath = 'uploads/staff/';
-                $file->move($destinationPath, $file_name);
+                $new_img = Image::make($file->getRealPath());
+                $new_img->save($destinationPath . $file_name, 80);
+    
+                // upload 250
+                $destinationPath = 'uploads/staff/250x250/';
+                $new_img = Image::make($file->getRealPath())->resize(250, null, function ($con) {
+                    $con->aspectRatio();
+                });
+                $new_img->save($destinationPath . $file_name, 80);
                 DB::table('staffs')->where('id', $i)->update(['photo'=>$file_name]);
             }
             $r->session()->flash('sms', "New staff has been created successfully!");
@@ -84,7 +93,15 @@ class StaffController extends Controller
             $file = $r->file('photo');
             $file_name = $file->getClientOriginalName();
             $destinationPath = 'uploads/staff/';
-            $file->move($destinationPath, $file_name);
+            $new_img = Image::make($file->getRealPath());
+            $new_img->save($destinationPath . $file_name, 80);
+
+            // upload 250
+            $destinationPath = 'uploads/staff/250x250/';
+            $new_img = Image::make($file->getRealPath())->resize(250, null, function ($con) {
+                $con->aspectRatio();
+            });
+            $new_img->save($destinationPath . $file_name, 80);
             $data['photo'] = $file_name;
         }
         $sms = "All changes have been saved successfully.";

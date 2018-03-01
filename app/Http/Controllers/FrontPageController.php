@@ -48,9 +48,25 @@ class FrontPageController extends Controller
     public function staff() 
     {
         $data['staffs'] = DB::table('staffs')
+            ->where('section', 'staff')
             ->where('active', 1)
             ->get();
-
+        return view('fronts.pages.staff', $data);
+    }
+    public function staff_detail($id) 
+    {
+        $data['s'] = DB::table('staffs')
+            ->where('id', $id)
+            ->where('active', 1)
+            ->first();
+        return view('fronts.pages.staff-detail', $data);
+    }
+    public function board() 
+    {
+        $data['staffs'] = DB::table('staffs')
+            ->where('section', 'board')
+            ->where('active', 1)
+            ->get();
         return view('fronts.pages.staff', $data);
     }
 }

@@ -134,32 +134,28 @@
         <img src="{{asset('front/img/partner.png')}}"> <b>Our Donors</b> <hr>
     </h4>
     <div class="col-md-12 border-custom"> 
-        <div class="">
-            <div class="swiper-viewport">
+        <div class="swiper-viewport">
             <div id="carousel0" class="swiper-container">
-            <div class="swiper-wrapper"> 
-            <div class="swiper-slide text-center">
-            <?php $i=1;?>
-            @foreach($donors as $d)
-                @if($i++==1)
-                    <img src="{{asset('partners/'.$d->logo)}}" width="150" alt="NFL"/></div>
-                @else
-                    <div class="swiper-slide text-center"><img src="{{asset('partners/'.$d->logo)}}" alt="{{$d->name}}" width="150" /></div>
-
-                @endif
-            @endforeach
-                
+                <div class="swiper-wrapper"> 
+                    <div class="swiper-slide text-center">
+                        <?php $i=1;?>
+                        @foreach($donors as $d)
+                            @if($i++==1)
+                                <img src="{{asset('partners/'.$d->logo)}}" width="150" alt="NFL"/></div>
+                            @else
+                                <div class="swiper-slide text-center"><img src="{{asset('partners/'.$d->logo)}}" alt="{{$d->name}}" width="150" /></div>
+                            @endif
+                        @endforeach
+                    </div>
+                </div>
+                <div class="swiper-pager">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
             </div>
         </div>
-        <div class="swiper-pager">
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
+    </div><hr><br><br><br>
     </div>
-    </div>
-</div><hr><br><br><br>
-</div>
-</div>
 <style type="text/css">
 .swiper-button-next, .swiper-button-prev {
 position: absolute;
@@ -170,7 +166,7 @@ margin-top: -22px;
 }
 </style>
 
-<script type="text/javascript"><!--
+<script type="text/javascript">
 $('#carousel0').swiper({
 mode: 'horizontal',
 slidesPerView: 5,

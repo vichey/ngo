@@ -85,6 +85,7 @@ Route::post('/category/save', "CategoryController@save");
 Route::post('/category/update', "CategoryController@update");
 
 // Page
+
 Route::get('/page', "PageController@index");
 Route::get('/page/create', "PageController@create");
 Route::post('/page/save', "PageController@save");
@@ -102,12 +103,16 @@ Route::get('/announcement/edit/{id}', "AnnouncementController@edit");
 Route::post('/announcement/update', "AnnouncementController@update");
 Route::get('/announcement/view/{id}', "AnnouncementController@view");
 // load front page
+Route::get('/page/staff', "FrontPageController@staff");
+Route::get('/page/staff/detail/{id}', "FrontPageController@staff_detail");
+Route::get('/page/board-member', "FrontPageController@board");
+
 Route::get('/page/{id}', "FrontPageController@index");
 
 // front page
 // Route::get('/page/about', "FrontPageController@about");
 // Route::get('/page/contact', "FrontPageController@contact");
-// Route::get('/page/staff', "FrontPageController@staff");
+
 // // test
 // Route::get('/test', "TestController@index");
 

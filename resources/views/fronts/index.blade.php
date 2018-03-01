@@ -111,9 +111,9 @@
                             <a href="#"><img class="card-img-top" src="{{asset('front/img/slider-asd.jpg')}}" alt=""></a>
                             <div class="card-body">
                                 <h6 class="card-title">
-                                <a href="#" class="title">Tips to make the most of your school holidays</a>
+                                <a href="#" class="title">ENGERY CONSERVATION</a>
                                 </h6>
-                                <p class="card-text">School holidays are here! What a joy! Finally, after all those months of hard study you have some free time. While many of you will spend it at home and rest, for others these holidays...</p>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua....</p>
                             </div>
                         </div>
                     </div>

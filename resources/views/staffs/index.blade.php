@@ -30,7 +30,7 @@
                                     <td>{{$s->section}}</td>
                                     <td>{{$s->order_number}}</td>
                                     <td>
-                                        <img src="{{asset('uploads/staff/'.$s->photo)}}" alt="" width="50">    
+                                        <img src="{{asset('uploads/staff/250x250/'.$s->photo)}}" alt="" width="50">    
                                     </td>
                                     <td>
                                         <a class="btn btn-xs btn-info" href="{{url('/admin/staff/edit/'.$s->id)}}" title="Edit"><i class="fa fa-pencil"></i></a>

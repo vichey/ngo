@@ -60,7 +60,7 @@
                                         <input type="file" name="photo" id="photo" class="form-control" onchange="loadFile(event)">
                                         <p>
                                             <br>
-                                            <img src="{{asset('uploads/staff/'.$staff->photo)}}" alt="" id="preview" width="120">
+                                            <img src="{{asset('uploads/staff/250x250/'.$staff->photo)}}" alt="" id="preview" width="120">
                                         </p>
                                     </div>
                                 </div>
