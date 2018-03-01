@@ -61,6 +61,14 @@ class FrontPageController extends Controller
             ->first();
         return view('fronts.pages.staff-detail', $data);
     }
+    public function recent_news_detail() 
+    {
+        $data['news'] = DB::table('recent_news')
+            // ->where('id', $id)
+            ->where('active', 1)
+            ->first();
+        return view('fronts.pages.recent-news-detail', $data);
+    }
     public function board() 
     {
         $data['staffs'] = DB::table('staffs')

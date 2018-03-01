@@ -106,7 +106,8 @@ Route::get('/announcement/view/{id}', "AnnouncementController@view");
 Route::get('/page/staff', "FrontPageController@staff");
 Route::get('/page/staff/detail/{id}', "FrontPageController@staff_detail");
 Route::get('/page/board-member', "FrontPageController@board");
-
+//Front Recent News
+Route::get('/recent-news/detail', "FrontPageController@recent_news_detail");
 Route::get('/page/{id}', "FrontPageController@index");
 
 // front page
@@ -116,13 +117,13 @@ Route::get('/page/{id}', "FrontPageController@index");
 // // test
 // Route::get('/test', "TestController@index");
 
-// // Post
-// Route::get('/post', "PostController@index");
-// Route::get('/post/create', "PostController@create");
-// Route::get('/post/create/new', "PostController@create");
-// Route::post('/post/save', "PostController@save");
-// Route::get('/post/delete/{id}', "PostController@delete");
-// Route::get('/post/edit/{id}', "PostController@edit");
-// Route::post('/post/update', "PostController@update");
-// Route::get('/post/view/{id}', "PostController@view");
+// Post
+Route::get('/post', "PostController@index");
+Route::get('/post/create', "PostController@create");
+Route::get('/post/create/new', "PostController@create");
+Route::post('/post/save', "PostController@save");
+Route::get('/post/delete/{id}', "PostController@delete");
+Route::get('/post/edit/{id}', "PostController@edit");
+Route::post('/post/update', "PostController@update");
+Route::get('/post/view/{id}', "PostController@view");
 Route::get('/language/{id}', "LangController@index");

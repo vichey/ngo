@@ -89,7 +89,7 @@
                             <a href="#"><img class="card-img-top" src="{{asset('front/img/2.jpg')}}" alt=""></a>
                             <div class="card-body">
                                 <h6 class="card-title">
-                                <a href="#" class="title">Community Youth Network (CYN) Annual Reflection</a>
+                                <a href="{{url('recent-news/detail/')}}" class="title">Community Youth Network (CYN) Annual Reflection</a>
                                 </h6>
                                 <p class="card-text">June10 - 12, 2015, CYN Annual Reflection workshop had brought together over 50 CYN...</p>
                             </div>
