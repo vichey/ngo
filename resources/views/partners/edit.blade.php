@@ -30,7 +30,7 @@
                     @endif
 
                     <form 
-                        action="{{url('/partner/update')}}" 
+                        action="{{url('/donor/update')}}" 
                         class="form-horizontal" 
                         enctype="multipart/form-data"  
                         method="post"
@@ -51,32 +51,8 @@
                                 >
                             </div>
                         </div>
-                        <div class="form-group row">
-                            <label for="contact" class="control-label col-lg-1 col-sm-2">Contact<span class="text-danger">*</span></label>
-                            <div class="col-lg-6 col-sm-8">
-                                <input 
-                                    type="text" 
-                                    required 
-                                    autofocus 
-                                    name="contact" 
-                                    id="contact" 
-                                    class="form-control" 
-                                    value="{{$partner->contact}}"
-                                >
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="address" class="control-label col-lg-1 col-sm-2">Address</label>
-                            <div class="col-lg-6 col-sm-8">
-                                <input 
-                                    type="text" 
-                                    name="address" 
-                                    id="address" 
-                                    class="form-control" 
-                                    value="{{$partner->address}}"
-                                >
-                            </div>
-                        </div>
+                        
+                        
                         <div class="form-group row">
                             <label for="url" class="control-label col-lg-1 col-sm-2">URL</label>
                             <div class="col-lg-6 col-sm-8">
