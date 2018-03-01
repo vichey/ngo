@@ -94,11 +94,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{url('/announcement')}}"><i class="fa fa-bullhorn"></i> Announcement </a>
                     </li>
+                    
                     <li class="nav-item">
-                        <a class="nav-link" href="{{url('/donor')}}"><i class="fa fa-th"></i> Photo Library </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{url('/donor')}}"><i class="fa fa-star"></i> Document Library </a>
+                        <a class="nav-link" href="{{url('/elibrary')}}"><i class="fa fa-star"></i> E-Library </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{url('/donor')}}"><i class="fa fa-gift"></i> Donor </a>
@@ -110,7 +108,7 @@
                         <a class="nav-link" href="#"><i class="fa fa-bars text-primary"></i> Menu </a>
                     </li>  --}}
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-file text-primary"></i> File Manager </a>
+                        <a class="nav-link" href="{{url('/fm')}}"><i class="fa fa-file text-primary"></i> File Manager </a>
                     </li>
                     <li class="nav-item nav-dropdown">
                         <a href="#" class="nav-link nav-dropdown-toggle">
