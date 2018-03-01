@@ -9,7 +9,7 @@
                 </div>
                 <div class="card-block">
 
-                    <table class="table table-condensed table-striped table-responsive">
+                    <table class="table tbl">
                         <thead>
                             <tr>
                                 <th>ID</th>
@@ -30,12 +30,11 @@
                                     <td>{{$s->section}}</td>
                                     <td>{{$s->order_number}}</td>
                                     <td>
-                                        <img src="{{asset('uploads/staff/'.$s->photo)}}" alt="" width="27">    
+                                        <img src="{{asset('uploads/staff/'.$s->photo)}}" alt="" width="50">    
                                     </td>
                                     <td>
-                                        <a href="{{url('/admin/staff/edit/'.$s->id)}}" title="Edit"><i class="fa fa-edit text-success"></i></a>
-                                        &nbsp;&nbsp;
-                                        <a href="{{url('/admin/staff/delete/'.$s->id)}}" onclick="return confirm('You want to delete?')" title="Delete"><i class="fa fa-trash text-danger"></i></a>
+                                        <a class="btn btn-xs btn-info" href="{{url('/admin/staff/edit/'.$s->id)}}" title="Edit"><i class="fa fa-pencil"></i></a>
+                                        <a class="btn btn-xs btn-danger" href="{{url('/admin/staff/delete/'.$s->id)}}" onclick="return confirm('You want to delete?')" title="Delete"><i class="fa fa-trash"></i></a>
                                     </td>
                                 </tr>
                             @endforeach

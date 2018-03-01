@@ -74,14 +74,16 @@ class StaffController extends Controller
     public function update(Request $r)
     {
         $data = array(
-            'name' => $r->name,
+            'full_name' => $r->full_name,
             'position' => $r->position,
-            'description' => $r->description,
+            'section' => $r->section,
+            'order_number' => $r->order_number,
+            'profile' => $r->profile
         );
         if($r->photo) {
             $file = $r->file('photo');
             $file_name = $file->getClientOriginalName();
-            $destinationPath = 'front/img/';
+            $destinationPath = 'uploads/staff/';
             $file->move($destinationPath, $file_name);
             $data['photo'] = $file_name;
         }
@@ -91,12 +93,12 @@ class StaffController extends Controller
         if ($i)
         {
             $r->session()->flash('sms', $sms);
-            return redirect('/staff/edit/'.$r->id);
+            return redirect('/admin/staff/edit/'.$r->id);
         }
         else
         {
             $r->session()->flash('sms1', $sms1);
-            return redirect('/staff/edit/'.$r->id);
+            return redirect('/admin/staff/edit/'.$r->id);
         }
     }
     // view detail
