@@ -75,45 +75,45 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-6 portfolio-item">
                         <div class="card new-card h-100">
-                            <a href="#"><img class="card-img-top" src="img/d.jpg" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="{{asset('front/img/2.jpg')}}" alt=""></a>
                             <div class="card-body">
                                 <h6 class="card-title">
-                                <a href="#" class="title">WIND ENERGY</a>
+                                <a href="#" class="title">Climate Change</a>
                                 </h6>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua....</p>
+                                <p class="card-text">To urge community people, youth, local authorities and other stakeholder to be clearly aware of the relation between climate change and the process of community development...</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 portfolio-item">
                         <div class="card new-card h-100">
-                            <a href="#"><img class="card-img-top" src="img/c.jpg" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="{{asset('front/img/1.JPG')}}" alt=""></a>
                             <div class="card-body">
                                 <h6 class="card-title">
-                                <a href="#" class="title">ELEPHANT SANCTUARY</a>
+                                <a href="#" class="title">Community Youth Network (CYN) Annual Reflection</a>
                                 </h6>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua....</p>
+                                <p class="card-text">June10 - 12, 2015, CYN Annual Reflection workshop had brought together over 50 CYN (Community based Youth Network) members...</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 portfolio-item">
                         <div class="card new-card h-100">
-                            <a href="#"><img class="card-img-top" src="img/a.jpg" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="{{asset('front/img/suces_latest.gif')}}" alt=""></a>
                             <div class="card-body">
                                 <h6 class="card-title">
-                                <a href="#" class="title">CONSERVATION VOLUNTEER</a>
+                                <a href="#" class="title">KYA 9TH GENERAL ASSEMBLY ON 18 DECEMBER, 2014</a>
                                 </h6>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua....</p>
+                                <p class="card-text">Phase 1៖ Memerendum of Understanding between POE, DOE including four target communes such as Pean Rong commune, Prey Klar commune...</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 portfolio-item">
                         <div class="card new-card h-100">
-                            <a href="#"><img class="card-img-top" src="img/b.jpg" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="{{asset('front/img/slider-asd.jpg')}}" alt=""></a>
                             <div class="card-body">
                                 <h6 class="card-title">
-                                <a href="#" class="title">ENGERY CONSERVATION</a>
+                                <a href="#" class="title">Tips to make the most of your school holidays</a>
                                 </h6>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua....</p>
+                                <p class="card-text">School holidays are here! What a joy! Finally, after all those months of hard study you have some free time. While many of you will spend it at home and rest, for others these holidays...</p>
                             </div>
                         </div>
                     </div>
