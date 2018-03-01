@@ -26,8 +26,9 @@
                     </div>
                     <div class="col-md-3" style="margin-top: 50px;">
                         <div class="float-right">
-                        <a href="" class="text-default"><img class="lang" src="{{asset('front/img/kh.png')}}" onclick="chLang(event, 'km')" width="40">ភាសារខ្មែរ</a>
-                        <a href="" class="text-default"><img class="lang" src="{{asset('front/img/en.png')}}" onclick="chLang(event,'km')" width="40"> English</a>
+                        <a href="#" class="text-default" onclick="chLang(event,'km')"><img class="lang" src="{{asset('front/img/kh.png')}}"
+                             width="40">ភាសារខ្មែរ</a>
+                        <a href="#" class="text-default" onclick="chLang(event,'en')"><img class="lang" src="{{asset('front/img/en.png')}}" width="40"> English</a>
                         </div>
                     </div> 
                 </div>
@@ -47,41 +48,41 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                About Us
+                                {{trans('labels.about')}}
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="{{url('/page/1')}}">Our History</a>
-                                <a class="dropdown-item" href="{{url('/page/2')}}">Vision, Mission, Core Values</a>
-                                <a class="dropdown-item" href="{{url('/page/3')}}">Organizational Chart</a>
-                                <a class="dropdown-item" href="{{url('/page/board-member')}}">BOD members</a>
-                                <a class="dropdown-item" href="{{url('/page/staff')}}">Staff</a>
-                                <a class="dropdown-item" href="{{url('/page/4')}}">Annual & Financial Reports</a>
+                                <a class="dropdown-item" href="{{url('/page/1')}}">{{trans('labels.history')}}</a>
+                                <a class="dropdown-item" href="{{url('/page/2')}}">{{trans('labels.vision')}}</a>
+                                <a class="dropdown-item" href="{{url('/page/3')}}">{{trans('labels.chart')}}</a>
+                                <a class="dropdown-item" href="{{url('/page/11')}}">{{trans('labels.board')}}</a>
+                                <a class="dropdown-item" href="{{url('/page/10')}}">{{trans('labels.staff')}}</a>
+                                <a class="dropdown-item" href="{{url('/page/4')}}">{{trans('labels.report')}}</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url('/page/5')}}">Where We Work</a>
+                            <a class="nav-link" href="{{url('/page/5')}}">{{trans('labels.where_we_work')}}</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                Our Programs
+                                {{trans('labels.our_program')}}
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="{{url('/page/6')}}">Youth Participation in Decision-Making Processes</a>
-                                <a class="dropdown-item" href="{{url('/page/7')}}">Youth Employment Opportunities</a>
+                                <a class="dropdown-item" href="{{url('/page/6')}}">{{trans('labels.youth_participation')}}</a>
+                                <a class="dropdown-item" href="{{url('/page/7')}}">{{trans('labels.youth_employment')}}</a>
                                 <a class="dropdown-item" href="{{url('/page/8')}}">Improved Social Well-Being and Youth Engagement in Human Rights and Sustainable Development</a>
                             </div>
                         </li>
                         
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                Get Involved
+                                {{trans('labels.involve')}}
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="{{url('/page/12')}}">Case Study</a>
-                                <a class="dropdown-item" href="{{url('/page/9')}}">Volunteer With Us</a>
+                                <a class="dropdown-item" href="{{url('/page/12')}}">{{trans('labels.case_study')}}</a>
+                                <a class="dropdown-item" href="{{url('/page/9')}}">{{trans('labels.volunteer')}}</a>
                                 {{--  <a class="dropdown-item" href="#">Announcements</a>  --}}
-                                <a class="dropdown-item" href="{{url('/page/13')}}">Events</a>
-                                <a class="dropdown-item" href="{{url('/page/14')}}">Job Announcements</a>
+                                <a class="dropdown-item" href="{{url('/page/13')}}">{{trans('labels.event')}}</a>
+                                <a class="dropdown-item" href="{{url('/page/14')}}">{{trans('labels.job')}}</a>
                                 
                             </div>
                         </li>
@@ -97,20 +98,20 @@
                         </li>  --}}
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                E-Library 
+                               {{trans('labels.elibrary')}}
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="{{url('/page/15')}}">Document Library</a>
-                                <a class="dropdown-item" href="{{url('/page/16')}}">Photo Library</a>
+                                <a class="dropdown-item" href="{{url('/page/15')}}"> {{trans('labels.ebook')}}</a>
+                                {{--  <a class="dropdown-item" href="{{url('/page/16')}}">Photo Library</a>  --}}
                             </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                Contact Us 
+                                {{trans('labels.contact')}}
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="{{url('/page/17')}}">Head Office in Phnom Penh</a>
-                                <a class="dropdown-item" href="{{url('/page/18')}}">Provincial Office</a>
+                                <a class="dropdown-item" href="{{url('/page/17')}}">{{trans('labels.hq')}}</a>
+                                <a class="dropdown-item" href="{{url('/page/18')}}">{{trans('labels.province_office')}}</a>
                             </div>
                         </li>
                     </ul>  
@@ -220,7 +221,9 @@ loop: true
 <script>
      function chLang(evt, ln)
         {
+
             evt.preventDefault();
+  
             $.ajax({
                 type: "GET",
                 url: "{{url('/')}}" + "/language/" + ln,
