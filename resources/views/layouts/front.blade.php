@@ -17,7 +17,7 @@
         <link href="{{asset('front/css/4-col-portfolio.css')}}" rel="stylesheet">
     </head>
     <body>
-    <div class="container-fluit">
+    <div class="container-fluit top-background">
         <div class="container">
             <div class="col-md-12">
                 <div class="row">   
@@ -54,8 +54,8 @@
                                 <a class="dropdown-item" href="{{url('/page/1')}}">{{trans('labels.history')}}</a>
                                 <a class="dropdown-item" href="{{url('/page/2')}}">{{trans('labels.vision')}}</a>
                                 <a class="dropdown-item" href="{{url('/page/3')}}">{{trans('labels.chart')}}</a>
-                                <a class="dropdown-item" href="{{url('/page/11')}}">{{trans('labels.board')}}</a>
-                                <a class="dropdown-item" href="{{url('/page/10')}}">{{trans('labels.staff')}}</a>
+                                <a class="dropdown-item" href="{{url('/page/board-member')}}">{{trans('labels.board')}}</a>
+                                <a class="dropdown-item" href="{{url('/page/staff')}}">{{trans('labels.staff')}}</a>
                                 <a class="dropdown-item" href="{{url('/page/4')}}">{{trans('labels.report')}}</a>
                             </div>
                         </li>
