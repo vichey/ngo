@@ -26,8 +26,8 @@
                     </div>
                     <div class="col-md-3" style="margin-top: 50px;">
                         <div class="float-right">
-                        <a href="" class="text-default"><img class="lang" src="{{asset('front/img/kh.png')}}" width="40">ភាសារខ្មែរ</a>
-                        <a href="" class="text-default"><img class="lang" src="{{asset('front/img/en.png')}}" width="40"> English</a>
+                        <a href="" class="text-default"><img class="lang" src="{{asset('front/img/kh.png')}}" onclick="chLang(event, 'km')" width="40">ភាសារខ្មែរ</a>
+                        <a href="" class="text-default"><img class="lang" src="{{asset('front/img/en.png')}}" onclick="chLang(event,'km')" width="40"> English</a>
                         </div>
                     </div> 
                 </div>
@@ -43,7 +43,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="{{url('/')}}">Home</a>
+                            <a class="nav-link" href="{{url('/')}}">{{trans('labels.home')}}</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
@@ -221,5 +221,21 @@ loop: true
 </div>
 <script src="{{asset('front/vendor/jquery/jquery.min.js')}}"></script>
 <script src="{{asset('front/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<script>
+     function chLang(evt, ln)
+        {
+            evt.preventDefault();
+            $.ajax({
+                type: "GET",
+                url: "{{url('/')}}" + "/language/" + ln,
+                success: function(sms){
+                    if(sms>0)
+                    {
+                        location.reload();
+                    }
+                }
+            });
+        }
+</script>
 </body>
 </html>
