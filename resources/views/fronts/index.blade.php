@@ -171,7 +171,7 @@
     <br><br>
     <div class="container-fluit announcements">
         <div class="container">
-        <h1 class="text-white text-center"><b>Announcements</b></h1> <hr class="hr-d">
+        <h1 class="text-white text-center"><b>Up Comming</b></h1> <hr class="hr-d">
         <hr>
         <div class="row text-white">
             <div class="col-sm-12 text-center"><hr class="hr-a">
