@@ -125,3 +125,4 @@ Route::get('/page/{id}', "FrontPageController@index");
 // Route::get('/post/edit/{id}', "PostController@edit");
 // Route::post('/post/update', "PostController@update");
 // Route::get('/post/view/{id}', "PostController@view");
+Route::get('/language/{id}', "LangController@index");
