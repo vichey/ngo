@@ -6,7 +6,7 @@
             @foreach($staffs as $s)
             <div class="col-md-3">
                 <div class="card new-card h-100 text-center">
-                    <a href="{{url('page/staff/detail/'.$s->id)}}"><img class="card-img-top" src="{{asset('uploads/staff/250x250/'.$s->photo)}}" alt=""></a>
+                    <a href="{{url('page/staff/detail/'.$s->id)}}"><img src="{{asset('uploads/staff/250x250/'.$s->photo)}}" height="170"></a>
                     <div class="card-body">
                         <p></p>
                         <aside>

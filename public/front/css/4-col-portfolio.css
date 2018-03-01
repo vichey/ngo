@@ -18,6 +18,9 @@ small {
   position: absolute;
   bottom: 4px;
 }
+.top-background {
+  background: #e3f3ff;
+}
 .staff-name {
   font-size: 22px;
   font-weight: bold;

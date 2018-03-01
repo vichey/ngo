@@ -17,7 +17,7 @@
         <link href="{{asset('front/css/4-col-portfolio.css')}}" rel="stylesheet">
     </head>
     <body>
-    <div class="container-fluit">
+    <div class="container-fluit top-background">
         <div class="container">
             <div class="col-md-12">
                 <div class="row">   
