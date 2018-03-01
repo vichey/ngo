@@ -87,97 +87,55 @@
 
     <!--First slide-->
     <div class="carousel-item active">
-<div class="row">
-        <div class="col-md-3">
-            <div class="card mb-2">
-                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a class="btn btn-primary">Button</a>
+    <div class="row">
+        @for($i=0;$i<count($news);$i++)
+            <div class="col-md-3">
+                <div class="card mb-2">
+                    <img class="img-fluid" src="{{asset('front/img/'.$news[$i]->featured_image)}}" alt="Card image cap">
+                    <div class="card-body">
+                    <h4 class="card-title"><a href="#">{{$news[$i]->title}}</a></h4>
+                        <p class="card-text">{{$news[$i]->short_description}}</p>
+                        <a class="btn btn-primary" href="#">Read More</a>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="card mb-2">
-                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a class="btn btn-primary">Button</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="card mb-2">
-                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a class="btn btn-primary">Button</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card mb-2">
-                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a class="btn btn-primary">Button</a>
-                </div>
-            </div>
-        </div>
-</div>
+            <?php 
+                if($i==3)
+                {
+                    break;
+                }
+            ?>
+        @endfor
+        
+    </div>
     </div>
     <!--/.First slide-->
 
     <!--Second slide-->
-    <div class="carousel-item">
+<div class="carousel-item">
 <div class="row">
-        <div class="col-md-3">
-            <div class="card mb-2">
-                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a class="btn btn-primary">Button</a>
-                </div>
+    @if(count($news)>4)
+    @for($i=4;$i<count($news);$i++)
+    <div class="col-md-3">
+        <div class="card mb-2">
+            <img class="img-fluid" src="{{asset('front/img/'.$news[$i]->featured_image)}}" alt="Card image cap">
+            <div class="card-body">
+            <h4 class="card-title"><a href="{{url('/recent-news/detail/'.$news[$i]->id)}}">{{$news[$i]->title}}</a></h4>
+                <p class="card-text">{{$news[$i]->short_description}}</p>
+                <a class="btn btn-primary" href="#">Read More</a>
             </div>
         </div>
-
-        <div class="col-md-3">
-            <div class="card mb-2">
-                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a class="btn btn-primary">Button</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card mb-2">
-                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a class="btn btn-primary">Button</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card mb-2">
-                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a class="btn btn-primary">Button</a>
-                </div>
-            </div>
-        </div>
+    </div>
+    <?php 
+        if($i==7)
+        {
+            break;
+        }
+    ?>
+@endfor
+    @endif
+        
+       
         </div>
     </div>
     <!--/.Second slide-->
@@ -190,7 +148,7 @@
 </div>
 <!--/.Carousel Wrapper-->
                     
-                <div class="row">
+                {{--  <div class="row">
                     @foreach($news as $n)
                     <div class="col-lg-3 col-md-3 col-sm-6 portfolio-item">
                         <div class="card new-card h-100">
@@ -204,7 +162,7 @@
                         </div>
                     </div>
                     @endforeach
-                </div>
+                </div>  --}}
             </div>
         </div>
     </div>
