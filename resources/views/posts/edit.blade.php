@@ -61,11 +61,13 @@
                             Feature Image
                         </div>
                         <div class="card-block">
-                            <input type="file" name="feature_image" id="feature_image" accept="image/*" class="form-control" onchange="loadFile(event)">
+                            <div style="margin-bottom: 3px;">
+                                <input type="file" name="feature_image" id="feature_image" accept="image/*" class="form-control" onchange="loadFile(event)">
+                            </div>
                             @if($post->featured_image != null) 
-                            <img src="{{asset('uploads/posts/250x250/'.$post->featured_image)}}" width="100%">
+                            <img src="{{asset('uploads/posts/250x250/'.$post->featured_image)}}" width="200" id="img">
                             @else 
-                            <img src="{{asset('front/img/default.svg')}}" width="100%">
+                            <img src="{{asset('front/img/default.svg')}}" width="200" id="img">
                             @endif
                         </div>
           
@@ -84,7 +86,7 @@
 <script>
     function loadFile(e){
         var output = document.getElementById('img');
-        output.width = 150;
+        output.width = 200;
         output.src = URL.createObjectURL(e.target.files[0]);
     }
 </script>

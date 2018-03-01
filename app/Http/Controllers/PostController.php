@@ -113,9 +113,7 @@ class PostController extends Controller
                 $con->aspectRatio();
             });
             $new_img->save($destinationPath . $file_name, 80);
-            $data = array(
-                'featured_image' => $file_name,
-            );
+            $data ['featured_image'] =  $file_name;
         }
         $sms = "All changes have been saved successfully.";
         $sms1 = "Fail to to save changes, please check again!";
