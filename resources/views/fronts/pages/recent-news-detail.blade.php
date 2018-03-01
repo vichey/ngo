@@ -4,11 +4,12 @@
     <div class="container">
         <p align="left" style="font-size: 27px;">
             <b>{{$news->title}}</b>
-            <small>create date: {{$news->create_at}}</small>
-        </p>
+            <aside class="text-info">Create date: {{$news->create_at}}</aside>
+        </p><hr>
+        
         <div class="row">
             <div class="col-md-12" >
-            <aside class="card-text" style="font-size: 27px;">{!!news->description!!}</aside><hr>
+                <aside class="card-text">{!!$news->description!!}</aside><hr>
             </div>
         </div>
     </div>

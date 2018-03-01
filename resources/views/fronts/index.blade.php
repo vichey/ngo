@@ -62,7 +62,7 @@
             </div>
         </div>
     </div>
- 
+    <?php $news = DB::Table('posts')->orderBy('id', 'desc')->where('active',1)->get(); ?>
     <div class="container">
         <div class="row"> 
             <div class="col-md-12">
@@ -73,50 +73,19 @@
                 </h4>
                 <hr class="hr-c">
                 <div class="row">
+                    @foreach($news as $n)
                     <div class="col-lg-3 col-md-3 col-sm-6 portfolio-item">
                         <div class="card new-card h-100">
-                            <a href="#"><img class="card-img-top" src="{{asset('front/img/1.jpg')}}" alt=""></a>
+                            <a href="{{url('recent-news/detail/'.$n->id)}}"><img class="card-img-top" src="{{asset('front/img/'.$n->featured_image)}}" alt=""></a>
                             <div class="card-body">
                                 <h6 class="card-title">
-                                <a href="#" class="title">Climate Change</a>
+                                    <a href="{{url('recent-news/detail/'.$n->id)}}" class="title" style="text-decoration: none;">{{$n->title}}</a>
                                 </h6>
-                                <p class="card-text">To urge community people, youth, local authorities and other stakeholder to be clearly aware of the relation between climate change and the process of community development...</p>
+                                <a href="{{url('recent-news/detail/'.$n->id)}}" style="text-decoration: none;"><p class="card-text">{{$n->short_description}}</p></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 portfolio-item">
-                        <div class="card new-card h-100">
-                            <a href="#"><img class="card-img-top" src="{{asset('front/img/2.jpg')}}" alt=""></a>
-                            <div class="card-body">
-                                <h6 class="card-title">
-                                <a href="{{url('recent-news/detail/')}}" class="title">Community Youth Network (CYN) Annual Reflection</a>
-                                </h6>
-                                <p class="card-text">June10 - 12, 2015, CYN Annual Reflection workshop had brought together over 50 CYN...</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 portfolio-item">
-                        <div class="card new-card h-100">
-                            <a href="#"><img class="card-img-top" src="{{asset('front/img/3.jpg')}}" alt=""></a>
-                            <div class="card-body">
-                                <h6 class="card-title">
-                                <a href="#" class="title">KYA 9TH GENERAL ASSEMBLY ON 18 DECEMBER, 2014</a>
-                                </h6>
-                                <p class="card-text">Phase 1៖ Memerendum of Understanding between POE, DOE including four target communes...</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 portfolio-item">
-                        <div class="card new-card h-100">
-                            <a href="#"><img class="card-img-top" src="{{asset('front/img/4.png')}}" alt=""></a>
-                            <div class="card-body">
-                                <h6 class="card-title">
-                                <a href="#" class="title">ENGERY CONSERVATION</a>
-                                </h6>
-                                <p class="card-text">School holidays are here! What a joy! Finally, after all those months of hard study you have some free time. While many of you will spend it at home and rest, for others these holidays...</p>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>

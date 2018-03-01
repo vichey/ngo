@@ -68,8 +68,7 @@
                             <img src="{{asset('front/img/default.svg')}}" width="100%">
                             @endif
                         </div>
-                    </div>
-                <div class="card">
+          
               
                 <div class="card-block">
                     <button class="btn btn-primary" type="submit">Save</button>

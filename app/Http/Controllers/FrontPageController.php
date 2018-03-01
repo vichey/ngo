@@ -61,10 +61,10 @@ class FrontPageController extends Controller
             ->first();
         return view('fronts.pages.staff-detail', $data);
     }
-    public function recent_news_detail() 
+    public function recent_news_detail($id) 
     {
-        $data['news'] = DB::table('recent_news')
-            // ->where('id', $id)
+        $data['news'] = DB::table('posts')
+            ->where('id', $id)
             ->where('active', 1)
             ->first();
         return view('fronts.pages.recent-news-detail', $data);

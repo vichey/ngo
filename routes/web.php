@@ -107,7 +107,7 @@ Route::get('/page/staff', "FrontPageController@staff");
 Route::get('/page/staff/detail/{id}', "FrontPageController@staff_detail");
 Route::get('/page/board-member', "FrontPageController@board");
 //Front Recent News
-Route::get('/recent-news/detail', "FrontPageController@recent_news_detail");
+Route::get('/recent-news/detail/{id}', "FrontPageController@recent_news_detail");
 Route::get('/page/{id}', "FrontPageController@index");
 
 // front page
