@@ -72,7 +72,7 @@
                                     Profile
                                 </p>
                                 <textarea name="profile" id="profile" cols="30" rows="10" class="form-control"></textarea>
-                                <p>
+                                <p><br>
                                     <button class="btn btn-primary btn-flat" type="submit">Save</button>
                                     <button class="btn btn-danger btn-flat" type="reset">Cancel</button>
 

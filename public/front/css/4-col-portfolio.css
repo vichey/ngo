@@ -18,6 +18,11 @@ small {
   position: absolute;
   bottom: 4px;
 }
+.staff-name {
+  font-size: 22px;
+  font-weight: bold;
+  color: #3b3b3b;
+}
 .hr-d {
   width: 250px;
   border: solid 3px #fff;
