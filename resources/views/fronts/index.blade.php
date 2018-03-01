@@ -43,9 +43,9 @@
             <div class="row"> 
                 <div class="col-md-6">  
                     <div class="greennature-action-ads-item-1">
-                        <h2 class="text-warning"><b>Our Mission</b></h2>
+                        <h2 class="text-primary"><b>Our Mission</b></h2>
                         <hr class="hr-m">  
-                        <span class="text-warning">
+                        <span class="text-primary">
                             Our vision is to be potential youth,<br> working with and for youth, for social positive change bad to good and good to better.
                         </span>
                     </div>
