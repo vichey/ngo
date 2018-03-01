@@ -198,6 +198,7 @@ loop: true
                             <img src="{{asset('front/img/l.png')}}" height="28"> 
                             <img src="{{asset('front/img/t.png')}}" height="28">
                             <img src="{{asset('front/img/e.png')}}" height="28"> 
+                            <img src="{{asset('front/img/fl.png')}}" height="28"> 
                         </p>
                         <p><img src="{{asset('front/img/ff.png')}}" ></p>
                         <p><img src="{{asset('front/img/y.jpg')}}"><p>
