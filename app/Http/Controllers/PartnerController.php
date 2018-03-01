@@ -51,24 +51,22 @@ class PartnerController extends Controller
         }
         $data = array(
             'name' => $r->name,
-            'address' => $r->address,
-            'contact' => $r->contact,
+            
             'logo' => $file_name,
             'sequence' => $r->sequence,
             'url' => $r->url
         );
-        $sms = "The new branch has been created successfully.";
-        $sms1 = "Fail to create the new branch, please check again!";
+       
         $i = DB::table('partners')->insert($data);
         if ($i)
         {
-            $r->session()->flash('sms', $sms);
-            return redirect('/partner/create');
+            $r->session()->flash('sms', "Upload success!");
+            return redirect('/donor/create');
         }
         else
         {
-            $r->session()->flash('sms1', $sms1);
-            return redirect('/partner/create')->withInput();
+            $r->session()->flash('sms1', "Fail to upload new donor logo!");
+            return redirect('/donor/create')->withInput();
         }
     }
     // delete
@@ -79,7 +77,7 @@ class PartnerController extends Controller
             return view('permissions.no');
         }
         DB::table('partners')->where('id', $id)->update(['active'=>0]);
-        return redirect('/partner');
+        return redirect('/donor');
     }
     public function edit($id)
     {

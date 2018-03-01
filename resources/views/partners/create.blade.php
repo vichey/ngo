@@ -42,18 +42,7 @@
                                 <input type="text" required autofocus name="name" id="name" class="form-control">
                             </div>
                         </div>
-                        <div class="form-group row">
-                            <label for="contact" class="control-label col-lg-1 col-sm-2">Contact<span class="text-danger">*</span></label>
-                            <div class="col-lg-6 col-sm-8">
-                                <input type="text" required autofocus name="contact" id="contact" class="form-control">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="address" class="control-label col-lg-1 col-sm-2">Address</label>
-                            <div class="col-lg-6 col-sm-8">
-                                <input type="text" name="address" id="address" class="form-control">
-                            </div>
-                        </div>
+                        
                         <div class="form-group row">
                             <label for="url" class="control-label col-lg-1 col-sm-2">URL</label>
                             <div class="col-lg-6 col-sm-8">
@@ -63,13 +52,13 @@
                         <div class="form-group row">
                             <label for="sequence" class="control-label col-lg-1 col-sm-2">Order &numero;</label>
                             <div class="col-lg-6 col-sm-8">
-                                <input type="number" name="sequence" id="sequence" class="form-control">
+                                <input type="number" name="sequence" id="sequence" class="form-control" value="0">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="logo" class="control-label col-lg-1 col-sm-2">Logo</label>
                             <div class="col-lg-6 col-sm-8">
-                                <input type="file" name="logo" id="logo" accept="image/*" onchange="loadFile(event)">
+                                <input type="file" name="logo" id="logo" accept="image/*" required onchange="loadFile(event)">
                             </div>
                         </div>
                         <div class="form-group row">

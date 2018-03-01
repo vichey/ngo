@@ -13,8 +13,7 @@
                             <tr>
                                 <th>&numero;</th>
                                 <th>Name</th>
-                                <th>Address</th>
-                                <th>Contact</th>
+                               
                                 <th>logo</th>
                                 <th>URL</th>
                                 <th>Order &numero;</th>
@@ -27,8 +26,7 @@
                                 <tr>
                                     <td>{{$i++}}</td>
                                     <td>{{$par->name}}</td>
-                                    <td>{{$par->address}}</td>
-                                    <td>{{$par->contact}}</td>
+                                   
                                     <td><img src="{{URL::asset('partners/').'/'.$par->logo}}" width="65"/></td>
                                     <td>{{$par->url}}</td>
                                     <td>{{$par->sequence}}</td>

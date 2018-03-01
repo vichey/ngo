@@ -53,22 +53,22 @@
                                 <a class="dropdown-item" href="{{url('/page/1')}}">Our History</a>
                                 <a class="dropdown-item" href="{{url('/page/2')}}">Vision, Mission, Core Values</a>
                                 <a class="dropdown-item" href="{{url('/page/3')}}">Organizational Chart</a>
-                                <a class="dropdown-item" href="#">BOD members</a>
-                                <a class="dropdown-item" href="#">Staff</a>
+                                <a class="dropdown-item" href="{{url('/page/11')}}">BOD members</a>
+                                <a class="dropdown-item" href="{{url('/page/10')}}">Staff</a>
                                 <a class="dropdown-item" href="{{url('/page/4')}}">Annual & Financial Reports</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Where We Work</a>
+                            <a class="nav-link" href="{{url('/page/5')}}">Where We Work</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                                 Our Programs
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Youth Participation in Decision-Making Processes</a>
-                                <a class="dropdown-item" href="#">Youth Employment Opportunities</a>
-                                <a class="dropdown-item" href="#">Improved Social Well-Being and Youth Engagement in Human Rights and Sustainable Development</a>
+                                <a class="dropdown-item" href="{{url('/page/6')}}">Youth Participation in Decision-Making Processes</a>
+                                <a class="dropdown-item" href="{{url('/page/7')}}">Youth Employment Opportunities</a>
+                                <a class="dropdown-item" href="{{url('/page/8')}}">Improved Social Well-Being and Youth Engagement in Human Rights and Sustainable Development</a>
                             </div>
                         </li>
                         
@@ -77,11 +77,11 @@
                                 Get Involved
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Case Study</a>
-                                <a class="dropdown-item" href="#">Volunteer With Us</a>
+                                <a class="dropdown-item" href="{{url('/page/12')}}">Case Study</a>
+                                <a class="dropdown-item" href="{{url('/page/9')}}">Volunteer With Us</a>
                                 {{--  <a class="dropdown-item" href="#">Announcements</a>  --}}
-                                <a class="dropdown-item" href="#">Events</a>
-                                <a class="dropdown-item" href="#">Job Announcements</a>
+                                <a class="dropdown-item" href="{{url('/page/13')}}">Events</a>
+                                <a class="dropdown-item" href="{{url('/page/14')}}">Job Announcements</a>
                                 
                             </div>
                         </li>
@@ -100,8 +100,8 @@
                                 E-Library 
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Document Library</a>
-                                <a class="dropdown-item" href="#">Photo Library</a>
+                                <a class="dropdown-item" href="{{url('/page/15')}}">Document Library</a>
+                                <a class="dropdown-item" href="{{url('/page/16')}}">Photo Library</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -109,8 +109,8 @@
                                 Contact Us 
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Head Office in Phnom Penh</a>
-                                <a class="dropdown-item" href="#">Provincial Office</a>
+                                <a class="dropdown-item" href="{{url('/page/17')}}">Head Office in Phnom Penh</a>
+                                <a class="dropdown-item" href="{{url('/page/18')}}">Provincial Office</a>
                             </div>
                         </li>
                     </ul>  
@@ -126,7 +126,9 @@
     </nav>
     
     @yield('content')
-
+    <?php
+        $donors = DB::table('partners')->where('active',1)->orderBy('sequence')->get();
+    ?>
     <h4 align="center">
         <img src="{{asset('front/img/partner.png')}}"> <b>Our Donors</b> <hr>
     </h4>
@@ -135,18 +137,17 @@
             <div class="swiper-viewport">
             <div id="carousel0" class="swiper-container">
             <div class="swiper-wrapper"> 
-                <div class="swiper-slide text-center">
-            <img src="{{asset('front/img/logo.png')}}" width="150" alt="NFL"/></div>
-            <div class="swiper-slide text-center"><img src="{{asset('front/img/logo.png')}}" alt="RedBull" width="150" /></div>
-            <div class="swiper-slide text-center"><img src="{{asset('front/img/logo.png')}}" alt="Sony"  width="150"/></div>
-            <div class="swiper-slide text-center"><img src="{{asset('front/img/logo.png')}}" alt="Coca Cola" width="150" /></div>
-            <div class="swiper-slide text-center"><img src="{{asset('front/img/logo.png')}}" alt="Burger King" width="150" /></div>
-            <div class="swiper-slide text-center"><img src="{{asset('front/img/logo.png')}}" alt="Canon" width="150" /></div>
-            <div class="swiper-slide text-center"><img src="{{asset('front/img/logo.png')}}" alt="Harley Davidson"  width="150"/></div>
-            <div class="swiper-slide text-center"><img src="{{asset('front/img/logo.png')}}" alt="Dell" width="150" /></div>
-            <div class="swiper-slide text-center"><img src="{{asset('front/img/logo.png')}}" alt="Disney"  width="150" /></div>
-            <div class="swiper-slide text-center"><img src="{{asset('front/img/logo.png')}}" alt="Starbucks" width="150"  /></div>
-            <div class="swiper-slide text-center"><img src="{{asset('front/img/logo.png')}}" alt="Nintendo" width="150" /></div>
+            <div class="swiper-slide text-center">
+            <?php $i=1;?>
+            @foreach($donors as $d)
+                @if($i++==1)
+                    <img src="{{asset('partners/'.$d->logo)}}" width="150" alt="NFL"/></div>
+                @else
+                    <div class="swiper-slide text-center"><img src="{{asset('partners/'.$d->logo)}}" alt="{{$d->name}}" width="150" /></div>
+
+                @endif
+            @endforeach
+                
             </div>
         </div>
         <div class="swiper-pager">
