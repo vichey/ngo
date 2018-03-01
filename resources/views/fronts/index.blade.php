@@ -75,7 +75,7 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-6 portfolio-item">
                         <div class="card new-card h-100">
-                            <a href="#"><img class="card-img-top" src="{{asset('front/img/2.jpg')}}" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="{{asset('front/img/1.jpg')}}" alt=""></a>
                             <div class="card-body">
                                 <h6 class="card-title">
                                 <a href="#" class="title">Climate Change</a>
@@ -86,34 +86,34 @@
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 portfolio-item">
                         <div class="card new-card h-100">
-                            <a href="#"><img class="card-img-top" src="{{asset('front/img/1.JPG')}}" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="{{asset('front/img/2.jpg')}}" alt=""></a>
                             <div class="card-body">
                                 <h6 class="card-title">
                                 <a href="#" class="title">Community Youth Network (CYN) Annual Reflection</a>
                                 </h6>
-                                <p class="card-text">June10 - 12, 2015, CYN Annual Reflection workshop had brought together over 50 CYN (Community based Youth Network) members...</p>
+                                <p class="card-text">June10 - 12, 2015, CYN Annual Reflection workshop had brought together over 50 CYN...</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 portfolio-item">
                         <div class="card new-card h-100">
-                            <a href="#"><img class="card-img-top" src="{{asset('front/img/suces_latest.gif')}}" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="{{asset('front/img/3.jpg')}}" alt=""></a>
                             <div class="card-body">
                                 <h6 class="card-title">
                                 <a href="#" class="title">KYA 9TH GENERAL ASSEMBLY ON 18 DECEMBER, 2014</a>
                                 </h6>
-                                <p class="card-text">Phase 1៖ Memerendum of Understanding between POE, DOE including four target communes such as Pean Rong commune, Prey Klar commune...</p>
+                                <p class="card-text">Phase 1៖ Memerendum of Understanding between POE, DOE including four target communes...</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 portfolio-item">
                         <div class="card new-card h-100">
-                            <a href="#"><img class="card-img-top" src="{{asset('front/img/slider-asd.jpg')}}" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="{{asset('front/img/4.png')}}" alt=""></a>
                             <div class="card-body">
                                 <h6 class="card-title">
                                 <a href="#" class="title">ENGERY CONSERVATION</a>
                                 </h6>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua....</p>
+                                <p class="card-text">School holidays are here! What a joy! Finally, after all those months of hard study you have some free time. While many of you will spend it at home and rest, for others these holidays...</p>
                             </div>
                         </div>
                     </div>
