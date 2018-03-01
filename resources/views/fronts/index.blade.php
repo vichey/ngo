@@ -45,7 +45,7 @@
                     <div class="greennature-action-ads-item-1">
                         <h2 class="text-warning"><b>Our Mission</b></h2>
                         <hr class="hr-m">  
-                        <span class="text-white">
+                        <span class="text-warning">
                             Our vision is to be potential youth,<br> working with and for youth, for social positive change bad to good and good to better.
                         </span>
                     </div>
@@ -54,7 +54,7 @@
                     <div class="greennature-action-ads-item">
                         <h2 class="text-success"><b>Our Vision:</b></h2>
                         <hr class="hr-v">  
-                        <span class="text-white">
+                        <span class="text-success">
                             Our mission is to upgrade and promote your participation human rights, democracy, peace building, health, gender equality, education and vocational training for young people in Cambodia. 
                         </span>
                     </div>
@@ -69,80 +69,72 @@
                 <h4 class="my-3">
                     <img src="{{asset('front/img/Insights.png')}}" width="40"> 
                     <b>Recent News</b> 
-                    <span class="more">More Recents News >></span>
+                    <a href="{{url('recent-news/all')}}"><span class="more">More Recents News >></span></a>
                 </h4>
                 <hr class="hr-c">
                 <!--Carousel Wrapper-->
 <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-
-<!--Controls-->
-<div class="controls-top">
-    <a class="btn-floating" href="#multi-item-example" data-slide="prev"><</a>
-    <a class="btn-floating" href="#multi-item-example" data-slide="next">></a></a>
-</div>
-<!--/.Controls-->
-
-<!--Slides-->
-<div class="carousel-inner" role="listbox">
-
-    <!--First slide-->
-    <div class="carousel-item active">
-    <div class="row">
-        @for($i=0;$i<count($news);$i++)
-            <div class="col-md-3">
-                <div class="card mb-2">
-                    <img class="img-fluid" src="{{asset('front/img/'.$news[$i]->featured_image)}}" alt="Card image cap">
-                    <div class="card-body">
-                    <h4 class="card-title"><a href="#">{{$news[$i]->title}}</a></h4>
-                        <p class="card-text">{{$news[$i]->short_description}}</p>
-                        <a class="btn btn-primary" href="#">Read More</a>
-                    </div>
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+            <div class="col-md-c">
+                <div class="row">
+                    @for($i=0;$i<count($news);$i++)
+                        <div class="col-md-3">
+                            <div class="card card-c mb-2">
+                                <a href="{{url('recent-news/detail/'.$news[$i]->id)}}"><img class="img-fluid" src="{{asset('uploads/posts/250x250/'.$news[$i]->featured_image)}}" width="100%" alt=""></a>
+                                <div class="card-body">
+                                    <a style="text-decoration:none;" href="{{url('recent-news/detail/'.$news[$i]->id)}}"><aside class="title">{{$news[$i]->title}}</aside></a>
+                                    <p class="card-text"><a  style="text-decoration:none; color: #666;"  href="{{url('recent-news/detail/'.$news[$i]->id)}}">{{$news[$i]->short_description}}</a></p>
+                                    <a class="btn btn-info btn-readmore" href="{{url('recent-news/detail/'.$news[$i]->id)}}">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <?php 
+                            if($i==3)
+                            {
+                                break;
+                            }
+                        ?>
+                    @endfor
                 </div>
             </div>
-            <?php 
-                if($i==3)
-                {
-                    break;
-                }
-            ?>
-        @endfor
-        
-    </div>
-    </div>
-    <!--/.First slide-->
-
-    <!--Second slide-->
-<div class="carousel-item">
-<div class="row">
-    @if(count($news)>4)
-    @for($i=4;$i<count($news);$i++)
-    <div class="col-md-3">
-        <div class="card mb-2">
-            <img class="img-fluid" src="{{asset('front/img/'.$news[$i]->featured_image)}}" alt="Card image cap">
-            <div class="card-body">
-            <h4 class="card-title"><a href="{{url('/recent-news/detail/'.$news[$i]->id)}}">{{$news[$i]->title}}</a></h4>
-                <p class="card-text">{{$news[$i]->short_description}}</p>
-                <a class="btn btn-primary" href="#">Read More</a>
+        </div>
+        <div class="carousel-item">
+            <div class="col-md-c">
+                <div class="row">
+                @if(count($news)>4)
+                    @for($i=4;$i<count($news);$i++)
+                    <div class="col-md-3">
+                        <div class="card card-c mb-2">
+                            <a href="{{url('recent-news/detail/'.$news[$i]->id)}}"><img class="img-fluid" src="{{asset('uploads/posts/250x250/'.$news[$i]->featured_image)}}" alt="" width="100%"></a>
+                            <div class="card-body">
+                                <a style="text-decoration:none;" href="{{url('recent-news/detail/'.$news[$i]->id)}}"><aside class="title">{{$news[$i]->title}}</aside></a>
+                                <p class="card-text"><a  style="text-decoration:none; color: #666;"  href="{{url('recent-news/detail/'.$news[$i]->id)}}">{{$news[$i]->short_description}}</a></p>
+                                <a class="btn btn-info btn-readmore" href="{{url('recent-news/detail/'.$news[$i]->id)}}">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <?php 
+                        if($i==7)
+                        {
+                            break;
+                        }
+                    ?>
+                    @endfor
+                @endif
+                </div>
             </div>
         </div>
-    </div>
-    <?php 
-        if($i==7)
-        {
-            break;
-        }
-    ?>
-@endfor
-    @endif
-        
-       
+        <div class="controls-top" style="margin-top: 10px;">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                &nbsp;<a class="btn-floating btn-info text-white btn btn-sm-c" href="#multi-item-example" data-slide="prev"><</a>
+                    <a class="btn-floating btn-info text-white  btn btn-sm-c" href="#multi-item-example" data-slide="next">></a></a>
+                </div>
+            </div>
         </div>
+        <p></p>
     </div>
-    <!--/.Second slide-->
-
-
-
-</div>
 <!--/.Slides-->
 
 </div>
