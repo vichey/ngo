@@ -15,7 +15,7 @@
                             <tr>
                                 <th>ID</th>
                                 <th>Title</th>
-                                <th>Creator</th>
+                                <th>Short Description</th>
                                 <th>Creation Date</th>
                                 <th>Action</th>
                             </tr>
@@ -26,7 +26,7 @@
                                 <tr>
                                     <td>{{$i++}}</td>
                                     <td><a href="{{url('/post/view/'.$p->id)}}" title="Edit">{{$p->title}}</a></td>
-                                    <td>{{$p->create_by}}</td>
+                                    <td>{{$p->short_description}}</td>
                                     <td>{{$p->create_at}}</td>
                                     <td>
                                         <a class="btn btn-xs btn-info"  href="{{url('/post/edit/'.$p->id)}}" title="Edit"><i class="fa fa-pencil"></i></a>

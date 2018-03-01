@@ -14,8 +14,7 @@
                             <aside>{{$post->title}}</aside>
                         </label>
                         <label for="title" class="control-label col-lg-6 col-sm-6">
-                            <aside class="text-primary">Post by: </aside>
-                            <aside class="success">{{$post->create_by}} <small class="text-danger">Create Date: {{$post->create_at}}</small> </aside>
+                            <aside class="success"><small class="text-danger">Create Date: {{$post->create_at}}</small> </aside>
                         </label>
                     </div>
                     <div class="form-group row">
@@ -25,8 +24,8 @@
                         </label>
                         <div class="col-lg-6 col-sm-6">
                             <aside class="text-primary">Feature Image</aside>
-                            @if($post->feature_image != null) 
-                            <img src="{{asset('uploads/posts/250x250/'.$post->feature_image)}}" width="150">
+                            @if($post->featured_image != null) 
+                            <img src="{{asset('uploads/posts/250x250/'.$post->featured_image)}}" width="150">
                             @else 
                             <img src="{{asset('front/img/default.svg')}}" width="150">
                             @endif

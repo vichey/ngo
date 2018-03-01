@@ -54,8 +54,8 @@
                                 <a class="dropdown-item" href="{{url('/page/1')}}">{{trans('labels.history')}}</a>
                                 <a class="dropdown-item" href="{{url('/page/2')}}">{{trans('labels.vision')}}</a>
                                 <a class="dropdown-item" href="{{url('/page/3')}}">{{trans('labels.chart')}}</a>
-                                <a class="dropdown-item" href="{{url('/page/11')}}">{{trans('labels.board')}}</a>
-                                <a class="dropdown-item" href="{{url('/page/10')}}">{{trans('labels.staff')}}</a>
+                                <a class="dropdown-item" href="{{url('/page/board-member')}}">{{trans('labels.board')}}</a>
+                                <a class="dropdown-item" href="{{url('/page/staff')}}">{{trans('labels.staff')}}</a>
                                 <a class="dropdown-item" href="{{url('/page/4')}}">{{trans('labels.report')}}</a>
                             </div>
                         </li>
@@ -185,10 +185,9 @@ loop: true
             <div class="col-md-3 text-center">
                 <div class="foot">
                 <h6>CONTACT INFO</h6><br>
-                Address: 184 Main Collins Street West Victoria 8007 <br>
-                +1800-222-3333<br>
-                +1833-232-3443<br>
-                contact@greennaturewp.com
+                Nº. 32D, St. 562, Sangkat Boeng kak I, Khan Toul Kork, Phnom Penh, CAMBODIA<br>
+                Phone/Fax: 855 23 884 306<br>
+                Email: admin@kya-cambodia.org
                 </div>
                 </div>
                 <div class="col-md-3 text-center">
