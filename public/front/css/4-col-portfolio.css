@@ -10,7 +10,7 @@ body, .form-control {
 }
 .logo {
   padding: 15px 0;
-  width: 320px;
+  width: 330px;
 }
 small {
   position: absolute;
@@ -250,7 +250,9 @@ small {
 .ml-auto, .mx-auto {
   margin-bottom: 0;
 }
-
+.c-lang {
+  margin-top: 45px;
+}
 @media (min-width: 992px) {
 
 }
@@ -272,6 +274,9 @@ small {
   .hr-c {
     margin-top: -10px;
   }
+  .c-lang {
+    margin-top: 0;
+  }
 }
 @media (max-width: 360px) {
   .greennature-action-ads-item, .greennature-action-ads-item-1 {
@@ -286,5 +291,8 @@ small {
   }
   .hr-c {
     margin-top: -10px;
+  }
+  .c-lang {
+    margin-top: 0;
   }
 }
