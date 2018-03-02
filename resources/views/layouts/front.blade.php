@@ -23,10 +23,11 @@
                 <div class="row">   
                     <div class="col-md-12">   
                        <a href="{{url('/')}}"><img src="{{asset('front/img/kya-logo.png')}}" class="logo"></a> 
-                       <div class="float-right lang">
-                        <a href="#" class="text-default" onclick="chLang(event,'km')"><img class="lang" src="{{asset('front/img/kh.png')}}"
+                       <div class="float-right c-lang">
+                            <a href="#" class="text-default" onclick="chLang(event,'km')">
+                                <img class="lang" src="{{asset('front/img/kh.png')}}"
                              width="40">ភាសារខ្មែរ</a>
-                        <a href="#" class="text-default" onclick="chLang(event,'en')"><img class="lang" src="{{asset('front/img/en.png')}}" width="40"> English</a>
+                            <a href="#" class="text-default" onclick="chLang(event,'en')"><img class="lang" src="{{asset('front/img/en.png')}}" width="40"> English</a>
                         </div>
                     </div>
                     <div class="col-md-" style="margin-top: 50px;">
