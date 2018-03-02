@@ -97,7 +97,7 @@
                     </li>
                     
                     <li class="nav-item">
-                        <a class="nav-link" href="{{url('/elibrary')}}"><i class="fa fa-star"></i> E-Library </a>
+                        <a class="nav-link" href="#"><i class="fa fa-star"></i> E-Library </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{url('/donor')}}"><i class="fa fa-gift"></i> Donor </a>
