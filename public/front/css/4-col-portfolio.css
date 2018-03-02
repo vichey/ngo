@@ -254,10 +254,18 @@ small {
   margin-top: 45px;
 }
 @media (min-width: 992px) {
-
+  .ml-auto, .mx-auto {
+    padding: 4px 1px;
+  }
 }
 @media (max-width: 768px) {
- 
+  .ml-auto, .mx-auto {
+    padding: 4px 1px;
+  }
+  .search-box {
+    width: 87%;
+    margin-right: 2px;
+  }
  }
 
 @media (max-width: 479px) {

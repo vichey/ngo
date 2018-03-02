@@ -119,7 +119,7 @@
                     </ul>  
                     <ul class="ml-auto">
                         <form class="form-inline">
-                            <input type="text" class="form-control mr-sm-1" placeholder="Search...">
+                            <input type="text" class="form-control mr-sm-1 search-box" placeholder="Search..." >
                             <button type="submit" class="btn btn-primary btn-c"><img src="{{asset('front/img/search-icon.png')}}"></button>
                         </form>
                     </ul>
