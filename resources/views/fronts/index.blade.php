@@ -162,7 +162,7 @@
         <div class="container">
             <div class="row"> 
                 <div class="col-md-12 text-center">  
-                    <h1 class="text-white"><b>The only way to make this happened is to take action!</b></h1>
+                    <h1 class="text-white text-donate"><b>The only way to make this happened is to take action!</b></h1>
                     <hr class="hr-d">  <br>
                     <button class="btn btn-lg-c btn-warning-c text-white ">
                         <b>Donate Now</b>
@@ -174,17 +174,13 @@
     <div class="container-fluit s-image">
         <div class="container">
             <div class="row"> 
-                <div class="col-md-6">  
+                    <div class="col-md-6">  
                     <h1 class="text-white"><b>Subscribe To Newsletter</b></h1> <hr class="hr-d" align="left">
-                    <br> 
-                    
-                    <form>
-                    <div class="form-inline ">
-                    <input type="text" name="" class="form-control" placeholder="please fill your email"> &nbsp;&nbsp;&nbsp;
-                    <button class="btn btn-success text-white "> 
-                        <b>SUBSCRIBE!</b>
-                    </button>
-                    </div>
+                    <form action="" >
+                        <input type="email" placeholder="E-mail" class="form-control" name="email" required><br>
+                        <button class="btn btn-success text-white"> 
+                            <b>SUBSCRIBE!</b>
+                        </button>
                     </form>
                     </div>
                     <div class="col-md-6">  
