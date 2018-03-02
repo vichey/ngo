@@ -10,7 +10,7 @@
                     </a>
                 </div>
                 <div class="card-block" style="padding: 0;">
-                    <table class="table table-striped table-condensed">
+                    <table class="table tbl">
                         <thead>
                             <tr>
                                 <th>ID</th>

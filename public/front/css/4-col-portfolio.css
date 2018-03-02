@@ -8,11 +8,9 @@ body, .form-control {
   background: #fff;
   font-size: 13px;
 }
-
-@media (min-width: 992px) {
-  body {
-    
-  }
+.logo {
+  padding: 15px 0;
+  width: 320px;
 }
 small {
   position: absolute;
@@ -251,4 +249,42 @@ small {
 }
 .ml-auto, .mx-auto {
   margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+
+}
+@media (max-width: 768px) {
+ 
+ }
+
+@media (max-width: 479px) {
+  .greennature-action-ads-item, .greennature-action-ads-item-1 {
+    padding: 5px 0px 5px 0px;
+    overflow: hidden;
+  }
+  .re-news {
+    font-size: 18px;
+  }
+  .more {
+    margin-top: 13px;
+  }
+  .hr-c {
+    margin-top: -10px;
+  }
+}
+@media (max-width: 360px) {
+  .greennature-action-ads-item, .greennature-action-ads-item-1 {
+    padding: 5px 0px 5px 0px;
+    overflow: hidden;
+  }
+  .re-news {
+    font-size: 18px;
+  }
+  .more {
+    margin-top: 13px;
+  }
+  .hr-c {
+    margin-top: -10px;
+  }
 }
