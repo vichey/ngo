@@ -1,6 +1,18 @@
 @extends('layouts.front')
-@section('content')   
-<p><br></p>
+@section('content') 
+<div class="container">
+<div class="col-md-12">
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="my-3">
+                <img src="{{asset('front/img/Insights.png')}}" width="40"> 
+                <b class="re-news">Recent News</b> 
+            </h4>
+            <hr class="hr-c">
+        </div>
+    </div>
+</div>
+</div>  
     <div class="container">
         <div class="col-md-12">
             <div class="row">
