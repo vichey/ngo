@@ -5,8 +5,8 @@
         <div class="col-md-12">
             <div class="row">
                 @foreach($news as $n)
-                <div class="col-md-3">
-                    <div class="card card-c mb-2">
+                <div class="col-md-3 portfolio-item">
+                    <div class="card card-c h-100 mb-2">
                         <a href="{{url('recent-news/detail/'.$n->id)}}"><img class="img-fluid" src="{{asset('uploads/posts/250x250/'.$n->featured_image)}}" width="100%" alt=""></a>
                         <div class="card-body">
                             <a style="text-decoration:none;" href="{{url('recent-news/detail/'.$n->id)}}"><aside class="title">{{$n->title}}</aside></a>

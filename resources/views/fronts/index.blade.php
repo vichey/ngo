@@ -79,8 +79,8 @@
             <div class="col-md-c">
                 <div class="row">
                     @for($i=0;$i<count($news);$i++)
-                        <div class="col-md-3">
-                            <div class="card card-c mb-2">
+                        <div class="col-md-3 portfolio-item">
+                            <div class="card h-100 card-c mb-2">
                                 <a href="{{url('recent-news/detail/'.$news[$i]->id)}}"><img class="img-fluid" src="{{asset('uploads/posts/250x250/'.$news[$i]->featured_image)}}" width="100%" alt=""></a>
                                 <div class="card-body">
                                     <a style="text-decoration:none;" href="{{url('recent-news/detail/'.$news[$i]->id)}}"><aside class="title">{{$news[$i]->title}}</aside></a>
@@ -104,8 +104,8 @@
                 <div class="row">
                 @if(count($news)>4)
                     @for($i=4;$i<count($news);$i++)
-                    <div class="col-md-3">
-                        <div class="card card-c mb-2">
+                    <div class="col-md-3 portfolio-item">
+                        <div class="card h-100 card-c mb-2">
                             <a href="{{url('recent-news/detail/'.$news[$i]->id)}}"><img class="img-fluid" src="{{asset('uploads/posts/250x250/'.$news[$i]->featured_image)}}" alt="" width="100%"></a>
                             <div class="card-body">
                                 <a style="text-decoration:none;" href="{{url('recent-news/detail/'.$news[$i]->id)}}"><aside class="title">{{$news[$i]->title}}</aside></a>
