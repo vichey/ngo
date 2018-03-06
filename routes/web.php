@@ -23,12 +23,21 @@ Route::post('/admin/staff/save', "StaffController@save");
 Route::post('/admin/staff/update', "StaffController@update");
 
 Auth::routes();
-// Logo
-Route::get('/logo', "LogoController@index");
-Route::get('/logo/create', "LogoController@create");
-Route::post('/logo/save', "LogoController@save");
-Route::get('/logo/edit/{id}', "LogoController@edit");
-Route::post('/logo/update', "LogoController@update");
+// Ebook
+Route::get('/ebook', "EbookController@index");
+Route::get('/ebook/create', "EbookController@create");
+Route::post('/ebook/save', "EbookController@save");
+Route::get('/ebook/edit/{id}', "EbookController@edit");
+Route::get('/ebook/detail/{id}', "EbookController@detail");
+Route::post('/ebook/update', "EbookController@update");
+Route::get('/ebook/delete/{id}', "EbookController@delete");
+// Ebook
+Route::get('/newsletter', "NewsletterController@index");
+Route::get('/newsletter/create', "NewsletterController@create");
+Route::post('/newsletter/save', "NewsletterController@save");
+Route::get('/newsletter/edit/{id}', "NewsletterController@edit");
+Route::post('/newsletter/update', "NewsletterController@update");
+Route::get('/newsletter/delete/{id}', "NewsletterController@delete");
 // Slide 
 Route::get('/slide', "SlideController@index");
 Route::get('/slide/create', "SlideController@create");
