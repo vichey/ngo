@@ -56,12 +56,12 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="order" class="control-label col-lg-2 col-sm-2">
+                            {{--  <label for="order" class="control-label col-lg-2 col-sm-2">
                             	Order
                             </label>
                             <div class="col-lg-4 col-sm-4">
                                 <input type="number" name="order" id="order" value="0" class="form-control">
-                            </div>
+                            </div>  --}}
                             <label for="featured_photo" class="control-label col-lg-2 col-sm-2">Feature Image <span class="text-info"></span> <span class="text-danger">*</span></label>
                             <div class="col-lg-4 col-sm-4">
                                 <input type="file" name="featured_photo" required id="featured_photo" accept="image/*" onchange="loadFile(event)">

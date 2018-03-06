@@ -21,7 +21,7 @@
                     <div class="form-group row">
                         <label for="url" class="control-label col-lg-6 col-sm-6">
                             <aside class="text-primary">File Name</aside>
-                            <a href="">
+                            <a href="{{asset('uploads/ebooks/'.$ebook->file_name)}}" target="_blank">
                                 {{$ebook->file_name}}
                             </a>
                         </label>
@@ -37,7 +37,7 @@
                         </label>
                         <label for="description" class="control-label col-lg-6 col-sm-6">
                             <aside class="text-primary">Feature Image</aside>
-                            <img src="{{asset('public/uploads/ebooks/'.$ebook->featured_photo)}}" alt="" width="150">
+                            <img src="{{asset('uploads/ebooks/'.$ebook->featured_photo)}}" alt="" width="150">
                         </label>
                     </div>       
                 </div>

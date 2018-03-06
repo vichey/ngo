@@ -16,7 +16,6 @@
                                 <th>&numero;</th>
                                 <th>Feature Image</th>
                                 <th>Title</th>
-                                <th>File Name</th>
                                 <th>Category</th>
                                 <th>Action</th>
                             </tr>
@@ -26,9 +25,8 @@
                             @foreach($ebooks as $e)
                                 <tr>
                                     <td>{{$i++}}</td>
-                                    <td><img src="{{URL::asset('public/uploads/ebooks').'/'.$e->featured_photo}}" height="30"/></td>
-                                    <td><a href="">{{$e->title}}</a></td>
-                                    <td>{{$e->file_name}}</td>
+                                    <td><img src="{{URL::asset('uploads/ebooks').'/'.$e->featured_photo}}" height="30"/></td>
+                                    <td><a href="{{asset('uploads/ebooks/'.$e->file_name)}}" target="_blank">{{$e->title}}</a></td>
                                     <td>{{$e->category}}</td>
                                     <td>
                                     <a class="btn btn-xs btn-info"  href="{{url('/ebook/detail/'.$e->id)}}" title="Detail"><i class="fa fa-eye"></i></a>
@@ -43,6 +41,6 @@
                 </div>
             </div>
         </div>
-        <!--/.col-->
+        
     </div>
 @endsection

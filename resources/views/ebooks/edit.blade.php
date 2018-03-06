@@ -30,7 +30,7 @@
                     @endif
 
                     <form 
-                    	action="{{url('/e-library/update')}}" 
+                    	action="{{url('/ebook/update')}}" 
                     	class="form-horizontal" 
                     	method="post"
                     	enctype="multipart/form-data"  
@@ -57,12 +57,12 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="order" class="control-label col-lg-2 col-sm-2">
+                            {{--  <label for="order" class="control-label col-lg-2 col-sm-2">
                             	Order
                             </label>
                             <div class="col-lg-4 col-sm-4">
                                 <input type="number" name="order" id="order" value="{{$ebook->order}}" class="form-control">
-                            </div>
+                            </div>  --}}
                             <label for="featured_photo" class="control-label col-lg-2 col-sm-2">Feature Image</label>
                             <div class="col-lg-4 col-sm-4">
                                 <input type="file" name="featured_photo" id="featured_photo" accept="image/*" onchange="loadFile(event)">
@@ -75,7 +75,7 @@
                             </div>
                             <label class="control-label col-lg-2 col-sm-2"></label>
                             <div class="col-md-2">
-                                <img src="{{asset('public/uploads/ebooks/'.$ebook->featured_photo)}}" id="img" width="100"/>
+                                <img src="{{asset('uploads/ebooks/'.$ebook->featured_photo)}}" id="img" width="100"/>
                             </div>
                         </div>
                         <div class="form-group row">
