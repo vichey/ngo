@@ -79,8 +79,8 @@
             <div class="col-md-c">
                 <div class="row">
                     @for($i=0;$i<count($news);$i++)
-                        <div class="col-md-3">
-                            <div class="card card-c mb-2">
+                        <div class="col-md-3 portfolio-item">
+                            <div class="card h-100 card-c mb-2">
                                 <a href="{{url('recent-news/detail/'.$news[$i]->id)}}"><img class="img-fluid" src="{{asset('uploads/posts/250x250/'.$news[$i]->featured_image)}}" width="100%" alt=""></a>
                                 <div class="card-body">
                                     <a style="text-decoration:none;" href="{{url('recent-news/detail/'.$news[$i]->id)}}"><aside class="title">{{$news[$i]->title}}</aside></a>
@@ -104,8 +104,8 @@
                 <div class="row">
                 @if(count($news)>4)
                     @for($i=4;$i<count($news);$i++)
-                    <div class="col-md-3">
-                        <div class="card card-c mb-2">
+                    <div class="col-md-3 portfolio-item">
+                        <div class="card h-100 card-c mb-2">
                             <a href="{{url('recent-news/detail/'.$news[$i]->id)}}"><img class="img-fluid" src="{{asset('uploads/posts/250x250/'.$news[$i]->featured_image)}}" alt="" width="100%"></a>
                             <div class="card-body">
                                 <a style="text-decoration:none;" href="{{url('recent-news/detail/'.$news[$i]->id)}}"><aside class="title">{{$news[$i]->title}}</aside></a>
@@ -162,7 +162,7 @@
         <div class="container">
             <div class="row"> 
                 <div class="col-md-12 text-center">  
-                    <h1 class="text-white"><b>The only way to make this happened is to take action!</b></h1>
+                    <h1 class="text-white text-donate"><b>The only way to make this happened is to take action!</b></h1>
                     <hr class="hr-d">  <br>
                     <button class="btn btn-lg-c btn-warning-c text-white ">
                         <b>Donate Now</b>
@@ -174,17 +174,13 @@
     <div class="container-fluit s-image">
         <div class="container">
             <div class="row"> 
-                <div class="col-md-6">  
+                    <div class="col-md-6">  
                     <h1 class="text-white"><b>Subscribe To Newsletter</b></h1> <hr class="hr-d" align="left">
-                    <br> 
-                    
-                    <form>
-                    <div class="form-inline ">
-                    <input type="text" name="" class="form-control" placeholder="please fill your email"> &nbsp;&nbsp;&nbsp;
-                    <button class="btn btn-success text-white "> 
-                        <b>SUBSCRIBE!</b>
-                    </button>
-                    </div>
+                    <form action="" >
+                        <input type="email" placeholder="E-mail" class="form-control" name="email" required><br>
+                        <button class="btn btn-success text-white"> 
+                            <b>SUBSCRIBE!</b>
+                        </button>
                     </form>
                     </div>
                     <div class="col-md-6">  

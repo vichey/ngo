@@ -24,6 +24,7 @@ small {
   font-weight: bold;
   color: #3b3b3b;
 }
+
 .hr-d {
   width: 250px;
   border: solid 3px #fff;
@@ -46,7 +47,6 @@ small {
     background-color: #004789 !important;    
     padding: 10px;
 }
-
 .btn-lg-c {
     padding: 50px 70px;
     font-size: 35px;
@@ -92,8 +92,9 @@ small {
 }
 .d-image {
   background-image: url("../img/service-bg-2.jpg");
-     padding-top: 160px;
-    padding-bottom: 160px;
+  padding-top: 160px;
+  padding-bottom: 160px;
+  background-repeat: no-repeat;
 }
 .to {
   font-size: 13px;
@@ -188,7 +189,7 @@ small {
   border: 0;
   padding: 0;
   background: #053f75c7;
-  margin-top: 10px;
+  margin-top: 14px;
 }
 .navbar-nav .dropdown-menu {
     border-radius: 0;
@@ -253,9 +254,15 @@ small {
 .c-lang {
   margin-top: 45px;
 }
+.title-re-news {
+  margin-top: 55px;
+}
 @media (min-width: 992px) {
   .ml-auto, .mx-auto {
     padding: 4px 1px;
+  }
+  .d-image {
+    padding-bottom: 100px;
   }
 }
 @media (max-width: 768px) {
@@ -266,9 +273,15 @@ small {
     width: 87%;
     margin-right: 2px;
   }
+  .d-image {
+    padding-bottom: 100px;
+  }
  }
 
 @media (max-width: 479px) {
+  .logo {
+    width: 100%;
+  }
   .greennature-action-ads-item, .greennature-action-ads-item-1 {
     padding: 5px 0px 5px 0px;
     overflow: hidden;
@@ -285,12 +298,31 @@ small {
   .c-lang {
     margin-top: 0;
   }
+  .d-image {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-repeat: no-repeat;
+  }
+  .text-donate {
+    font-size: 15px;
+  }
+  .btn-lg-c {
+    padding: 20 50px;
+    font-size: 20px;
+    line-height: 1.5;
+    border-radius: .3rem;
+}
+
 }
 @media (max-width: 360px) {
   .greennature-action-ads-item, .greennature-action-ads-item-1 {
     padding: 5px 0px 5px 0px;
     overflow: hidden;
   }
+  .d-image {
+    padding-bottom: 10px;
+    background-repeat: no-repeat;
+  }
   .re-news {
     font-size: 18px;
   }
@@ -302,5 +334,13 @@ small {
   }
   .c-lang {
     margin-top: 0;
+  }
+  .d-image {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-repeat: no-repeat;
+  }
+  .text-donate {
+    font-size: 20px;
   }
 }
