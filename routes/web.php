@@ -31,13 +31,21 @@ Route::get('/ebook/edit/{id}', "EbookController@edit");
 Route::get('/ebook/detail/{id}', "EbookController@detail");
 Route::post('/ebook/update', "EbookController@update");
 Route::get('/ebook/delete/{id}', "EbookController@delete");
-// Ebook
+// Newsletter
 Route::get('/newsletter', "NewsletterController@index");
 Route::get('/newsletter/create', "NewsletterController@create");
 Route::post('/newsletter/save', "NewsletterController@save");
 Route::get('/newsletter/edit/{id}', "NewsletterController@edit");
 Route::post('/newsletter/update', "NewsletterController@update");
 Route::get('/newsletter/delete/{id}', "NewsletterController@delete");
+// Membership
+Route::get('/membership', "MembershipController@index");
+Route::get('/membership/create', "MembershipController@create");
+Route::post('/membership/save', "MembershipController@save");
+Route::get('/membership/edit/{id}', "MembershipController@edit");
+Route::get('/membership/detail/{id}', "MembershipController@detail");
+Route::post('/membership/update', "MembershipController@update");
+Route::get('/membership/delete/{id}', "MembershipController@delete");
 // Slide 
 Route::get('/slide', "SlideController@index");
 Route::get('/slide/create', "SlideController@create");
@@ -92,9 +100,12 @@ Route::get('/category/edit/{id}', "CategoryController@edit");
 Route::get('/category/delete/{id}', "CategoryController@delete");
 Route::post('/category/save', "CategoryController@save");
 Route::post('/category/update', "CategoryController@update");
-
+//membership form
+Route::get('/page/membership-form', "FrontPageController@membership");
+Route::post('/front/membership/save', "FrontPageController@membership_save");
+Route::post('/front/newsletter/save', "FrontPageController@newsletter_save");
+Route::get('/public/newsletter/sms', "FrontPageController@newsletter_sms");
 // Page
-
 Route::get('/page', "PageController@index");
 Route::get('/page/create', "PageController@create");
 Route::post('/page/save', "PageController@save");
@@ -103,7 +114,7 @@ Route::get('/page/edit/{id}', "PageController@edit");
 Route::post('/page/update', "PageController@update");
 Route::get('/page/view/{id}', "PageController@view");
 
-// Page
+// Comming Up
 Route::get('/announcement', "AnnouncementController@index");
 Route::get('/announcement/create', "AnnouncementController@create");
 Route::post('/announcement/save', "AnnouncementController@save");
@@ -120,9 +131,7 @@ Route::get('/recent-news/detail/{id}', "FrontPageController@recent_news_detail")
 Route::get('/recent-news/all/', "FrontPageController@recent_news_all");
 Route::get('/page/{id}', "FrontPageController@index");
 
-// front page
-// Route::get('/page/about', "FrontPageController@about");
-// Route::get('/page/contact', "FrontPageController@contact");
+
 
 // // test
 // Route::get('/test', "TestController@index");

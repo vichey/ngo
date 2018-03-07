@@ -78,7 +78,7 @@
                         <a class="nav-link" href="{{url('/admin/dashboard')}}"><i class="fa fa-tachometer text-primary"></i> {{$lb_dashboard}} </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-user"></i>Member</a>
+                        <a class="nav-link" href="{{url('/membership')}}"><i class="fa fa-users"></i>Membership</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{url('/admin/staff')}}"><i class="fa fa-user"></i>Staff</a>

@@ -53,6 +53,51 @@ class FrontPageController extends Controller
             ->get();
         return view('fronts.pages.staff', $data);
     }
+    
+    public function membership() 
+    {
+        return view('fronts.pages.membership');
+    }
+
+    public function membership_save(Request $r) 
+    {
+        $data = array(
+            'english_first_name' => $r->english_first_name,
+            'english_family_name' => $r->english_family_name,
+            'khmer_first_name' => $r->khmer_first_name,
+            'khmer_family_name' => $r->khmer_family_name,
+            'date_of_birth' => $r->date_of_birth,
+            'place_of_birth' => $r->place_of_birth,
+            'current_address' => $r->current_address,
+            'gender' => $r->gender,
+            'phone' => $r->phone,
+            'email' => $r->email,
+            'receive_newsletter' => $r->receive_newsletter,
+        );
+        if($r->photo) {
+            $file = $r->file('photo');
+            $file_name = $file->getClientOriginalName();
+            $destinationPath = 'public/uploads/members';
+            $file->move($destinationPath, $file_name);
+
+            $data['photo'] = $file_name;
+        }
+        $sms = "The new membership has been created successfully.";
+        $sms1 = "Fail to create the new membership, please check again!";
+        $i = DB::table('memberships')->insert($data);
+
+        if ($i)
+        {
+            $r->session()->flash('sms', $sms);
+            return redirect('/page/membership-form');
+        }
+        else
+        {
+            $r->session()->flash('sms1', $sms1);
+            return redirect('/page/membership-form')->withInput();
+        }
+    }
+
     public function staff_detail($id) 
     {
         $data['s'] = DB::table('staffs')
@@ -84,5 +129,33 @@ class FrontPageController extends Controller
             ->where('active', 1)
             ->get();
         return view('fronts.pages.staff', $data);
+    }
+    
+    // save new newsletter
+    public function newsletter_save(Request $r)
+    {
+        $data = array(
+            'name' => $r->name,
+            'email' => $r->email,
+        );
+        $sms = "The subscribe newsletter has been created successfully.";
+        $sms1 = "Fail to create the new newsletter, please check again!";
+        $i = DB::table('newsletters')->insert($data);
+
+        if ($i)
+        {
+            $r->session()->flash('sms', $sms);
+            return redirect('/public/newsletter/sms');
+        }
+        else
+        {
+            $r->session()->flash('sms1', $sms1);
+            return redirect('/public/newsletter/sms');
+        }
+    }
+    // index
+    public function newsletter_sms()
+    {
+        return view('fronts.pages.sms-newsletter');
     }
 }
