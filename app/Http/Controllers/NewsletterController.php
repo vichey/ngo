@@ -5,11 +5,15 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DB;
 use Session;
+
 use Auth;
 class NewsletterController extends Controller
 {
     public function __construct()
     {
+
+        $this->middleware('auth');
+
         $this->middleware(function ($request, $next) {
             if (Auth::user()==null)
             {

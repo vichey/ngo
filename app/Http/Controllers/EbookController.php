@@ -40,7 +40,6 @@ class EbookController extends Controller
         $data = array(
             'title' => $r->title,
             'description' => $r->description,
-            'order' => $r->order,
             'category_id' => $r->category
         );
         $i = DB::table('ebooks')->insertGetId($data);
@@ -49,16 +48,20 @@ class EbookController extends Controller
             if($r->file_name) {
                 $file = $r->file('file_name');
                 $file_name = $file->getClientOriginalName();
-                $destinationPath = 'public/uploads/ebooks';
-                $file->move($destinationPath, $i.'-'.$file_name);
-                $data['file_name'] = $i.'-'.$file_name;
+                $ss = substr($file_name, strripos($file_name, '.'), strlen($file_name));
+                $file_name = $i . $ss;
+                $destinationPath = 'uploads/ebooks/';
+                $file->move($destinationPath, $file_name);
+                $data['file_name'] = $file_name;
             }
             if($r->featured_photo) {
                 $file = $r->file('featured_photo');
                 $file_name = $file->getClientOriginalName();
-                $destinationPath = 'public/uploads/ebooks';
-                $file->move($destinationPath, $i.'-'.$file_name);
-                $data['featured_photo'] = $i.'-'.$file_name;
+                $ss = substr($file_name, strripos($file_name, '.'), strlen($file_name));
+                $file_name = 'thumb' .$i . $ss;
+                $destinationPath = 'uploads/ebooks/';
+                $file->move($destinationPath, $file_name);
+                $data['featured_photo'] = $file_name;
             }
             DB::table('ebooks')->where('id', $i)->update(['featured_photo'=> $data['featured_photo'], 'file_name'=> $data['file_name']]);
             $sms = "The new ebook has been created successfully.";
@@ -99,7 +102,6 @@ class EbookController extends Controller
         $data = array(
             'title' => $r->title,
             'description' => $r->description,
-            'order' => $r->order,
             'category_id' => $r->category
         );
 
@@ -107,21 +109,23 @@ class EbookController extends Controller
 
             $file = $r->file('file_name');
             $file_name = $file->getClientOriginalName();
-            $destinationPath = 'public/uploads/ebooks';
-            $file->move($destinationPath, $r->id.'-'.$file_name);
-            $data['file_name'] = $r->id.'-'.$file_name;
+            $ss = substr($file_name, strripos($file_name, '.'), strlen($file_name));
+            $file_name = $r->id . $ss;
+            $destinationPath = 'uploads/ebooks/';
+            $file->move($destinationPath, $file_name);
+            $data['file_name'] = $file_name;
         }
         if($r->featured_photo) {
             $file = $r->file('featured_photo');
             $file_name = $file->getClientOriginalName();
-            $destinationPath = 'public/uploads/ebooks';
-            $file->move($destinationPath, $r->id.'-'.$file_name);
-            $data['featured_photo'] = $r->id.'-'.$file_name;
+            $ss = substr($file_name, strripos($file_name, '.'), strlen($file_name));
+            $file_name = 'thumb'.$r->id. $ss;
+            $destinationPath = 'uploads/ebooks/';
+            $file->move($destinationPath, $file_name);
+            $data['featured_photo'] = $file_name;
         }
         DB::table('ebooks')->where('id', $r->id)->update($data);
-        $sms = "The new branch has been created successfully.";
-        $sms1 = "Fail to create the new ebook, please check again!";
-        $r->session()->flash('sms', $sms);
+        $r->session()->flash('sms', 'All changes have saved successfully!');
         return redirect('/ebook/edit/'.$r->id);
         
     }
