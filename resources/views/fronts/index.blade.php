@@ -43,7 +43,7 @@
             <div class="row"> 
                 <div class="col-md-6">  
                     <div class="greennature-action-ads-item-1">
-                        <h2 class="text-primary"><b>Our Mission</b></h2>
+                        <h2 class="text-primary text-subscribe"><b>Our Mission</b></h2>
                         <hr class="hr-m">  
                         <span class="text-primary">
                             Our vision is to be potential youth,<br> working with and for youth, for social positive change bad to good and good to better.
@@ -52,7 +52,7 @@
                 </div>
                 <div class="col-md-6 ">  
                     <div class="greennature-action-ads-item">
-                        <h2 class="text-success"><b>Our Vision:</b></h2>
+                        <h2 class="text-success text-subscribe"><b>Our Vision:</b></h2>
                         <hr class="hr-v">  
                         <span class="text-success">
                             Our mission is to upgrade and promote your participation human rights, democracy, peace building, health, gender equality, education and vocational training for young people in Cambodia. 
@@ -162,7 +162,7 @@
         <div class="container">
             <div class="row"> 
                 <div class="col-md-12 text-center">  
-                    <h1 class="text-white text-donate"><b>The only way to make this happened is to take action!</b></h1>
+                    <h1 class="text-donate"><b>The only way to make this happened is to take action!</b></h1>
                     <hr class="hr-d">  <br>
                     <button class="btn btn-lg-c btn-warning-c text-white ">
                         <b>Donate Now</b>
@@ -175,28 +175,39 @@
         <div class="container">
             <div class="row"> 
                     <div class="col-md-6">  
-                    <h1 class="text-white"><b>Subscribe To Newsletter</b></h1> <hr class="hr-d" align="left">
-                    <form action="" >
-                        <input type="email" placeholder="E-mail" class="form-control" name="email" required><br>
-                        <button class="btn btn-success text-white"> 
-                            <b>SUBSCRIBE!</b>
-                        </button>
-                    </form>
+                        <h1 class="text-white text-subscribe"><b>Subscribe To Newsletter</b></h1> <hr class="hr-d" align="left">
+                        <form 	
+                            action="{{url('/front/newsletter/save')}}" 
+                            class="form-horizontal" 
+                            method="post"
+                            enctype="multipart/form-data"  
+                        >
+                            <input type="text" placeholder="Full Name" class="form-control" name="name" required><br>
+                            <input type="email" placeholder="E-mail" class="form-control" name="email" required><br>
+                            <button class="btn btn-success text-white"> 
+                                <b>SUBSCRIBE!</b>
+                            </button>  <p></p>
+                        </form>
                     </div>
+                  
                     <div class="col-md-6">  
-                    <h1 class="text-primary"><b>Member Login</b> 
-                    <span class="to">To become a KYA member please</span></h1> <hr class="hr-r" align="left">
-                    <form action="" >
-                        <input type="email" placeholder="E-mail" class="form-control" name="email" required><br>
-                        <input type="password" placeholder="Password" class="form-control" name="password" required><br>
-                        <button class="btn btn-primary text-white"> 
+                    <h1 class="text-primary text-subscribe"><b>Member Login</b></h1> <hr class="hr-d" align="left">
+                    <form 	
+                        action="{{url('/front/newsletter/save')}}" 
+                        class="form-horizontal" 
+                        method="post"
+                        enctype="multipart/form-data"  
+                    >
+                        <input type="text" placeholder="E-mail" class="form-control" name="name" required><br>
+                        <input type="email" placeholder="Password" class="form-control" name="email" required><br>
+                        <button class="btn btn-success text-white"> 
                             <b>Sing In!</b>
                         </button>
-                        <button class="btn btn-warning text-white float-right"> 
-                            <b>Sing Up!</b>
-                        </button>
-                    </form>
-                    
+                      
+                            <a class="btn btn-warning text-white" href="{{url('page/membership-form')}}">
+                                <b>Sing Up!</b>
+                            </a>
+                        </form>
                 </div>
             </div>
         </div>
@@ -204,7 +215,7 @@
     <br><br>
     <div class="container-fluit announcements">
         <div class="container">
-        <h1 class="text-white text-center"><b>Up Comming</b></h1> <hr class="hr-d">
+        <h1 class="text-white text-center text-subscribe"><b>Up Comming</b></h1> <hr class="hr-d">
         <hr>
         <div class="row text-white">
             <div class="col-sm-12 text-center"><hr class="hr-a">
@@ -216,7 +227,6 @@
                 <hr class="hr-a">
             </div>
         </div>
-        <hr>
     </div>
-</div><br><br>
+</div>
 @endsection

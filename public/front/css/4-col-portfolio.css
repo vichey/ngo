@@ -95,6 +95,7 @@ small {
   padding-top: 160px;
   padding-bottom: 160px;
   background-repeat: no-repeat;
+  background-size: 100%;
 }
 .to {
   font-size: 13px;
@@ -106,7 +107,7 @@ small {
 .s-image {
      background-image: url("../img/newsletter-bg.jpg");
     padding-top: 80px;
-    padding-bottom: 78px;
+    padding-bottom: 50px;
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -257,17 +258,39 @@ small {
 .title-re-news {
   margin-top: 55px;
 }
+.swiper-button-next, .swiper-button-prev {
+  position: absolute;
+  top: 55%;
+  width: 40px;
+  height: 26px;
+  margin-top: -22px;
+  }
+.our-donor {
+  padding: 30px 0;
+}
 @media (min-width: 992px) {
   .ml-auto, .mx-auto {
     padding: 4px 1px;
   }
-  .d-image {
-    padding-bottom: 100px;
+  .text-subscribe {
+    font-size: 30px;
   }
+  .s-image {
+    padding-top: 29px;
+    padding-bottom: 35px;
+  }
+  .d-image {
+    padding-bottom: 33px;
+    padding-top: 30px;
+  }
+
 }
 @media (max-width: 768px) {
   .ml-auto, .mx-auto {
     padding: 4px 1px;
+  }
+  .text-subscribe {
+    font-size: 27px;
   }
   .search-box {
     width: 87%;
@@ -276,18 +299,51 @@ small {
   .d-image {
     padding-bottom: 100px;
   }
+  .d-image {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-size: 100% 500px;
+  }
+  .s-image {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-size: 100% 259px;
+}
  }
 
 @media (max-width: 479px) {
+  .our-donor {
+    padding: 10px 0;
+  }
+  .img-responsive {
+    max-width: 100%;
+    height: auto;
+    display:block;
+  }
+  .hr-d {
+    width: 250px;
+    border: solid 2px #fff;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    top: 62%;
+    width: 26px;
+    height: 26px;
+    }
+  .text-subscribe {
+    font-size: 22px;
+  }
+  .re-news {
+    font-size: 20px;
+  }
   .logo {
     width: 100%;
+  }
+  .d-image {
+
   }
   .greennature-action-ads-item, .greennature-action-ads-item-1 {
     padding: 5px 0px 5px 0px;
     overflow: hidden;
-  }
-  .re-news {
-    font-size: 18px;
   }
   .more {
     margin-top: 13px;
@@ -298,20 +354,28 @@ small {
   .c-lang {
     margin-top: 0;
   }
+  .announcements {
+    padding: 10px;
+  }
   .d-image {
     padding-bottom: 10px;
     padding-top: 10px;
-    background-repeat: no-repeat;
+    background-size: 100% 200px;
   }
   .text-donate {
     font-size: 15px;
   }
   .btn-lg-c {
-    padding: 20 50px;
+    padding: 15px 28px;
     font-size: 20px;
     line-height: 1.5;
     border-radius: .3rem;
-}
+  }
+  .s-image {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-size: 100% 650px;
+  }
 
 }
 @media (max-width: 360px) {
@@ -319,6 +383,16 @@ small {
     padding: 5px 0px 5px 0px;
     overflow: hidden;
   }
+  .img-responsive {
+    max-width: 100%;
+    height: auto;
+    display:block;
+  }
+  .s-image {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-size: 100% 650px;
+}
   .d-image {
     padding-bottom: 10px;
     background-repeat: no-repeat;
@@ -335,12 +409,11 @@ small {
   .c-lang {
     margin-top: 0;
   }
-  .d-image {
-    padding-bottom: 10px;
-    padding-top: 10px;
-    background-repeat: no-repeat;
-  }
   .text-donate {
     font-size: 20px;
+  }
+  .s-image {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }

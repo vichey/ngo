@@ -38,7 +38,7 @@
                         {{csrf_field()}}
                         <input type="hidden" name="id" id="id" value="{{$partner->id}}">
                         <div class="form-group row">
-                            <label for="name" class="control-label col-lg-1 col-sm-2">Name <span class="text-danger">*</span></label>
+                            <label for="name" class="control-label col-lg-2 col-sm-2">Name <span class="text-danger">*</span></label>
                             <div class="col-lg-6 col-sm-8">
                                 <input 
                                     type="text" 
@@ -51,10 +51,8 @@
                                 >
                             </div>
                         </div>
-                        
-                        
                         <div class="form-group row">
-                            <label for="url" class="control-label col-lg-1 col-sm-2">URL</label>
+                            <label for="url" class="control-label col-lg-2 col-sm-2">URL</label>
                             <div class="col-lg-6 col-sm-8">
                                 <input 
                                     type="text" 
@@ -66,7 +64,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="sequence" class="control-label col-lg-1 col-sm-2">Order &numero;</label>
+                            <label for="sequence" class="control-label col-lg-2 col-sm-2">Order &numero;</label>
                             <div class="col-lg-6 col-sm-8">
                                 <input 
                                     type="number" 
@@ -78,7 +76,7 @@
                             </div>
                         </div>
                          <div class="form-group row">
-                            <label for="logo" class="control-label col-lg-1 col-sm-2">Logo</label>
+                            <label for="logo" class="control-label col-lg-2 col-sm-2">Logo <span class="text-danger">(130x100)</span></label>
                             <div class="col-lg-6 col-sm-8">
                                 <input 
                                     type="file" 
@@ -90,13 +88,13 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="contact" class="control-label col-lg-1 col-sm-2"></label>
+                            <label for="contact" class="control-label col-lg-2 col-sm-2"></label>
                             <div class="col-lg-6 col-sm-8">
                                 <img src="" id="img"/>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="control-label col-lg-1 col-sm-2">&nbsp;</label>
+                            <label class="control-label col-lg-2 col-sm-2">&nbsp;</label>
                             <div class="col-lg-6 col-sm-8">
                                 <button class="btn btn-primary" type="submit">Save Change</button>
                             </div>

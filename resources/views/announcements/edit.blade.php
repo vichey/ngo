@@ -4,7 +4,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header text-bold">
-                    <i class="fa fa-align-justify"></i> New Announcement&nbsp;&nbsp;
+                    <i class="fa fa-align-justify"></i> New Comming Up&nbsp;&nbsp;
                     <a href="{{url('/announcement')}}" class="btn btn-link btn-sm">Back To List</a>
                 </div>
                 <div class="card-block">
