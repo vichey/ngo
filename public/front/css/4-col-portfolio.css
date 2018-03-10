@@ -258,6 +258,16 @@ small {
 .title-re-news {
   margin-top: 55px;
 }
+.swiper-button-next, .swiper-button-prev {
+  position: absolute;
+  top: 55%;
+  width: 40px;
+  height: 26px;
+  margin-top: -22px;
+  }
+.our-donor {
+  padding: 30px 0;
+}
 @media (min-width: 992px) {
   .ml-auto, .mx-auto {
     padding: 4px 1px;
@@ -302,8 +312,28 @@ small {
  }
 
 @media (max-width: 479px) {
+  .our-donor {
+    padding: 10px 0;
+  }
+  .img-responsive {
+    max-width: 100%;
+    height: auto;
+    display:block;
+  }
+  .hr-d {
+    width: 250px;
+    border: solid 2px #fff;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    top: 62%;
+    width: 26px;
+    height: 26px;
+    }
   .text-subscribe {
     font-size: 22px;
+  }
+  .re-news {
+    font-size: 20px;
   }
   .logo {
     width: 100%;
@@ -314,9 +344,6 @@ small {
   .greennature-action-ads-item, .greennature-action-ads-item-1 {
     padding: 5px 0px 5px 0px;
     overflow: hidden;
-  }
-  .re-news {
-    font-size: 18px;
   }
   .more {
     margin-top: 13px;
@@ -355,6 +382,11 @@ small {
   .greennature-action-ads-item, .greennature-action-ads-item-1 {
     padding: 5px 0px 5px 0px;
     overflow: hidden;
+  }
+  .img-responsive {
+    max-width: 100%;
+    height: auto;
+    display:block;
   }
   .s-image {
     padding-top: 0;
