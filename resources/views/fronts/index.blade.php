@@ -5,26 +5,22 @@
     $i = 1;
 ?>
 <div id="demo" class="carousel slide" data-ride="carousel">
-    <ul class="carousel-indicators">
-        @foreach($slides as $s)
-        @if($i == 1) 
-            <li data-target="#demo" data-slide-to="{{$j}}" class="active"></li>
-        @else
-            <li data-target="#demo" data-slide-to="{{$j}}"></li>
-        @endif
-        <?php $i++; $j++;?>
-        @endforeach
-    </ul>
     <div class="carousel-inner">
         <?php $v = 1; ?>
         @foreach($slides as $s)
             @if($v == 1) 
             <div class="carousel-item active">
                 <img src="{{asset('front/slides/'.$s->photo)}}" alt="{{$s->name}}" width="100%">
+                <div class="carousel-caption carousel-caption-c">
+                    <b>{{$s->name}}</b>
+                </div> 
             </div>
             @else
             <div class="carousel-item">
                 <img src="{{asset('front/slides/'.$s->photo)}}" alt="{{$s->name}}" width="100%">
+                <div class="carousel-caption carousel-caption-c">
+                    <b>{{$s->name}}</b>
+                </div>   
             </div>
             @endif
         <?php $v++;?>
