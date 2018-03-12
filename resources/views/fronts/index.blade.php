@@ -1,7 +1,6 @@
 @extends('layouts.front')
 @section('content')
 <?php 
-    $slides = DB::table('slides')->orderBy('order', 'asc')->where('active', 1)->get();
     $j = 1;
     $i = 1;
 ?>
@@ -43,26 +42,21 @@
             <div class="row"> 
                 <div class="col-md-6">  
                     <div class="greennature-action-ads-item-1">
-                        <h2 class="text-primary text-subscribe"><b>Our Mission</b></h2>
+                        <h2 class="text-primary text-subscribe"><b>{{$mission->title}}</b></h2>
                         <hr class="hr-m">  
-                        <span class="text-primary">
-                            Our vision is to be potential youth,<br> working with and for youth, for social positive change bad to good and good to better.
-                        </span>
+                        {!!$mission->description!!}
                     </div>
                 </div>
                 <div class="col-md-6 ">  
                     <div class="greennature-action-ads-item">
-                        <h2 class="text-success text-subscribe"><b>Our Vision:</b></h2>
+                        <h2 class="text-success text-subscribe"><b>{{$vission->title}}</b></h2>
                         <hr class="hr-v">  
-                        <span class="text-success">
-                            Our mission is to upgrade and promote your participation human rights, democracy, peace building, health, gender equality, education and vocational training for young people in Cambodia. 
-                        </span>
+                        {!!$vission->description!!}
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <?php $news = DB::Table('posts')->orderBy('id', 'desc')->where('active',1)->get(); ?>
     <div class="container">
         <div class="row"> 
             <div class="col-md-12">
@@ -164,9 +158,9 @@
                 <div class="col-md-12 text-center">  
                     <h1 class="text-donate"><b>The only way to make this happened is to take action!</b></h1>
                     <hr class="hr-d">  <br>
-                    <button class="btn btn-lg-c btn-warning-c text-white ">
+                    <a href="{{url('/page/21')}}" class="btn btn-lg-c btn-warning-c text-white ">
                         <b>Donate Now</b>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
