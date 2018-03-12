@@ -179,17 +179,17 @@ loop: true
 <div class="container-fluit b">
     <div class="container">
         <div class="row">
-            <div class="col-md-4 text-center">
-                <div class="foot">
-                <h6>CONTACT INFO</h6><br>
+            <div class="col-md-4 text-jutify">
+                <div class="foot" >
+                <h6>CONTACT INFO</h6><p></p>
                 Nº. 32D, St. 562, Sangkat Boeng kak I, Khan Toul Kork, Phnom Penh, CAMBODIA<br>
                 Phone/Fax: 855 23 884 306<br>
                 Email: admin@kya-cambodia.org
                 </div>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-jutify">
                     <div class="foot">
-                        <h6>FIND US</h6>
+                        <h6>FIND US</h6><p></p>
                         <p>
                             <a href="https://www.facebook.com/khmeryouthassociationkh" target="_blank">
                                 <img src="{{asset('front/img/f.png')}}" height="28"> 
@@ -218,7 +218,7 @@ loop: true
                         <p>
                     </div>
             </div>
-            <div class="col-md-4 text-center">
+            <div class="col-md-4 text-jutify">
                 <div class="foot">
                     <div class="fb-like-box fb_iframe_widget" 
                     data-href="https://www.facebook.com/khmeryouthassociationkh"
