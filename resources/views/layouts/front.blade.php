@@ -203,15 +203,18 @@ loop: true
                             <img src="{{asset('front/img/fl.png')}}" height="28"> 
                         </p>
                         <p>
-                            <a href="https://www.facebook.com/khmeryouthassociationkh" target="_blank">
-                                <img src="{{asset('front/img/ff.png')}}" >
-                            </a>
+                            <div class="socail">
+                                <a href="https://www.facebook.com/khmeryouthassociationkh" target="_blank">
+                                    <img src="{{asset('front/img/ff.png')}}" >
+                                </a>
+                            </div>
                         </p>
                         <p>
-                            <a href="https://www.youtube.com/channel/UCBIDarOtRqINLw-CIryck9Q" target="_blank">
-                                <img src="{{asset('front/img/y.jpg')}}">
-                            </a>
-                                
+                            <div class="socail">
+                                <a href="https://www.youtube.com/channel/UCBIDarOtRqINLw-CIryck9Q" target="_blank">
+                                    <img src="{{asset('front/img/y.jpg')}}">
+                                </a>
+                            </div>   
                         <p>
                     </div>
             </div>
