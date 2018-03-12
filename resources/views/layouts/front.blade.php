@@ -6,7 +6,7 @@
         <meta name="description" content="Khmer Youth Association">
         <meta name="keyword" content="KYA, Khmer Youth Association">
 
-        <title>Khmer Young Assiciation</title>
+        <title>Khmer Youth Assiciation</title>
         <link rel="icon" type="image/gif" href="{{asset('img/favicon.gif')}}" >
         <script type="text/javascript" src="{{asset('front/css/jq.js')}}"></script>
         <!-- Bootstrap core CSS -->
