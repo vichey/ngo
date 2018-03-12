@@ -81,7 +81,7 @@
                                 {{trans('labels.involve')}}
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="{{url('/page/12')}}">{{trans('labels.case_study')}}</a>
+                                {{--  <a class="dropdown-item" href="{{url('/page/12')}}">{{trans('labels.case_study')}}</a>  --}}
                                 <a class="dropdown-item" href="{{url('/page/9')}}">{{trans('labels.volunteer')}}</a>
                                 {{--  <a class="dropdown-item" href="#">Announcements</a>  --}}
                                 <a class="dropdown-item" href="{{url('/page/13')}}">{{trans('labels.event')}}</a>
@@ -101,10 +101,11 @@
                         </li>  --}}
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                               {{trans('labels.elibrary')}}
+                              Resources
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="{{url('/page/15')}}"> {{trans('labels.ebook')}}</a>
+                                <a class="dropdown-item" href="#"> Case Study</a>
+                                <a class="dropdown-item" href="{{url('/page/15')}}"> {{trans('labels.elibrary')}}</a>
                                 {{--  <a class="dropdown-item" href="{{url('/page/16')}}">Photo Library</a>  --}}
                             </div>
                         </li>
@@ -145,15 +146,15 @@
                                 <?php $i=1;?>
                                 @foreach($donors as $d)
                                     @if($i++==1)
-                                        <img src="{{asset('partners/'.$d->logo)}}" alt="{{$d->name}}" class="img-responsive"/></div>
+                                        <img src="{{asset('partners/'.$d->logo)}}" alt="{{$d->name}}" class="img-responsive"/ width="130"></div>
                                     @else
-                                        <div class="swiper-slide text-center"><img src="{{asset('partners/'.$d->logo)}}" alt="{{$d->name}}" class="img-responsive"/></div>
+                                        <div class="swiper-slide text-center"><img src="{{asset('partners/'.$d->logo)}}" alt="{{$d->name}}" class="img-responsive" width="130"/></div>
                                     @endif
                                 @endforeach
                             </div>
                         </div>
                         <div class="swiper-pager">
-                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-next"></div>  
                             <div class="swiper-button-prev"></div>
                         </div>
                     </div>
@@ -190,14 +191,28 @@ loop: true
                     <div class="foot">
                         <h6>FIND US</h6>
                         <p>
-                            <img src="{{asset('front/img/f.png')}}" height="28"> 
+                            <a href="https://www.facebook.com/khmeryouthassociationkh" target="_blank">
+                                <img src="{{asset('front/img/f.png')}}" height="28"> 
+                            </a>
+                          
                             <img src="{{asset('front/img/l.png')}}" height="28"> 
-                            <img src="{{asset('front/img/t.png')}}" height="28">
+                            <a href="https://twitter.com/intent/tweet?text=Khmer%20Youth%20Association&source=sharethiscom&related=sharethis&url=http%3A%2F%2Fkya-cambodia.org%2Fsite%2F%23sthash.ra2zGiVV.uxfs" target="_blank">
+                                <img src="{{asset('front/img/t.png')}}" height="28">
+                            </a>
                             <img src="{{asset('front/img/e.png')}}" height="28"> 
                             <img src="{{asset('front/img/fl.png')}}" height="28"> 
                         </p>
-                        <p><img src="{{asset('front/img/ff.png')}}" ></p>
-                        <p><img src="{{asset('front/img/y.jpg')}}"><p>
+                        <p>
+                            <a href="https://www.facebook.com/khmeryouthassociationkh" target="_blank">
+                                <img src="{{asset('front/img/ff.png')}}" >
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://www.youtube.com/channel/UCBIDarOtRqINLw-CIryck9Q" target="_blank">
+                                <img src="{{asset('front/img/y.jpg')}}">
+                            </a>
+                                
+                        <p>
                     </div>
             </div>
             <div class="col-md-4 text-center">

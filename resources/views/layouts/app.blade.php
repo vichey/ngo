@@ -93,11 +93,17 @@
                         <a class="nav-link" href="{{url('/page')}}"><i class="fa fa-columns"></i> Page </a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="{{url('/main-menu')}}"><i class="fa fa-columns"></i> Main Menu </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url('/sub-menu')}}"><i class="fa fa-columns"></i> Sub Menu </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{{url('/announcement')}}"><i class="fa fa-bullhorn"></i> Comming Up </a>
                     </li>
                     
                     <li class="nav-item">
-                        <a class="nav-link" href="{{url('/ebook')}}"><i class="fa fa-book"></i> Ebook </a>
+                        <a class="nav-link" href="{{url('/ebook')}}"><i class="fa fa-book"></i> E-Library </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{url('/donor')}}"><i class="fa fa-gift"></i> Donor </a>
