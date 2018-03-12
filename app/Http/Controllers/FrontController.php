@@ -18,7 +18,18 @@ class FrontController extends Controller
     // index
     public function index()
     {
-        return view('fronts.index');
+        $data['mission'] = DB::table('pages')->where('id',19)->first();
+        $data['vission'] = DB::table('pages')->where('id',20)->first();
+        $data['slides'] = DB::table('slides')
+            ->where('active', 1)
+            ->orderBy('order', 'asc')
+            ->get();
+        $data['news'] = DB::table('posts')
+            ->orderBy('id', 'desc')
+            ->where('active',1)
+            ->get();
+
+        return view('fronts.index', $data);
     }
     public function detail($id)
     {
