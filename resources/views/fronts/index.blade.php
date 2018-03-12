@@ -185,20 +185,16 @@
                     </div>
                   
                     <div class="col-md-6">  
-                    <h1 class="text-primary text-subscribe"><b>Member Login</b></h1> <hr class="hr-d" align="left">
+                    <h1 class="text-primary text-subscribe"><b>Register</b></h1> <hr class="hr-d" align="left">
                     <form 	
                         action="{{url('/front/newsletter/save')}}" 
                         class="form-horizontal" 
                         method="post"
                         enctype="multipart/form-data"  
                     >
-                        <input type="text" placeholder="E-mail" class="form-control" name="name" required><br>
-                        <input type="email" placeholder="Password" class="form-control" name="email" required><br>
-                        <button class="btn btn-success text-white"> 
-                            <b>Sing In!</b>
-                        </button>
+                    <p class="text-white">To become a KYA member please</p>   
                       
-                            <a class="btn btn-warning text-white" href="{{url('page/membership-form')}}">
+                            <a class="btn btn-primary" href="{{url('page/membership-form')}}">
                                 <b>Sing Up!</b>
                             </a>
                         </form>

@@ -65,8 +65,14 @@ small {
   border-radius: 2px;
   font-size: 12px;
 }
+.socail {
+  background: #fff;
+  padding: 5px;
+  width: 162px;
+  margin: 0 auto;
+}
 .b {
-  background: #004789;
+  background: #263238;
   color: #fff;
 }
 .co {
