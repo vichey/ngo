@@ -110,7 +110,7 @@ small {
   padding-right: 2px;
 }
 .s-image {
-     background-image: url("../img/newsletter-bg.jpg");
+    background-image: url("../img/newsletter-bg.jpg");
     padding-top: 80px;
     padding-bottom: 50px;
     background-size: 100%;
@@ -283,6 +283,8 @@ small {
   .s-image {
     padding-top: 29px;
     padding-bottom: 35px;
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
   .d-image {
     padding-bottom: 33px;
