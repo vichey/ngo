@@ -9,19 +9,27 @@
         <?php $v = 1; ?>
         @foreach($slides as $s)
             @if($v == 1) 
+         
             <div class="carousel-item active">
+            <a href="{{$s->url}}">
                 <img src="{{asset('front/slides/'.$s->photo)}}" alt="{{$s->name}}" width="100%">
                 <div class="carousel-caption carousel-caption-c">
                     <b>{{$s->name}}</b>
                 </div> 
+                </a>
             </div>
+          
             @else
+            
             <div class="carousel-item">
+            <a href="{{$s->url}}">
                 <img src="{{asset('front/slides/'.$s->photo)}}" alt="{{$s->name}}" width="100%">
                 <div class="carousel-caption carousel-caption-c">
                     <b>{{$s->name}}</b>
-                </div>   
+                </div>  
+                </a> 
             </div>
+           
             @endif
         <?php $v++;?>
         @endforeach
@@ -40,14 +48,14 @@
                 
                 <div class="col-md-6">  
                     <div class="greennature-action-ads-item-1">
-                        <h2 class="text-primary text-subscribe"><b>{{$mission->title}}</b></h2>
+                        <h1 class="text-primary">{{$mission->title}}</h1>
                         <hr class="hr-m">  
                         {!!$mission->description!!}
                     </div>
                 </div>
                 <div class="col-md-6 ">  
                     <div class="greennature-action-ads-item">
-                        <h2 class="text-success text-subscribe"><b>{{$vission->title}}</b></h2>
+                        <h1 class="text-success">{{$vission->title}}</h1>
                         <hr class="hr-v">  
                         {!!$vission->description!!}
                     </div>
@@ -60,7 +68,7 @@
             <div class="col-md-12">
                 <h4 class="my-3">
                     <img src="{{asset('front/img/Insights.png')}}" width="40"> 
-                    <b class="re-news">Recent News</b> 
+                    <span class="re-news">Recent News</span> 
                     <a href="{{url('recent-news/all')}}"><span class="more">More Recents News >></span></a>
                 </h4>
                 <hr class="hr-c">
@@ -76,7 +84,7 @@
                                 <a href="{{url('recent-news/detail/'.$news[$i]->id)}}"><img class="img-fluid" src="{{asset('uploads/posts/250x250/'.$news[$i]->featured_image)}}" width="100%" alt=""></a>
                                 <div class="card-body">
                                     <a style="text-decoration:none;" href="{{url('recent-news/detail/'.$news[$i]->id)}}"><aside class="title">{{$news[$i]->title}}</aside></a>
-                                    <p class="card-text"><a  style="text-decoration:none; color: #666;"  href="{{url('recent-news/detail/'.$news[$i]->id)}}">{{$news[$i]->short_description}}</a></p>
+                                    <p class="card-text"><a  style="text-decoration:none;color: #333;"  href="{{url('recent-news/detail/'.$news[$i]->id)}}">{{$news[$i]->short_description}}</a></p>
                                     <a class="btn btn-info btn-readmore" href="{{url('recent-news/detail/'.$news[$i]->id)}}">Read More</a>
                                 </div>
                             </div>
@@ -101,7 +109,7 @@
                             <a href="{{url('recent-news/detail/'.$news[$i]->id)}}"><img class="img-fluid" src="{{asset('uploads/posts/250x250/'.$news[$i]->featured_image)}}" alt="" width="100%"></a>
                             <div class="card-body">
                                 <a style="text-decoration:none;" href="{{url('recent-news/detail/'.$news[$i]->id)}}"><aside class="title">{{$news[$i]->title}}</aside></a>
-                                <p class="card-text"><a  style="text-decoration:none; color: #666;"  href="{{url('recent-news/detail/'.$news[$i]->id)}}">{{$news[$i]->short_description}}</a></p>
+                                <p class="card-text"><a  style="text-decoration:none; color: #333;"  href="{{url('recent-news/detail/'.$news[$i]->id)}}">{{$news[$i]->short_description}}</a></p>
                                 <a class="btn btn-info btn-readmore" href="{{url('recent-news/detail/'.$news[$i]->id)}}">Read More</a>
                             </div>
                         </div>
@@ -117,7 +125,7 @@
                 </div>
             </div>
         </div>
-        <div class="controls-top" style="margin-top: 10px;">
+        <div class="controls-top">
             <div class="row">
                 <div class="col-md-12 text-center">
                 &nbsp;<a class="btn-floating btn-info text-white btn btn-sm-c" href="#multi-item-example" data-slide="prev"><</a>
@@ -137,15 +145,16 @@
         <div class="container">
             <div class="row"> 
                 <div class="col-md-12 text-center">  
-                    <h1 class="text-donate"><b>The only way to make this happened is to take action!</b></h1>
-                    <hr class="hr-d">  <br>
-                    <a href="{{url('/page/21')}}" class="btn btn-lg-c btn-warning-c text-white ">
+                    <h1 class="text-donate">The only way to make this happened is to take action!</h1>
+                    <hr class="hr-d">
+                    <a href="{{url('/page/21')}}" class="btn btn-lg-c btn-warning-c">
                         <b>Donate Now</b>
                     </a>
                 </div>
             </div>
         </div>
     </div>
+<<<<<<< HEAD
     {{--  <div class="container-fluit s-image">
         <div class="container">
             <div class="row"> 
@@ -186,18 +195,19 @@
        
     </div>
     <br><br>
+=======
+>>>>>>> 265e8bfa62ab909839c5c4d991f861dfe3338978
     <div class="container-fluit announcements">
         <div class="container">
-        <h1 class="text-white text-center text-subscribe"><b>Up Coming Events</b></h1> <hr class="hr-d">
-        <hr>
-        <div class="row text-white">
-            <div class="col-sm-12 text-center"><hr class="hr-a">
-                <p>Angkor Youth Camp 8th​​ 2016 - <span class="text-warning">October 29, 2016 </span></p>
-                <hr class="hr-a">
-            </div>
-            <div class="col-sm-12 text-center">
-                <p>KYA Youths Case Studies (Mr. Tin Soklim Team Leader YFY)- <span class="text-warning">October 29, 2016</span></p>
-                <hr class="hr-a">
+            <h1 class="text-center">Up Comming Event</h1> <hr class="hr-d">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>1. Angkor Youth Camp 8th​​ 2016 - <span class="text-warning">October 29, 2016 </span></p>
+                </div>
+                <div class="col-sm-12">
+                    <p>2. KYA Youths Case Studies (Mr. Tin Soklim Team Leader YFY)- <span class="text-warning">October 29, 2016</span></p>
+                    <hr class="hr-a">
+                </div>
             </div>
         </div>
     </div>

@@ -153,9 +153,9 @@
                                 <?php $i=1;?>
                                 @foreach($donors as $d)
                                     @if($i++==1)
-                                        <img src="{{asset('partners/'.$d->logo)}}" alt="{{$d->name}}" class="img-responsive"/ width="130"></div>
+                                        <img src="{{asset('partners/'.$d->logo)}}" alt="{{$d->name}}" class="img-responsive"></div>
                                     @else
-                                        <div class="swiper-slide text-center"><img src="{{asset('partners/'.$d->logo)}}" alt="{{$d->name}}" class="img-responsive" width="130"/></div>
+                                        <div class="swiper-slide text-center"><img src="{{asset('partners/'.$d->logo)}}" alt="{{$d->name}}" class="img-responsive"></div>
                                     @endif
                                 @endforeach
                             </div>
@@ -189,14 +189,24 @@ loop: true
 <div class="container-fluit b">
     <div class="container">
         <div class="row">
-            <div class="col-md-4 text-jutify">
-                <div class="foot" >
-                <h6>CONTACT INFO</h6><p></p>
-                <i class="fa fa-map-marker"></i>&nbsp;&nbsp;Nº. 32D, St. 562, Sangkat Boeng kak I, Khan Toul Kork, Phnom Penh, CAMBODIA<br>
-                <i class="fa fa-phone"></i>&nbsp;&nbsp;+855 23 884 306<br>
-                <i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="mailto:admin@kya-cambodia.org" style="color:#fff">admin@kya-cambodia.org</a>
+            
+            <div class="col-md-3 text-jutify">
+                <div class="foot">
+                    <h6 class="text-subscribe">FIND US</h6><p></p>
+                    <p>
+                        <a href="https://www.facebook.com/khmeryouthassociationkh" target="_blank">
+                            <img src="{{asset('front/img/f.png')}}" height="35" class="socail"> 
+                        </a>
+                        <img src="{{asset('front/img/l.png')}}" height="35" class="socail"> 
+                        <a href="https://twitter.com/intent/tweet?text=Khmer%20Youth%20Association&source=sharethiscom&related=sharethis&url=http%3A%2F%2Fkya-cambodia.org%2Fsite%2F%23sthash.ra2zGiVV.uxfs" target="_blank">
+                            <img src="{{asset('front/img/t.png')}}" height="35" class="socail">
+                        </a>
+                        <img src="{{asset('front/img/fl.png')}}" height="35" class="socail"> 
+                        <img src="{{asset('front/img/e.png')}}" height="35" class="socail"> 
+                        
+                    </p>
                 </div>
-                </div>
+
                 <div class="col-md-4 text-jutify">
                     <div class="foot">
                         <h6>FIND US</h6><p></p>
@@ -244,6 +254,33 @@ loop: true
                                 SUBSCRIBE!
                             </button>  <p></p>
                         </form>
+            </div>
+            <div class="col-md-4 text-jutify">
+                <div class="foot">
+                    <h6 class="text-subscribe">CONTACT INFO</h6><p></p>
+                    Nº. 32D, St. 562, Sangkat Boeng kak I, Khan Toul Kork, Phnom Penh, CAMBODIA<br>
+                    Phone/Fax: 855 23 884 306<br>
+                    Email: admin@kya-cambodia.org
+                </div>
+            </div>
+            <div class="col-md-5 text-jutify">
+                <div class="foot">
+                    <h6 class="text-subscribe">SUBSCRIBE TO NEWSLETTER</h6>
+                    <form 	
+                        action="{{url('/front/newsletter/save')}}" 
+                        class="form-horizontal" 
+                        method="post"
+                        enctype="multipart/form-data"  
+                    >   
+                        <p>
+                            <input type="text" placeholder="Full Name" class="form-control" name="name" required><br>
+                            <input type="email" placeholder="E-mail" class="form-control" name="email" required><br>
+                            <button class="btn btn-primary"> 
+                                <b>SUBSCRIBE!</b>
+                            </button>
+                        </p>
+                    </form>
+
                 </div>
             </div>
         </div>

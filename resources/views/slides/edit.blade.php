@@ -41,11 +41,19 @@
                             <label for="name" class="control-label col-lg-2 col-sm-2">
                             	Name <span class="text-danger">*</span>
                             </label>
-                            <div class="col-lg-3 col-sm-3">
+                            <div class="col-lg-6 col-sm-8">
                                 <input type="text" autofocus name="name" id="name" required class="form-control" value="{{$slide->name}}">
                             </div>
                             <div class="col-lg-3 col-sm-3">
                                 <img src="{{URL::asset('front/slides/').'/'.$slide->photo}}" width="150" id="img"/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="url" class="control-label col-lg-2 col-sm-2">
+                            	URL 
+                            </label>
+                            <div class="col-lg-6 col-sm-8">
+                                <input type="text" name="url" id="url" value="{{$slide->url}}" class="form-control">
                             </div>
                         </div>
                         <div class="form-group row">
