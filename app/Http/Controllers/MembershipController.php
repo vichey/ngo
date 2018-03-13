@@ -44,20 +44,22 @@ class MembershipController extends Controller
             'email' => $r->email,
             'receive_newsletter' => $r->receive_newsletter,
         );
-        if($r->photo) {
-            $file = $r->file('photo');
-            $file_name = $file->getClientOriginalName();
-            $destinationPath = 'public/uploads/members';
-            $file->move($destinationPath, $file_name);
-
-            $data['photo'] = $file_name;
-        }
+        
         $sms = "The new membership has been created successfully.";
         $sms1 = "Fail to create the new membership, please check again!";
-        $i = DB::table('memberships')->insert($data);
+        $i = DB::table('memberships')->insertGetId($data);
 
         if ($i)
         {
+            if($r->photo) {
+                $file = $r->file('photo');
+                $file_name = $file->getClientOriginalName();
+                $destinationPath = 'public/uploads/members';
+                $file->move($destinationPath, $i.$file_name);
+    
+                $data['photo'] = $i.$file_name;
+                DB::table('memberships')->update($data);
+            }
             $r->session()->flash('sms', $sms);
             return redirect('/membership/create');
         }
@@ -104,9 +106,9 @@ class MembershipController extends Controller
             $file = $r->file('photo');
             $file_name = $file->getClientOriginalName();
             $destinationPath = 'public/uploads/members';
-            $file->move($destinationPath, $file_name);
+            $file->move($destinationPath, $r->id.$file_name);
 
-            $data['photo'] = $file_name;
+            $data['photo'] = $r->id.$file_name;
         }
          $sms = "All changes have been saved successfully.";
          $sms1 = "Fail to to save changes, please check again!";
