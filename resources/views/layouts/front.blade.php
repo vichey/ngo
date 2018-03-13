@@ -22,7 +22,8 @@
         <div class="container">
             <div class="col-md-12">
                 <div class="row">   
-                    <div class="col-md-12">   
+                    <div class="col-md-12">  
+                        {{--  <p></p>   --}}
                        <a href="{{url('/')}}"><img src="{{asset('front/img/kya-logo.png')}}" class="logo"></a> 
                        <div class="float-right c-lang">
                             <a href="#" class="text-default" onclick="chLang(event,'km')">
@@ -30,6 +31,7 @@
                              width="40">ភាសារខ្មែរ</a>
                             <a href="#" class="text-default" onclick="chLang(event,'en')"><img class="lang" src="{{asset('front/img/en.png')}}" width="40"> English</a>
                         </div>
+                        {{--  <p></p>  --}}
                     </div>
                     <div class="col-md-" style="margin-top: 50px;">
                        

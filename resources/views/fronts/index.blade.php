@@ -144,7 +144,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluit s-image"></div>
+    <div class="container-fluit s-image">
         <div class="container">
             <div class="row"> 
                     <div class="col-md-6">  
@@ -172,7 +172,7 @@
                         enctype="multipart/form-data"  
                     >
                     <p class="text-white">To become a KYA member please</p>   
-                      
+                    
                             <a class="btn btn-primary" href="{{url('page/membership-form')}}">
                                 <b>Sing Up!</b>
                             </a>
@@ -180,6 +180,8 @@
                 </div>
             </div>
         </div>
+    </div>
+       
     </div>
     <br><br>
     <div class="container-fluit announcements">
