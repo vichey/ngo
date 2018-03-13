@@ -93,6 +93,22 @@ Route::post('/role/update', "RoleController@update");
 Route::get('/role/permission/{id}', "PermissionController@index");
 Route::post('/rolepermission/save', "PermissionController@save");
 
+//Main Menu
+Route::get('/main-menu', "MainMenuController@index");
+Route::get('/main-menu/create', "MainMenuController@create");
+Route::post('/main-menu/save', "MainMenuController@save");
+Route::get('/main-menu/delete/{id}', "MainMenuController@delete");
+Route::get('/main-menu/edit/{id}', "MainMenuController@edit");
+Route::post('/main-menu/update', "MainMenuController@update");
+
+//Sub Menu
+Route::get('/sub-menu', "SubMenuController@index");
+Route::get('/sub-menu/create', "SubMenuController@create");
+Route::post('/sub-menu/save', "SubMenuController@save");
+Route::get('/sub-menu/delete/{id}', "SubMenuController@delete");
+Route::get('/sub-menu/edit/{id}', "SubMenuController@edit");
+Route::post('/sub-menu/update', "SubMenuController@update");
+
 // catogory
 Route::get('/category', "CategoryController@index");
 Route::get('/category/create', "CategoryController@create");
