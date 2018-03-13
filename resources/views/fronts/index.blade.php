@@ -154,7 +154,6 @@
             </div>
         </div>
     </div>
-<<<<<<< HEAD
     {{--  <div class="container-fluit s-image">
         <div class="container">
             <div class="row"> 
@@ -195,8 +194,7 @@
        
     </div>
     <br><br>
-=======
->>>>>>> 265e8bfa62ab909839c5c4d991f861dfe3338978
+
     <div class="container-fluit announcements">
         <div class="container">
             <h1 class="text-center">Up Comming Event</h1> <hr class="hr-d">
