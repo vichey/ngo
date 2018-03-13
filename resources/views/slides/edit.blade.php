@@ -49,6 +49,14 @@
                             </div>
                         </div>
                         <div class="form-group row">
+                            <label for="url" class="control-label col-lg-2 col-sm-2">
+                            	URL 
+                            </label>
+                            <div class="col-lg-6 col-sm-8">
+                                <input type="text" name="url" id="url" value="{{$slide->url}}" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row">
                             <label for="order" class="control-label col-lg-2 col-sm-2">
                             	Order 
                             </label>

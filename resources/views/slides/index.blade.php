@@ -16,6 +16,7 @@
                                 <th>&numero;</th>
                                 <th>Image</th>
                                 <th>Name</th>
+                                <th>URL</th>
                                 <th>Order</th>
                                 <th>Action</th>
                             </tr>
@@ -27,6 +28,7 @@
                                     <td>{{$i++}}</td>
                                     <td><img src="{{URL::asset('front/slides/').'/'.$sli->photo}}" width="100"/></td>
                                     <td>{{$sli->name}}</td>
+                                    <td>{{$sli->url}}</td>
                                     <td>{{$sli->order}}</td>
                                     <td>
                                         <a class="btn btn-xs btn-primary"  href="{{url('/slide/edit/'.$sli->id)}}" title="Edit"><i class="fa fa-pencil"></i></a>

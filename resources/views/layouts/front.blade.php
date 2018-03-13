@@ -145,9 +145,9 @@
                                 <?php $i=1;?>
                                 @foreach($donors as $d)
                                     @if($i++==1)
-                                        <img src="{{asset('partners/'.$d->logo)}}" alt="{{$d->name}}" class="img-responsive"/ width="130"></div>
+                                        <img src="{{asset('partners/'.$d->logo)}}" alt="{{$d->name}}" class="img-responsive"></div>
                                     @else
-                                        <div class="swiper-slide text-center"><img src="{{asset('partners/'.$d->logo)}}" alt="{{$d->name}}" class="img-responsive" width="130"/></div>
+                                        <div class="swiper-slide text-center"><img src="{{asset('partners/'.$d->logo)}}" alt="{{$d->name}}" class="img-responsive"></div>
                                     @endif
                                 @endforeach
                             </div>
@@ -178,59 +178,49 @@ loop: true
 <div class="container-fluit b">
     <div class="container">
         <div class="row">
+            
+            <div class="col-md-3 text-jutify">
+                <div class="foot">
+                    <h6 class="text-subscribe">FIND US</h6><p></p>
+                    <p>
+                        <a href="https://www.facebook.com/khmeryouthassociationkh" target="_blank">
+                            <img src="{{asset('front/img/f.png')}}" height="35" class="socail"> 
+                        </a>
+                        <img src="{{asset('front/img/l.png')}}" height="35" class="socail"> 
+                        <a href="https://twitter.com/intent/tweet?text=Khmer%20Youth%20Association&source=sharethiscom&related=sharethis&url=http%3A%2F%2Fkya-cambodia.org%2Fsite%2F%23sthash.ra2zGiVV.uxfs" target="_blank">
+                            <img src="{{asset('front/img/t.png')}}" height="35" class="socail">
+                        </a>
+                        <img src="{{asset('front/img/fl.png')}}" height="35" class="socail"> 
+                        <img src="{{asset('front/img/e.png')}}" height="35" class="socail"> 
+                        
+                    </p>
+                </div>
+            </div>
             <div class="col-md-4 text-jutify">
                 <div class="foot" >
-                <h6>CONTACT INFO</h6><p></p>
+                <h6 class="text-subscribe">CONTACT INFO</h6><p></p>
                 Nº. 32D, St. 562, Sangkat Boeng kak I, Khan Toul Kork, Phnom Penh, CAMBODIA<br>
                 Phone/Fax: 855 23 884 306<br>
                 Email: admin@kya-cambodia.org
                 </div>
-                </div>
-                <div class="col-md-4 text-jutify">
-                    <div class="foot">
-                        <h6>FIND US</h6><p></p>
-                        <p>
-                            <a href="https://www.facebook.com/khmeryouthassociationkh" target="_blank">
-                                <img src="{{asset('front/img/f.png')}}" height="28"> 
-                            </a>
-                          
-                            <img src="{{asset('front/img/l.png')}}" height="28"> 
-                            <a href="https://twitter.com/intent/tweet?text=Khmer%20Youth%20Association&source=sharethiscom&related=sharethis&url=http%3A%2F%2Fkya-cambodia.org%2Fsite%2F%23sthash.ra2zGiVV.uxfs" target="_blank">
-                                <img src="{{asset('front/img/t.png')}}" height="28">
-                            </a>
-                            <img src="{{asset('front/img/e.png')}}" height="28"> 
-                            <img src="{{asset('front/img/fl.png')}}" height="28"> 
-                        </p>
-                        <p>
-                            <div class="socail">
-                                <a href="https://www.facebook.com/khmeryouthassociationkh" target="_blank">
-                                    <img src="{{asset('front/img/ff.png')}}" >
-                                </a>
-                            </div>
-                        </p>
-                        <p>
-                            <div class="socail">
-                                <a href="https://www.youtube.com/channel/UCBIDarOtRqINLw-CIryck9Q" target="_blank">
-                                    <img src="{{asset('front/img/y.jpg')}}">
-                                </a>
-                            </div>   
-                        <p>
-                    </div>
             </div>
-            <div class="col-md-4 text-jutify">
+            <div class="col-md-5 text-jutify">
                 <div class="foot">
-                    <div class="fb-like-box fb_iframe_widget" 
-                    data-href="https://www.facebook.com/khmeryouthassociationkh"
-                     data-width="250" data-show-faces="true" data-stream="false"
-                      data-header="true" fb-xfbml-state="rendered" 
-                      fb-iframe-plugin-query="app_id=&amp;container_width=250&amp;header=true&amp;href=https%3A%2F%2Fwww.facebook.com%2Fkhmeryouthassociationkh&amp;locale=en_US&amp;sdk=joey&amp;show_faces=true&amp;stream=false&amp;width=200"><span style="vertical-align: bottom; width:250px; height: 188px;">
-                          <iframe name="f24aff432ffcfc" width="250px" 
-                          height="1000px" frameborder="0" allowtransparency="true" 
-                          allowfullscreen="true" scrolling="no" 
-                          title="fb:like_box Facebook Social Plugin" 
-                          src="https://www.facebook.com/plugins/like_box.php?app_id=&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FlY4eZXm_YWu.js%3Fversion%3D42%23cb%3Df2a218e77737814%26domain%3Dwww.kya-cambodia.org%26origin%3Dhttp%253A%252F%252Fwww.kya-cambodia.org%252Ff13c442bd725f4%26relation%3Dparent.parent&amp;container_width=250&amp;header=true&amp;href=https%3A%2F%2Fwww.facebook.com%2Fkhmeryouthassociationkh&amp;locale=en_US&amp;sdk=joey&amp;show_faces=true&amp;stream=false&amp;width=250px" style="border: none; visibility: visible; width: 250px; height: 200px;" class="">
-                        </iframe>
-                    </span></div>
+                    <h6 class="text-subscribe">SUBSCRIBE TO NEWSLETTER</h6>
+                    <form 	
+                        action="{{url('/front/newsletter/save')}}" 
+                        class="form-horizontal" 
+                        method="post"
+                        enctype="multipart/form-data"  
+                    >   
+                        <p>
+                            <input type="text" placeholder="Full Name" class="form-control" name="name" required><br>
+                            <input type="email" placeholder="E-mail" class="form-control" name="email" required><br>
+                            <button class="btn btn-primary"> 
+                                <b>SUBSCRIBE!</b>
+                            </button>
+                        </p>
+                    </form>
                 </div>
             </div>
         </div>

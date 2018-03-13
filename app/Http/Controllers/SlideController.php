@@ -26,16 +26,10 @@ class SlideController extends Controller
             ->get();
         return view('slides.index', $data);
     }
-    // load create form
     public function create()
     {
-        // if(!Right::check('Logo', 'i'))
-        // {
-        //     return view('permissions.no');
-        // }
         return view('slides.create');
     }
-    // save new logo
     public function save(Request $r)
     {
     	$file_name = '';
@@ -48,6 +42,7 @@ class SlideController extends Controller
         $data = array(
             'name' => $r->name,
             'order' => $r->order,
+            'url' => $r->url,
             'photo' => $file_name,
         );
         $sms = "The new branch has been created successfully.";
@@ -85,7 +80,8 @@ class SlideController extends Controller
     {
         $data = array(
             'name' => $r->name,
-            'order' => $r->order
+            'order' => $r->order,
+            'url' => $r->url,
         );
         if ($r->photo) {
             $file = $r->file('photo');

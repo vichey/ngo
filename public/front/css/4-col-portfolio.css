@@ -10,7 +10,7 @@ body, .form-control {
 }
 .logo {
   padding: 15px 0;
-  width: 330px;
+  width: 400px;
 }
 small {
   position: absolute;
@@ -24,12 +24,10 @@ small {
   font-weight: bold;
   color: #3b3b3b;
 }
-
 .hr-d {
-  width: 250px;
-  border: solid 3px #fff;
+  width: 340px;
+  border: solid 2px #111;
 }
-
 .btn-c {
   padding: 4px 6px 3px 6px;
 }
@@ -56,6 +54,7 @@ small {
 .btn-warning-c {
     background-color: #ecb338;
     border-color: #ffc107;
+    color: #111;
 }
 .top-header {
   padding: 10px;
@@ -66,13 +65,11 @@ small {
   font-size: 12px;
 }
 .socail {
-  background: #fff;
-  padding: 5px;
-  width: 162px;
+  border: 5px solid #fff;
 }
 .b {
-  background: #263238;
-  color: #fff;
+  background: #e3f3ff;
+  color: #111;
 }
 .co {
   margin-top: 10px;
@@ -88,9 +85,9 @@ small {
   padding: 20px;
 }
 .announcements {
-    background: #004789;
+    background: #e3f3ff;
     padding: 20px;
-    margin-top: -38px;
+    color: #111;
 }
 .hr-a {
   border-bottom: 1px solid #fff;
@@ -109,22 +106,17 @@ small {
   padding-left:2px;
   padding-right: 2px;
 }
-.s-image {
-    background-image: url("../img/newsletter-bg.jpg");
-    padding-top: 80px;
-    padding-bottom: 50px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
 .carousel-caption-c {
   padding: 5px;
-  background: rgba(0,0,0,0.5);
+  background: #053f75c7;
   width: 100%;
   font-size: 16px;
   left: 0;
   bottom: 0;
 }
-
+.controls-top {
+  margin-bottom: 25px;
+}
 .hr-r {
   border: 3px solid #0069d9;
   width: 250px;
@@ -166,7 +158,7 @@ small {
 }
 .more {
   font-size: 13px;
-  color:#004789;
+  color: #111;
   float: right;
   margin-top: 18px;
   text-transform: uppercase;
@@ -235,7 +227,7 @@ small {
     color: #808080;
 }
 .title {
-    color: #004789;
+    color: #0c97ad;
     font-weight: 500;
     text-transform: uppercase;
 }
@@ -249,7 +241,6 @@ small {
 }
 .border-custom {
 	background: #fff;
-	padding: 10px 10px 10px 10px;
 }
 .fc {
 	font-size: 13px;
@@ -267,7 +258,7 @@ small {
   margin-bottom: 0;
 }
 .c-lang {
-  margin-top: 45px;
+  margin-top: 55px;
 }
 .title-re-news {
   margin-top: 55px;
@@ -287,13 +278,7 @@ small {
     padding: 4px 1px;
   }
   .text-subscribe {
-    font-size: 30px;
-  }
-  .s-image {
-    padding-top: 29px;
-    padding-bottom: 35px;
-    background-size: 100%;
-    background-repeat: no-repeat;
+    font-size: 25px;
   }
   .d-image {
     padding-bottom: 33px;
@@ -320,11 +305,6 @@ small {
     padding-top: 10px;
     background-size: 100% 500px;
   }
-  .s-image {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-size: 100% 259px;
-}
  }
 
 @media (max-width: 479px) {
@@ -335,10 +315,6 @@ small {
     max-width: 100%;
     height: auto;
     display:block;
-  }
-  .hr-d {
-    width: 250px;
-    border: solid 2px #fff;
   }
   .swiper-button-next, .swiper-button-prev {
     top: 62%;
@@ -353,9 +329,6 @@ small {
   }
   .logo {
     width: 100%;
-  }
-  .d-image {
-
   }
   .greennature-action-ads-item, .greennature-action-ads-item-1 {
     padding: 5px 0px 5px 0px;
@@ -404,11 +377,6 @@ small {
     height: auto;
     display:block;
   }
-  .s-image {
-    padding-top: 0;
-    padding-bottom: 0;
-    background-size: 100% 650px;
-}
   .d-image {
     padding-bottom: 10px;
     background-repeat: no-repeat;
@@ -427,9 +395,5 @@ small {
   }
   .text-donate {
     font-size: 20px;
-  }
-  .s-image {
-    padding-top: 10px;
-    padding-bottom: 10px;
   }
 }
