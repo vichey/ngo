@@ -155,7 +155,7 @@
     </div>
     <div class="container-fluit announcements">
         <div class="container">
-            <h1 class="text-center">Up Comming Event</h1> <hr class="hr-d">
+            <h1 class="text-center">Up Coming Events</h1> <hr class="hr-d">
             <div class="row">
                 <div class="col-sm-12">
                     <p>1. Angkor Youth Camp 8th​​ 2016 - <span class="text-warning">October 29, 2016 </span></p>

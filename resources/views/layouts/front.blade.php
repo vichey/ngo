@@ -138,11 +138,13 @@
             $donors = DB::table('partners')->where('active',1)->orderBy('sequence')->get();
         ?>
         <div class="our-donor container">
+            <p></p>
             <h1 align="center">
                 <img src="{{asset('front/img/partner.png')}}"> Our Donors
             </h1>
            <hr>
             <div class="col-md-12"> 
+                <p>&nbsp;</p>
                 <div class="swiper-viewport">
                     <div id="carousel0" class="swiper-container">
                         <div class="swiper-wrapper"> 
@@ -181,40 +183,45 @@ autoplay: 2500,
 loop: true
 });
 </script>
-
+<p></p>
 <div class="container-fluit b">
     <div class="container">
         <div class="row">
             <div class="col-md-4 text-jutify">
                 <div class="foot">
-                    <h6 class="text-subscribe">CONTACT INFO</h6><p></p>
-                    Nº. 32D, St. 562, Sangkat Boeng kak I, Khan Toul Kork, Phnom Penh, CAMBODIA<br>
-                    Phone/Fax: 855 23 884 306<br>
-                    Email: admin@kya-cambodia.org
+                    <h6>CONTACT INFO</h6><p></p>
+                    <i class="fa fa-map-marker"></i>&nbsp;&nbsp;Nº. 32D, St. 562, Sangkat Boeng kak I, Khan Toul Kork, Phnom Penh, CAMBODIA<br>
+                    <i class="fa fa-phone"></i>&nbsp;&nbsp;+855 23 884 306<br>
+                    <i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="mailto:admin@kya-cambodia.org" style="color:#fff">admin@kya-cambodia.org</a>
                 </div>
             </div>
-            <div class="col-md-3 text-jutify">
-                <div class="foot">
-                    <h6 class="text-subscribe">FIND US</h6><p></p>
-                    <p>
-                        <a href="https://www.facebook.com/khmeryouthassociationkh" target="_blank">
-                            <img src="{{asset('front/img/f.png')}}" height="35" class="socail"> 
-                        </a>
-                        <img src="{{asset('front/img/l.png')}}" height="35" class="socail"> 
-                        <a href="https://twitter.com/intent/tweet?text=Khmer%20Youth%20Association&source=sharethiscom&related=sharethis&url=http%3A%2F%2Fkya-cambodia.org%2Fsite%2F%23sthash.ra2zGiVV.uxfs" target="_blank">
-                            <img src="{{asset('front/img/t.png')}}" height="35" class="socail">
-                        </a>
-                        <img src="{{asset('front/img/fl.png')}}" height="35" class="socail"> 
-                        <img src="{{asset('front/img/e.png')}}" height="35" class="socail"> 
-                        <a href="https://www.youtube.com/channel/UCBIDarOtRqINLw-CIryck9Q" target="_blank">
-                            <img src="{{asset('front/img/youtube.png')}}" height="35" class="socail"> 
-                        </a>
-                        
-                    </p>
-               
             <div class="col-md-4 text-jutify">
                 <div class="foot">
-                        <h6 style="text-transform:uppercase;">Subscribe To Newsletter</h6> 
+                    <h6>FIND US</h6><p></p>
+                    <p>
+                        <a href="https://www.youtube.com/channel/UCBIDarOtRqINLw-CIryck9Q" target="_blank">
+                            <img src="{{asset('front/img/youtube.png')}}" height="35"> 
+                        </a>
+                        <img src="{{asset('front/img/l.png')}}" height="35"> 
+                        <a href="https://twitter.com/intent/tweet?text=Khmer%20Youth%20Association&source=sharethiscom&related=sharethis&url=http%3A%2F%2Fkya-cambodia.org%2Fsite%2F%23sthash.ra2zGiVV.uxfs" target="_blank">
+                            <img src="{{asset('front/img/t.png')}}" height="35">
+                        </a>
+                        <img src="{{asset('front/img/fl.png')}}" height="35"> 
+                        <img src="{{asset('front/img/e.png')}}" height="35"> 
+                        <p>
+                               
+                                <a href="https://www.facebook.com/khmeryouthassociationkh" target="_blank">
+                                    <img src="{{asset('front/img/ff.png')}}"> 
+                                </a>
+                        </p>
+                       
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 text-jutify">
+                <div class="foot">
+                        <h6 style="text-transform:uppercase;">Subscribe To Newsletter</h6> <p></p>
                         <form 	
                             action="{{url('/front/newsletter/save')}}" 
                             class="form-horizontal" 
