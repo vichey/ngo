@@ -35,7 +35,9 @@
 </div>
     <div class="container-fluit b-image">
         <div class="container">
+            <p></p>
             <div class="row"> 
+                
                 <div class="col-md-6">  
                     <div class="greennature-action-ads-item-1">
                         <h2 class="text-primary text-subscribe"><b>{{$mission->title}}</b></h2>
@@ -186,7 +188,7 @@
     <br><br>
     <div class="container-fluit announcements">
         <div class="container">
-        <h1 class="text-white text-center text-subscribe"><b>Up Comming</b></h1> <hr class="hr-d">
+        <h1 class="text-white text-center text-subscribe"><b>Up Coming Events</b></h1> <hr class="hr-d">
         <hr>
         <div class="row text-white">
             <div class="col-sm-12 text-center"><hr class="hr-a">

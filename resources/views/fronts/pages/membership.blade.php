@@ -3,10 +3,12 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
-            <h5 class="default-color my-4 text-primary">
-                <b>Membership Form</b>
-                <hr>
-            </h5>
+            <p></p>
+            <h4 class="default-color my-4">
+                Member Registration Form
+            </h4>
+            <hr>
+            
             @if(Session::has('sms'))
                 <div class="alert alert-success" role="alert">
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -123,7 +125,7 @@
                 </p>
             </div>
             <div class="col-md-6"><p>
-                <input type="submit" class="btn btn-success" value="Send" name="send">
+                <input type="submit" class="btn btn-primary" value="Register Now" name="send">
             </p>
             
             </div>

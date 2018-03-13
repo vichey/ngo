@@ -8,11 +8,11 @@
 
         <title>Khmer Youth Assiciation</title>
         <link rel="icon" type="image/gif" href="{{asset('img/favicon.gif')}}" >
-        <script type="text/javascript" src="{{asset('front/css/jq.js')}}"></script>
         <!-- Bootstrap core CSS -->
         <link href="{{asset('front/css/b.css')}}" rel="stylesheet">
         <link href="{{asset('front/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-        <script src="{{asset('front/css/owl.carousel.min.js')}}"></script>
+        <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet">
+    
         <!-- Custom styles for this template -->
         <link href="{{asset('front/css/4-col-portfolio.css')}}" rel="stylesheet">
     </head>
@@ -60,7 +60,6 @@
                                 <a class="dropdown-item" href="{{url('/page/3')}}">{{trans('labels.chart')}}</a>
                                 <a class="dropdown-item" href="{{url('/page/board-member')}}">{{trans('labels.board')}}</a>
                                 <a class="dropdown-item" href="{{url('/page/staff')}}">{{trans('labels.staff')}}</a>
-                                <a class="dropdown-item" href="{{url('/page/4')}}">{{trans('labels.report')}}</a>
                             </div>
                         </li>
                         <li class="nav-item">
@@ -84,6 +83,7 @@
                             <div class="dropdown-menu">
                                 {{--  <a class="dropdown-item" href="{{url('/page/12')}}">{{trans('labels.case_study')}}</a>  --}}
                                 <a class="dropdown-item" href="{{url('/page/9')}}">{{trans('labels.volunteer')}}</a>
+                                <a class="dropdown-item" href="{{url('/page/membership-form')}}">Become A Member</a>
                                 {{--  <a class="dropdown-item" href="#">Announcements</a>  --}}
                                 <a class="dropdown-item" href="{{url('/page/13')}}">{{trans('labels.event')}}</a>
                                 <a class="dropdown-item" href="{{url('/page/14')}}">{{trans('labels.job')}}</a>
@@ -105,6 +105,7 @@
                               Resources
                             </a>
                             <div class="dropdown-menu">
+                                <a class="dropdown-item" href="{{url('/page/4')}}">{{trans('labels.report')}}</a>                               
                                 <a class="dropdown-item" href="#"> Case Study</a>
                                 <a class="dropdown-item" href="{{url('/page/15')}}"> {{trans('labels.elibrary')}}</a>
                                 {{--  <a class="dropdown-item" href="{{url('/page/16')}}">Photo Library</a>  --}}
@@ -163,6 +164,8 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="{{asset('front/css/jq.js')}}"></script>
+    <script src="{{asset('front/css/owl.carousel.min.js')}}"></script>
 
 <script type="text/javascript">
 $('#carousel0').swiper({
@@ -183,9 +186,9 @@ loop: true
             <div class="col-md-4 text-jutify">
                 <div class="foot" >
                 <h6>CONTACT INFO</h6><p></p>
-                Nº. 32D, St. 562, Sangkat Boeng kak I, Khan Toul Kork, Phnom Penh, CAMBODIA<br>
-                Phone/Fax: 855 23 884 306<br>
-                Email: admin@kya-cambodia.org
+                <i class="fa fa-map-marker"></i>&nbsp;&nbsp;Nº. 32D, St. 562, Sangkat Boeng kak I, Khan Toul Kork, Phnom Penh, CAMBODIA<br>
+                <i class="fa fa-phone"></i>&nbsp;&nbsp;+855 23 884 306<br>
+                <i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="mailto:admin@kya-cambodia.org" style="color:#fff">admin@kya-cambodia.org</a>
                 </div>
                 </div>
                 <div class="col-md-4 text-jutify">
