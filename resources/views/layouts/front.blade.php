@@ -185,7 +185,7 @@ loop: true
 <div class="container-fluit b">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 text-jutify">
+            <div class="col-md-4 text-jutify">
                 <div class="foot">
                     <h6 class="text-subscribe">FIND US</h6><p></p>
                     <p>
@@ -198,59 +198,14 @@ loop: true
                         </a>
                         <img src="{{asset('front/img/fl.png')}}" height="35" class="socail"> 
                         <img src="{{asset('front/img/e.png')}}" height="35" class="socail"> 
+                        <a href="https://www.youtube.com/channel/UCBIDarOtRqINLw-CIryck9Q" target="_blank">
+                            <img src="{{asset('front/img/youtube.png')}}" height="35" class="socail"> 
+                        </a>
                         
                     </p>
                 </div>
-
-                <div class="col-md-4 text-jutify">
-                    <div class="foot">
-                        <h6>FIND US</h6><p></p>
-                        <p>
-                            <a href="https://www.youtube.com/channel/UCBIDarOtRqINLw-CIryck9Q" target="_blank">
-                                <img src="{{asset('front/img/youtube.png')}}" height="28"> 
-                            </a>
-                          
-                            <img src="{{asset('front/img/l.png')}}" height="28"> 
-                            <a href="https://twitter.com/intent/tweet?text=Khmer%20Youth%20Association&source=sharethiscom&related=sharethis&url=http%3A%2F%2Fkya-cambodia.org%2Fsite%2F%23sthash.ra2zGiVV.uxfs" target="_blank">
-                                <img src="{{asset('front/img/t.png')}}" height="28">
-                            </a>
-                            <img src="{{asset('front/img/e.png')}}" height="28"> 
-                            <img src="{{asset('front/img/fl.png')}}" height="28"> 
-                        </p>
-                        <p>
-                                <a href="https://www.facebook.com/khmeryouthassociationkh" target="_blank">
-                                    <img src="{{asset('front/img/ff.png')}}" width="200">
-                                </a>
-                            <div class="socail">
-                                
-                            </div>
-                        </p>
-                        {{--  <p>
-                            <div class="socail">
-                                <a href="https://www.youtube.com/channel/UCBIDarOtRqINLw-CIryck9Q" target="_blank">
-                                    <img src="{{asset('front/img/y.jpg')}}">
-                                </a>
-                            </div>   
-                        <p>  --}}
-                    </div>
             </div>
-            <div class="col-md-4 text-jutify">
-                <div class="foot">
-                        <h6 style="text-transform:uppercase;">Subscribe To Newsletter</h6> 
-                        <form 	
-                            action="{{url('/front/newsletter/save')}}" 
-                            class="form-horizontal" 
-                            method="post"
-                            enctype="multipart/form-data"  
-                        >
-                            <input type="text" placeholder="Full Name" class="form-control" name="name" required><br>
-                            <input type="email" placeholder="E-mail" class="form-control" name="email" required><br>
-                            <button class="btn btn-success text-white"> 
-                                SUBSCRIBE!
-                            </button>  <p></p>
-                        </form>
-            </div>
-            <div class="col-md-4 text-jutify">
+            <div class="col-md-3 text-jutify">
                 <div class="foot">
                     <h6 class="text-subscribe">CONTACT INFO</h6><p></p>
                     Nº. 32D, St. 562, Sangkat Boeng kak I, Khan Toul Kork, Phnom Penh, CAMBODIA<br>
