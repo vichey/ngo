@@ -15,6 +15,7 @@
     
         <!-- Custom styles for this template -->
         <link href="{{asset('front/css/4-col-portfolio.css')}}" rel="stylesheet">
+       
     </head>
     <body>
     <div class="container-fluit top-background">
@@ -136,11 +137,15 @@
         <?php
             $donors = DB::table('partners')->where('active',1)->orderBy('sequence')->get();
         ?>
-        <div class="our-donor">
+        <div class="our-donor container">
+            <p></p>
             <h4 align="center">
-                <img src="{{asset('front/img/partner.png')}}"> <b>Our Donors</b> <hr>
+                <img src="{{asset('front/img/partner.png')}}"> <b>Our Donors</b>
             </h4>
+            <p>&nbsp;</p>
+            <hr>
             <div class="col-md-12 border-custom"> 
+                <p></p>
                 <div class="swiper-viewport">
                     <div id="carousel0" class="swiper-container">
                         <div class="swiper-wrapper"> 
@@ -160,7 +165,8 @@
                             <div class="swiper-button-prev"></div>
                         </div>
                     </div>
-                </div><hr>
+                </div>
+                <p></p>
             </div>
         </div>
     </div>
