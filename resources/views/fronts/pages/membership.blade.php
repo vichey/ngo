@@ -49,19 +49,19 @@
             <div class="col-sm-6">
                 <p>
                     <b>Khmer Family Name <span class="text-danger">*</span></b>
-                    <input type="text" class="form-control" name="khmer_family_name" required placeholder="Fimily Name">
+                    <input type="text" class="form-control" name="khmer_family_name" required placeholder="Khmer Fimily Name">
                 </p>
             </div>
             <div class="col-sm-6">
                 <p>
                     <b>English First Name <span class="text-danger">*</span></b>
-                    <input type="text" class="form-control" name="english_first_name" required placeholder="Khmer First Name">
+                    <input type="text" class="form-control" name="english_first_name" required placeholder="English First Name">
                 </p>
             </div>
             <div class="col-sm-6">
                 <p>
                     <b>English Family Name <span class="text-danger">*</span></b>
-                    <input type="text" class="form-control" name="english_family_name" required placeholder="Khmer Fimily Name">
+                    <input type="text" class="form-control" name="english_family_name" required placeholder="English Fimily Name">
                 </p>
             </div>
             <div class="col-sm-6">

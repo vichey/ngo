@@ -137,9 +137,8 @@
     </div>
 
 </div>
-
  </div>
-        </div>
+</div>
     </div>
     <div class="container-fluit d-image">
         <div class="container">
@@ -204,7 +203,6 @@
                 </div>
                 <div class="col-sm-12">
                     <p>2. KYA Youths Case Studies (Mr. Tin Soklim Team Leader YFY)- <span class="text-warning">October 29, 2016</span></p>
-                    <hr class="hr-a">
                 </div>
             </div>
         </div>
