@@ -12,7 +12,6 @@
         <!-- Bootstrap core CSS -->
         <link href="{{asset('front/css/b.css')}}" rel="stylesheet">
         <link href="{{asset('front/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-
         <script src="{{asset('front/css/owl.carousel.min.js')}}"></script>
         <!-- Custom styles for this template -->
         <link href="{{asset('front/css/4-col-portfolio.css')}}" rel="stylesheet">

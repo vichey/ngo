@@ -93,10 +93,10 @@
                         <a class="nav-link" href="{{url('/page')}}"><i class="fa fa-columns"></i> Page </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{url('/main-menu')}}"><i class="fa fa-columns"></i> Main Menu </a>
+                        <a class="nav-link" href="{{url('/main-menu')}}"><i class="fa fa-navicon"></i> Main Menu </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{url('/sub-menu')}}"><i class="fa fa-columns"></i> Sub Menu </a>
+                        <a class="nav-link" href="{{url('/sub-menu')}}"><i class="fa fa-list"></i> Sub Menu </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{url('/announcement')}}"><i class="fa fa-bullhorn"></i> Comming Up </a>
