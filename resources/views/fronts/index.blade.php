@@ -125,27 +125,10 @@
         </div>
         <p></p>
     </div>
-<!--/.Slides-->
 
 </div>
-<!--/.Carousel Wrapper-->
-                    
-                {{--  <div class="row">
-                    @foreach($news as $n)
-                    <div class="col-lg-3 col-md-3 col-sm-6 portfolio-item">
-                        <div class="card new-card h-100">
-                            <a href="{{url('recent-news/detail/'.$n->id)}}"><img class="card-img-top" src="{{asset('front/img/'.$n->featured_image)}}" alt=""></a>
-                            <div class="card-body">
-                                <h6 class="card-title">
-                                    <a href="{{url('recent-news/detail/'.$n->id)}}" class="title" style="text-decoration: none;">{{$n->title}}</a>
-                                </h6>
-                                <a href="{{url('recent-news/detail/'.$n->id)}}" style="text-decoration: none;"><p class="card-text">{{$n->short_description}}</p></a>
-                            </div>
-                        </div>
-                    </div>
-                    @endforeach
-                </div>  --}}
-            </div>
+
+ </div>
         </div>
     </div>
     <div class="container-fluit d-image">
@@ -161,7 +144,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluit s-image">
+    <div class="container-fluit s-image"></div>
         <div class="container">
             <div class="row"> 
                     <div class="col-md-6">  
