@@ -239,12 +239,11 @@ loop: true
 </div>
 <script src="{{asset('front/vendor/jquery/jquery.min.js')}}"></script>
 <script src="{{asset('front/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{asset('front/vendor/jquery/menu-hover.js')}}"></script>
 <script>
      function chLang(evt, ln)
         {
-
             evt.preventDefault();
-  
             $.ajax({
                 type: "GET",
                 url: "{{url('/')}}" + "/language/" + ln,
