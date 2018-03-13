@@ -146,7 +146,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluit s-image">
+    {{--  <div class="container-fluit s-image">
         <div class="container">
             <div class="row"> 
                     <div class="col-md-6">  
@@ -182,7 +182,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>  --}}
        
     </div>
     <br><br>

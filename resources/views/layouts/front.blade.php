@@ -201,8 +201,8 @@ loop: true
                     <div class="foot">
                         <h6>FIND US</h6><p></p>
                         <p>
-                            <a href="https://www.facebook.com/khmeryouthassociationkh" target="_blank">
-                                <img src="{{asset('front/img/f.png')}}" height="28"> 
+                            <a href="https://www.youtube.com/channel/UCBIDarOtRqINLw-CIryck9Q" target="_blank">
+                                <img src="{{asset('front/img/youtube.png')}}" height="28"> 
                             </a>
                           
                             <img src="{{asset('front/img/l.png')}}" height="28"> 
@@ -213,35 +213,37 @@ loop: true
                             <img src="{{asset('front/img/fl.png')}}" height="28"> 
                         </p>
                         <p>
-                            <div class="socail">
                                 <a href="https://www.facebook.com/khmeryouthassociationkh" target="_blank">
-                                    <img src="{{asset('front/img/ff.png')}}" >
+                                    <img src="{{asset('front/img/ff.png')}}" width="200">
                                 </a>
+                            <div class="socail">
+                                
                             </div>
                         </p>
-                        <p>
+                        {{--  <p>
                             <div class="socail">
                                 <a href="https://www.youtube.com/channel/UCBIDarOtRqINLw-CIryck9Q" target="_blank">
                                     <img src="{{asset('front/img/y.jpg')}}">
                                 </a>
                             </div>   
-                        <p>
+                        <p>  --}}
                     </div>
             </div>
             <div class="col-md-4 text-jutify">
                 <div class="foot">
-                    <div class="fb-like-box fb_iframe_widget" 
-                    data-href="https://www.facebook.com/khmeryouthassociationkh"
-                     data-width="250" data-show-faces="true" data-stream="false"
-                      data-header="true" fb-xfbml-state="rendered" 
-                      fb-iframe-plugin-query="app_id=&amp;container_width=250&amp;header=true&amp;href=https%3A%2F%2Fwww.facebook.com%2Fkhmeryouthassociationkh&amp;locale=en_US&amp;sdk=joey&amp;show_faces=true&amp;stream=false&amp;width=200"><span style="vertical-align: bottom; width:250px; height: 188px;">
-                          <iframe name="f24aff432ffcfc" width="250px" 
-                          height="1000px" frameborder="0" allowtransparency="true" 
-                          allowfullscreen="true" scrolling="no" 
-                          title="fb:like_box Facebook Social Plugin" 
-                          src="https://www.facebook.com/plugins/like_box.php?app_id=&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FlY4eZXm_YWu.js%3Fversion%3D42%23cb%3Df2a218e77737814%26domain%3Dwww.kya-cambodia.org%26origin%3Dhttp%253A%252F%252Fwww.kya-cambodia.org%252Ff13c442bd725f4%26relation%3Dparent.parent&amp;container_width=250&amp;header=true&amp;href=https%3A%2F%2Fwww.facebook.com%2Fkhmeryouthassociationkh&amp;locale=en_US&amp;sdk=joey&amp;show_faces=true&amp;stream=false&amp;width=250px" style="border: none; visibility: visible; width: 250px; height: 200px;" class="">
-                        </iframe>
-                    </span></div>
+                        <h6 style="text-transform:uppercase;">Subscribe To Newsletter</h6> 
+                        <form 	
+                            action="{{url('/front/newsletter/save')}}" 
+                            class="form-horizontal" 
+                            method="post"
+                            enctype="multipart/form-data"  
+                        >
+                            <input type="text" placeholder="Full Name" class="form-control" name="name" required><br>
+                            <input type="email" placeholder="E-mail" class="form-control" name="email" required><br>
+                            <button class="btn btn-success text-white"> 
+                                SUBSCRIBE!
+                            </button>  <p></p>
+                        </form>
                 </div>
             </div>
         </div>
