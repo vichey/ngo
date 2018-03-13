@@ -153,6 +153,47 @@
             </div>
         </div>
     </div>
+    {{--  <div class="container-fluit s-image">
+        <div class="container">
+            <div class="row"> 
+                    <div class="col-md-6">  
+                        <h1 class="text-white text-subscribe"><b>Subscribe To Newsletter</b></h1> <hr class="hr-d" align="left">
+                        <form 	
+                            action="{{url('/front/newsletter/save')}}" 
+                            class="form-horizontal" 
+                            method="post"
+                            enctype="multipart/form-data"  
+                        >
+                            <input type="text" placeholder="Full Name" class="form-control" name="name" required><br>
+                            <input type="email" placeholder="E-mail" class="form-control" name="email" required><br>
+                            <button class="btn btn-success text-white"> 
+                                <b>SUBSCRIBE!</b>
+                            </button>  <p></p>
+                        </form>
+                    </div>
+                  
+                    <div class="col-md-6">  
+                    <h1 class="text-primary text-subscribe"><b>Register</b></h1> <hr class="hr-d" align="left">
+                    <form 	
+                        action="{{url('/front/newsletter/save')}}" 
+                        class="form-horizontal" 
+                        method="post"
+                        enctype="multipart/form-data"  
+                    >
+                    <p class="text-white">To become a KYA member please</p>   
+                    
+                            <a class="btn btn-primary" href="{{url('page/membership-form')}}">
+                                <b>Sing Up!</b>
+                            </a>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>  --}}
+       
+    </div>
+    <br><br>
+
     <div class="container-fluit announcements">
         <div class="container">
             <h1 class="text-center">Up Comming Event</h1> <hr class="hr-d">
