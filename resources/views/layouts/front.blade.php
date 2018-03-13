@@ -88,7 +88,7 @@
                                 {{--  <a class="dropdown-item" href="#">Announcements</a>  --}}
                                 <a class="dropdown-item" href="{{url('/page/13')}}">{{trans('labels.event')}}</a>
                                 <a class="dropdown-item" href="{{url('/page/14')}}">{{trans('labels.job')}}</a>
-                                
+                                <a class="dropdown-item" href="{{url('/page/membership-form')}}">Register</a>
                             </div>
                         </li>
                         {{--  <li class="nav-item dropdown">
