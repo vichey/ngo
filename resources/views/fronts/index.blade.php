@@ -43,7 +43,9 @@
 </div>
     <div class="container-fluit b-image">
         <div class="container">
+            <p></p>
             <div class="row"> 
+                
                 <div class="col-md-6">  
                     <div class="greennature-action-ads-item-1">
                         <h1 class="text-primary">{{$mission->title}}</h1>
@@ -154,15 +156,15 @@
     </div>
     <div class="container-fluit announcements">
         <div class="container">
-        <h1 class="text-center">Up Comming Event</h1> <hr class="hr-d">
-        <div class="row">
-            <div class="col-sm-12">
-                <p>1. Angkor Youth Camp 8th​​ 2016 - <span class="text-warning">October 29, 2016 </span></p>
-                <hr class="hr-a">
-            </div>
-            <div class="col-sm-12">
-                <p>2. KYA Youths Case Studies (Mr. Tin Soklim Team Leader YFY)- <span class="text-warning">October 29, 2016</span></p>
-                <hr class="hr-a">
+            <h1 class="text-center">Up Comming Event</h1> <hr class="hr-d">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>1. Angkor Youth Camp 8th​​ 2016 - <span class="text-warning">October 29, 2016 </span></p>
+                </div>
+                <div class="col-sm-12">
+                    <p>2. KYA Youths Case Studies (Mr. Tin Soklim Team Leader YFY)- <span class="text-warning">October 29, 2016</span></p>
+                    <hr class="hr-a">
+                </div>
             </div>
         </div>
     </div>

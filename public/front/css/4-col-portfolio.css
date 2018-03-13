@@ -10,7 +10,7 @@ body, .form-control {
 }
 .logo {
   padding: 15px 0;
-  width: 400px;
+  width: 440px;
 }
 small {
   position: absolute;
@@ -83,6 +83,7 @@ small {
 }
 .foot {
   padding: 20px;
+  font-size: 15px;
 }
 .announcements {
     background: #e3f3ff;
@@ -122,7 +123,7 @@ small {
   width: 250px;
 }
 .greennature-action-ads-item, .greennature-action-ads-item-1 {
-    padding: 65px 40px 100px;
+    padding: 14px 40px 7px;
     overflow: hidden;
 }
 .card-c {
@@ -196,7 +197,7 @@ small {
   border: 0;
   padding: 0;
   background: #053f75c7;
-  margin-top: 14px;
+  margin-top: 9px;
 }
 .navbar-nav .dropdown-menu {
     border-radius: 0;
@@ -210,6 +211,7 @@ small {
 .navbar-dark .navbar-nav .nav-link.show, 
 .navbar-dark .navbar-nav .show>.nav-link  {
     color: #fff;
+    font-size: 17px;
 }
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
     color: #ccc;
@@ -258,7 +260,7 @@ small {
   margin-bottom: 0;
 }
 .c-lang {
-  margin-top: 55px;
+  margin-top: 60px;
 }
 .title-re-news {
   margin-top: 55px;
@@ -360,12 +362,6 @@ small {
     line-height: 1.5;
     border-radius: .3rem;
   }
-  .s-image {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-size: 100% 650px;
-  }
-
 }
 @media (max-width: 360px) {
   .greennature-action-ads-item, .greennature-action-ads-item-1 {

@@ -41,7 +41,7 @@
                             <label for="name" class="control-label col-lg-2 col-sm-2">
                             	Name <span class="text-danger">*</span>
                             </label>
-                            <div class="col-lg-3 col-sm-3">
+                            <div class="col-lg-6 col-sm-8">
                                 <input type="text" autofocus name="name" id="name" required class="form-control" value="{{$slide->name}}">
                             </div>
                             <div class="col-lg-3 col-sm-3">
