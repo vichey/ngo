@@ -138,14 +138,11 @@
             $donors = DB::table('partners')->where('active',1)->orderBy('sequence')->get();
         ?>
         <div class="our-donor container">
-            <p></p>
-            <h4 align="center">
-                <img src="{{asset('front/img/partner.png')}}"> <b>Our Donors</b>
-            </h4>
-            <p>&nbsp;</p>
-            <hr>
-            <div class="col-md-12 border-custom"> 
-                <p></p>
+            <h1 align="center">
+                <img src="{{asset('front/img/partner.png')}}"> Our Donors
+            </h1>
+           <hr>
+            <div class="col-md-12"> 
                 <div class="swiper-viewport">
                     <div id="carousel0" class="swiper-container">
                         <div class="swiper-wrapper"> 
@@ -166,7 +163,6 @@
                         </div>
                     </div>
                 </div>
-                <p></p>
             </div>
         </div>
     </div>
@@ -189,7 +185,6 @@ loop: true
 <div class="container-fluit b">
     <div class="container">
         <div class="row">
-            
             <div class="col-md-3 text-jutify">
                 <div class="foot">
                     <h6 class="text-subscribe">FIND US</h6><p></p>
