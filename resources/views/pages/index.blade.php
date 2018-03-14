@@ -26,7 +26,7 @@
                                 <tr>
                                     <td>{{$i++}}</td>
                                     <td>{{$pag->title}}</td>
-                                    <td>{{$pag->url}}</td>
+                                    <td>/page/{{$pag->id}}</td>
                                     <td>
                                         <a class="btn btn-xs btn-primary" href="{{url('/page/view/'.$pag->id)}}" title="view"><i class="fa fa-eye"></i></a>
                                         <a class="btn btn-xs btn-info" href="{{url('/page/edit/'.$pag->id)}}" title="Edit"><i class="fa fa-pencil"></i></a>
