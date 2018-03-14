@@ -37,14 +37,13 @@ class AnnouncementController extends Controller
     {
         $data = array(
             'title' => $r->title,
-            'short_description' => $r->short_description,
             'description' => $r->description,
             'location' => $r->location,
             'date' => $r->date,
             'time' => $r->time,
         );
-        $sms = "The new page has been created successfully.";
-        $sms1 = "Fail to create the new page, please check again!";
+        $sms = "The new coming up event has been created successfully.";
+        $sms1 = "Fail to create the new coming up event, please check again!";
         $i = DB::table('announcements')->insertGetId($data);
 
         if($i > 0) {
@@ -84,7 +83,6 @@ class AnnouncementController extends Controller
     {
         $data = array(
             'title' => $r->title,
-            'short_description' => $r->short_description,
             'description' => $r->description,
             'location' => $r->location,
             'date' => $r->date,

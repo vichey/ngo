@@ -69,14 +69,6 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="short_description" class="control-label col-lg-1 col-sm-2">
-                                Short Description
-                            </label>
-                            <div class="col-lg-6 col-sm-10">
-                                <textarea name="short_description" id="short_description" class="form-control">{{$announcement->short_description}}</textarea>
-                            </div>
-                        </div>
-                        <div class="form-group row">
                             <label for="description" class="control-label col-lg-1 col-sm-2">
                                 Description
                             </label>

@@ -156,32 +156,14 @@
     <?php $comings = DB::table('announcements')->orderBy('id','desc')->where('active', 1)->limit(15)->get(); $i = 1; ?>
     <div class="container-fluit announcements">
         <div class="container">
-            <h1 class="text-center text-primary">Up Coming Events</h1> <hr class="hr-d">
+            <h1 class="text-center text-primary">Up Coming Events</h1> <hr class="hr-n">
             <div class="row">
                 @foreach($comings as $com)
                 <div class="col-sm-12">
-                    <p class="text-primary txt">1. Angkor Youth Camp 8th​​ 2018 For Youth Empowering and Social Working Improvement. <br>
-                        <span class="text-danger txt-small"><i class="fa fa-map-marker"></i> Koh Kong Province </span>
-                        <span class="text-success txt-small"><i class="fa fa-calendar"></i> 8:00 AM - November 18, 2018 </span>
-                    </p>
-                    <p class="text-primary txt">2. KYA Youths Case Studies (Mr. Tin Soklim Team Leader YFY. 
-                       <br>
-                       <span class="text-danger txt-small"><i class="fa fa-map-marker"></i> SBN Tower, Ler Re OY </span>
-                       <span class="text-success txt-small"><i class="fa fa-calendar"></i> 8:00 AM - November 18, 2018 </span>
-                        
-                    </p>
-                    <p class="text-primary txt">3. KYA Annual Congress 9th 2018 - For Finding New Committee.
-                        <br>
-                        <span class="text-danger txt-small"><i class="fa fa-map-marker"></i> Olympic Staduim </span>
-                        <span class="text-success txt-small"><i class="fa fa-calendar"></i> 9:00 AM - December 18, 2018 </span>
-                            
-                    </p>
-                    <p class="text-primary txt">4. KYA Youths Case Studies (Mr. Tin Soklim Team Leader YFY. 
-                        <br>
-                        <span class="text-danger txt-small"><i class="fa fa-map-marker"></i> SBN Tower, Ler Re OY </span>
-                        <span class="text-success txt-small"><i class="fa fa-calendar"></i> 8:00 AM - November 18, 2018 </span>
-                            
-                    </p>
+                    <p class="text-primary txt"><?php echo $i++?>. {{$com->title}} <br>
+                        <span class="text-danger txt-small"><i class="fa fa-map-marker"></i> {{$com->location}}</span>
+                        <span class="text-success txt-small"><i class="fa fa-calendar"></i> {{$com->time}} -​ {{$com->date}} </span>
+                    </p><hr>
                 </div>
                 
                 @endforeach

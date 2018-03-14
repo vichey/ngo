@@ -28,6 +28,10 @@ small {
   width: 340px;
   border: solid 2px #111;
 }
+.hr-n {
+  width: 340px;
+  border: solid 2px #007bff;
+}
 .btn-c {
   padding: 4px 6px 3px 6px;
 }
@@ -359,6 +363,10 @@ small {
   .text-donate {
     font-size: 15px;
   }
+  .carousel-caption-c {
+    padding: 0px;
+    font-size: 11px;
+  }
   .btn-lg-c {
     padding: 15px 28px;
     font-size: 20px;
@@ -395,14 +403,4 @@ small {
   .text-donate {
     font-size: 20px;
   }
-}
-.txt
-{
-  font-size: 16px;
-}
-.txt-small
-{
-  font-size: 12px;
-  margin-left: 12px;
-  font-style: italic;
 }
