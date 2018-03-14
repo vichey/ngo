@@ -88,7 +88,7 @@
                                 {{--  <a class="dropdown-item" href="#">Announcements</a>  --}}
                                 <a class="dropdown-item" href="{{url('/page/13')}}">{{trans('labels.event')}}</a>
                                 <a class="dropdown-item" href="{{url('/page/14')}}">{{trans('labels.job')}}</a>
-                                <a class="dropdown-item" href="{{url('/page/membership-form')}}">Register</a>
+                                <a class="dropdown-item" href="{{url('/page/membership-form')}}">Member Register</a>
                             </div>
                         </li>
                         {{--  <li class="nav-item dropdown">
@@ -144,7 +144,6 @@
             </h1>
            <hr>
             <div class="col-md-12"> 
-                <p>&nbsp;</p>
                 <div class="swiper-viewport">
                     <div id="carousel0" class="swiper-container">
                         <div class="swiper-wrapper"> 
@@ -152,9 +151,9 @@
                                 <?php $i=1;?>
                                 @foreach($donors as $d)
                                     @if($i++==1)
-                                        <img src="{{asset('partners/'.$d->logo)}}" alt="{{$d->name}}" class="img-responsive" width="130"></div>
+                                        <img src="{{asset('partners/'.$d->logo)}}" alt="{{$d->name}}" class="img-responsive"></div>
                                     @else
-                                        <div class="swiper-slide text-center"><img src="{{asset('partners/'.$d->logo)}}" width="130" alt="{{$d->name}}" class="img-responsive"></div>
+                                        <div class="swiper-slide text-center"><img src="{{asset('partners/'.$d->logo)}}" alt="{{$d->name}}" class="img-responsive"></div>
                                     @endif
                                 @endforeach
                             </div>

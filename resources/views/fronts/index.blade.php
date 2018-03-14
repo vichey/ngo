@@ -153,10 +153,12 @@
             </div>
         </div>
     </div>
+    <?php $comings = DB::table('announcements')->orderBy('id','desc')->where('active', 1)->limit(15)->get(); $i = 1; ?>
     <div class="container-fluit announcements">
         <div class="container">
             <h1 class="text-center text-primary">Up Coming Events</h1> <hr class="hr-d">
             <div class="row">
+                @foreach($comings as $com)
                 <div class="col-sm-12">
                     <p class="text-primary txt">1. Angkor Youth Camp 8th​​ 2018 For Youth Empowering and Social Working Improvement. <br>
                         <span class="text-danger txt-small"><i class="fa fa-map-marker"></i> Koh Kong Province </span>
@@ -181,8 +183,8 @@
                             
                     </p>
                 </div>
-                <div class="col-sm-12">
-                </div>
+                
+                @endforeach
             </div>
         </div>
     </div>

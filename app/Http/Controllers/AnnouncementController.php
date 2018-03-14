@@ -22,6 +22,7 @@ class AnnouncementController extends Controller
     public function index()
     {
         $data['announcements'] = DB::table('announcements')
+            ->orderBy('id','desc')
             ->where('active', 1)
             ->paginate(18);
         return view('announcements.index', $data);
@@ -37,7 +38,10 @@ class AnnouncementController extends Controller
         $data = array(
             'title' => $r->title,
             'short_description' => $r->short_description,
-            'description' => $r->description
+            'description' => $r->description,
+            'location' => $r->location,
+            'date' => $r->date,
+            'time' => $r->time,
         );
         $sms = "The new page has been created successfully.";
         $sms1 = "Fail to create the new page, please check again!";
@@ -81,7 +85,10 @@ class AnnouncementController extends Controller
         $data = array(
             'title' => $r->title,
             'short_description' => $r->short_description,
-            'description' => $r->description
+            'description' => $r->description,
+            'location' => $r->location,
+            'date' => $r->date,
+            'time' => $r->time,
         );
         $sms = "All changes have been saved successfully.";
         $sms1 = "Fail to to save changes, please check again!";
