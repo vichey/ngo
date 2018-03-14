@@ -99,7 +99,7 @@
                         <a class="nav-link" href="{{url('/sub-menu')}}"><i class="fa fa-list"></i> Sub Menu </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{url('/announcement')}}"><i class="fa fa-bullhorn"></i> Comming Up </a>
+                        <a class="nav-link" href="{{url('/announcement')}}"><i class="fa fa-bullhorn"></i> Coming Up Event</a>
                     </li>
                     
                     <li class="nav-item">

@@ -71,12 +71,15 @@ small {
   background: #263238;
   color: #fff;
 }
+.text-coming {
+  font-size: 15px;
+}
 .co {
   margin-top: 10px;
   float: right;
 }
 .b-image {
-  background:#e3f3ff;
+  background:#eee;
   padding: 10px;
   padding-bottom: 10px;
   background-position: center -18.92px;
@@ -86,7 +89,7 @@ small {
   font-size: 15px;
 }
 .announcements {
-    background: #e3f3ff;
+    background: #eee;
     padding: 20px;
     color: #111;
 }
@@ -109,7 +112,7 @@ small {
 }
 .carousel-caption-c {
   padding: 5px;
-  background: #053f75c7;
+  background: rgba(0,0,0,0.4);
   width: 100%;
   font-size: 16px;
   left: 0;

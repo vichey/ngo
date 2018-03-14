@@ -153,16 +153,21 @@
             </div>
         </div>
     </div>
+    <?php $comings = DB::table('announcements')->orderBy('id','desc')->where('active', 1)->limit(15)->get(); $i = 1; ?>
     <div class="container-fluit announcements">
         <div class="container">
             <h1 class="text-center">Up Coming Events</h1> <hr class="hr-d">
             <div class="row">
+                @foreach($comings as $com)
                 <div class="col-sm-12">
-                    <p>1. Angkor Youth Camp 8th​​ 2016 - <span class="text-warning">October 29, 2016 </span></p>
+                    <aside class="text-coming"><b><?php echo $i++ ;?>.</b> {{$com->short_description}}</aside>
+                    <aside>
+                        <span class="text-primary"><i class="fa fa-map-marker"></i> {{$com->location}}</span>&nbsp;&nbsp; 
+                        <span class="text-success"><i class="fa fa-calendar"></i> {{$com->date}}</span>&nbsp;&nbsp; 
+                        <span class="text-danger"><i class="fa fa-clock-o"></i> {{$com->time}}</span></aside>
+                    <hr>
                 </div>
-                <div class="col-sm-12">
-                    <p>2. KYA Youths Case Studies (Mr. Tin Soklim Team Leader YFY)- <span class="text-warning">October 29, 2016</span></p>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
