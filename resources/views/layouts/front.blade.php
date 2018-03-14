@@ -151,13 +151,13 @@
                                 <?php $i=1;?>
                                 @foreach($donors as $d)
                                     @if($i++==1)
-                                        <img src="{{asset('partners/'.$d->logo)}}" alt="{{$d->name}}" class="img-responsive"></div>
+                                        <img src="{{asset('partners/'.$d->logo)}}" alt="{{$d->name}}" class="img-responsive" width="130"></div>
                                     @else
-                                        <div class="swiper-slide text-center"><img src="{{asset('partners/'.$d->logo)}}" alt="{{$d->name}}" class="img-responsive"></div>
+                                        <div class="swiper-slide text-center"><img src="{{asset('partners/'.$d->logo)}}" alt="{{$d->name}}" class="img-responsive" width="130"></div>
                                     @endif
                                 @endforeach
                             </div>
-                        </div>
+                        </div>  
                         <div class="swiper-pager">
                             <div class="swiper-button-next"></div>  
                             <div class="swiper-button-prev"></div>
@@ -171,16 +171,32 @@
     <script src="{{asset('front/css/owl.carousel.min.js')}}"></script>
 
 <script type="text/javascript">
-$('#carousel0').swiper({
-mode: 'horizontal',
-slidesPerView: 5,
-pagination: '.carousel0',
-paginationClickable: true,
-nextButton: '.swiper-button-next',
-prevButton: '.swiper-button-prev',
-autoplay: 2500,
-loop: true
-});
+    $('#carousel0').swiper({
+        mode: 'horizontal',
+        slidesPerView: 5,
+        pagination: '.carousel0',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        autoplay: 2500,
+        loop: true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true
+            },
+            600:{
+                items:3,
+                nav:true
+            },
+            1000:{
+                items:5,
+                nav:true,
+                loop:true
+            }
+        }
+    });
 </script>
 <p></p>
 <div class="container-fluit b">
